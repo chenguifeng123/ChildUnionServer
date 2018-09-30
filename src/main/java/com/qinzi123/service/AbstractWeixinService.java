@@ -1,17 +1,12 @@
 package com.qinzi123.service;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.qinzi123.dao.WeixinDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
-import com.qinzi123.dao.WeixinDao;
+import java.util.*;
 
 public abstract class AbstractWeixinService {
 
@@ -37,7 +32,7 @@ public abstract class AbstractWeixinService {
 		return list.size() == 0 ? new HashMap() : list.get(0);
 	}
 	
-	// 获取用户的openId
+
 	protected String getOpenId(String code){
 		String openId = codeOpenIdMap.get(code); 
 		if(openId != null) return openId;
