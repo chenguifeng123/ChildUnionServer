@@ -27,4 +27,8 @@ public class BusinessWeixinService extends AbstractWeixinService{
 	public List<LinkedHashMap> oneBusiness(String id){
 		return weixinDao.oneBusiness(id);
 	}
+
+	public int addFollower(int userId, int followerId){
+		return weixinDao.addFollower(userId, followerId);
+	}
 }

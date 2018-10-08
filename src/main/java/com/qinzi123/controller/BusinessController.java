@@ -31,4 +31,10 @@ public class BusinessController {
 		return businessWeixinService.oneBusiness(id);
 	}
 
+	@ApiOperation(value = "关注", notes = "关注")
+	@RequestMapping(value="/business/addFollower/{userId}-{followerId}", method=RequestMethod.GET)
+	private int addFollower(@PathVariable int userId, @PathVariable int followerId){
+		return businessWeixinService.addFollower(userId, followerId);
+	}
+
 }
