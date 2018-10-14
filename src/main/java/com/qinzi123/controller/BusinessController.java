@@ -4,12 +4,11 @@ import com.qinzi123.service.BusinessWeixinService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @RestController
@@ -20,9 +19,10 @@ public class BusinessController {
 	private BusinessWeixinService businessWeixinService;
 	
 	@ApiOperation(value = "商户列表", notes = "商户列表")
-	@RequestMapping(value="/business/list/{id}", method=RequestMethod.GET)
-	private List<LinkedHashMap> listBusiness(@PathVariable String id){
-		return businessWeixinService.listBusiness(id);
+	@RequestMapping(value="/business/list/{id}-{start}-{num}", method=RequestMethod.GET)
+	private List<LinkedHashMap> listBusiness(@PathVariable String id, @PathVariable int start,
+											 @PathVariable int num){
+		return businessWeixinService.listBusiness(id, start, num);
 	}
 
 	@ApiOperation(value = "具体商户信息", notes = "具体商户信息")
@@ -35,6 +35,24 @@ public class BusinessController {
 	@RequestMapping(value="/business/addFollower/{userId}-{followerId}", method=RequestMethod.GET)
 	private int addFollower(@PathVariable int userId, @PathVariable int followerId){
 		return businessWeixinService.addFollower(userId, followerId);
+	}
+
+	@ApiOperation(value = "服务列表", notes = "服务列表")
+	@RequestMapping(value="/business/service/list", method=RequestMethod.GET)
+	private List<LinkedHashMap> getAllService(){
+		return businessWeixinService.getAllService();
+	}
+
+	@ApiOperation(value = "更新用户", notes = "更新用户")
+	@RequestMapping(value="/business/setUser", method=RequestMethod.POST)
+	private int addUserCard(@RequestBody Map map){
+		return businessWeixinService.setUser(map);
+	}
+
+	@ApiOperation(value = "获取用户标签", notes = "获取用户标签")
+	@RequestMapping(value="/business/tag/{id}", method=RequestMethod.GET)
+	private Map getCardTagById(@PathVariable String id){
+		return businessWeixinService.getCardTagById(id);
 	}
 
 }

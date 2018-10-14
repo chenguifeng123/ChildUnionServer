@@ -40,7 +40,6 @@ public abstract class AbstractWeixinService {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
 		System.out.println(getUrl);
-		@SuppressWarnings("rawtypes")
 		Map map= restTemplate.getForObject(getUrl, Map.class);
 		System.out.println(map);
 		openId = map.get("openid") == null ? "" : map.get("openid").toString();
