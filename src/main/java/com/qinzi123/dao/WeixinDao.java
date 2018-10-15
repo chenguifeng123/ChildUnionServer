@@ -14,6 +14,7 @@ public interface WeixinDao {
 	public List<LinkedHashMap> oneBusiness(@Param("id") String id);
 
 	public int addFollower(@Param("userId") int userId, @Param("followerId") int followerId);
+	public Map hasFollowered(@Param("userId") int userId, @Param("followerId") int followerId);
 	public List<LinkedHashMap> getAllService();
 
 	public Map getCardInfoByOpenId(@Param("openid")String openid);
@@ -23,4 +24,7 @@ public interface WeixinDao {
 	public int addCardTag(Map map);
 	public int updateCardTag(Map map);
 	public Map getCardTagById(@Param("card_id")String card_id);
+
+	public List<LinkedHashMap> getFollowerById(@Param("id") String id);
+	public List<LinkedHashMap> getFansById(@Param("id") String id);
 }

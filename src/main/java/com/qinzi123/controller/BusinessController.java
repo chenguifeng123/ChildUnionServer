@@ -55,4 +55,25 @@ public class BusinessController {
 		return businessWeixinService.getCardTagById(id);
 	}
 
+
+	@ApiOperation(value = "获取我关注的", notes = "获取我关注的")
+	@RequestMapping(value="/business/my/follower/{id}", method=RequestMethod.GET)
+	private List<LinkedHashMap> getFollowerById(@PathVariable String id){
+		return businessWeixinService.getFollowerById(id);
+	}
+
+
+	@ApiOperation(value = "获取关注我的", notes = "获取关注我的")
+	@RequestMapping(value="/business/my/fans/{id}", method=RequestMethod.GET)
+	private List<LinkedHashMap> getFansById(@PathVariable String id){
+		return businessWeixinService.getFansById(id);
+	}
+
+	@ApiOperation(value = "批量关注", notes = "批量关注")
+	@RequestMapping(value="/business/batchAddFollower/{userId}-{followerIdList}", method=RequestMethod.GET)
+	private int batchAddFollower(@PathVariable int userId, @PathVariable String followerIdList){
+		return businessWeixinService.batchAddFollower(userId, followerIdList.split(","));
+	}
+
+
 }

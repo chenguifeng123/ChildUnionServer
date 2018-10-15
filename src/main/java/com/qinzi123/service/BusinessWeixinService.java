@@ -30,6 +30,8 @@ public class BusinessWeixinService extends AbstractWeixinService{
 	}
 
 	public int addFollower(int userId, int followerId){
+		Map map = weixinDao.hasFollowered(userId, followerId);
+		if(map != null && map.size() > 0) return 1;
 		return weixinDao.addFollower(userId, followerId);
 	}
 
@@ -66,5 +68,19 @@ public class BusinessWeixinService extends AbstractWeixinService{
 
 	public Map getCardTagById(String id){
 		return weixinDao.getCardTagById(id);
+	}
+
+	public List<LinkedHashMap> getFollowerById(String id){
+		return weixinDao.getFollowerById(id);
+	}
+
+	public List<LinkedHashMap> getFansById(String id){
+		return weixinDao.getFansById(id);
+	}
+
+	public int batchAddFollower(int userId, String[] idList){
+		for(String id : idList)
+			addFollower(userId, Integer.parseInt(id));
+		return 1;
 	}
 }
