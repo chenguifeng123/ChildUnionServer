@@ -70,12 +70,12 @@ public class BusinessWeixinService extends AbstractWeixinService{
 		return weixinDao.getCardTagById(id);
 	}
 
-	public List<LinkedHashMap> getFollowerById(String id){
-		return weixinDao.getFollowerById(id);
+	public List<LinkedHashMap> getFollowerById(String current_id, String my_id){
+		return weixinDao.getFollowerById(current_id, my_id);
 	}
 
-	public List<LinkedHashMap> getFansById(String id){
-		return weixinDao.getFansById(id);
+	public List<LinkedHashMap> getFansById(String current_id, String my_id){
+		return weixinDao.getFansById(current_id, my_id);
 	}
 
 	public int batchAddFollower(int userId, String[] idList){

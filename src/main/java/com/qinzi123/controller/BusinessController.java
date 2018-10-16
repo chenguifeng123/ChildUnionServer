@@ -57,16 +57,16 @@ public class BusinessController {
 
 
 	@ApiOperation(value = "获取我关注的", notes = "获取我关注的")
-	@RequestMapping(value="/business/my/follower/{id}", method=RequestMethod.GET)
-	private List<LinkedHashMap> getFollowerById(@PathVariable String id){
-		return businessWeixinService.getFollowerById(id);
+	@RequestMapping(value="/business/my/follower/{current_id}-{my_id}", method=RequestMethod.GET)
+	private List<LinkedHashMap> getFollowerById(@PathVariable String current_id, @PathVariable String my_id){
+		return businessWeixinService.getFollowerById(current_id, my_id);
 	}
 
 
 	@ApiOperation(value = "获取关注我的", notes = "获取关注我的")
-	@RequestMapping(value="/business/my/fans/{id}", method=RequestMethod.GET)
-	private List<LinkedHashMap> getFansById(@PathVariable String id){
-		return businessWeixinService.getFansById(id);
+	@RequestMapping(value="/business/my/fans/{current_id}-{my_id}", method=RequestMethod.GET)
+	private List<LinkedHashMap> getFansById(@PathVariable String current_id, @PathVariable String my_id){
+		return businessWeixinService.getFansById(current_id, my_id);
 	}
 
 	@ApiOperation(value = "批量关注", notes = "批量关注")

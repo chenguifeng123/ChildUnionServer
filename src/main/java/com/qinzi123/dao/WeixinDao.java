@@ -25,6 +25,6 @@ public interface WeixinDao {
 	public int updateCardTag(Map map);
 	public Map getCardTagById(@Param("card_id")String card_id);
 
-	public List<LinkedHashMap> getFollowerById(@Param("id") String id);
-	public List<LinkedHashMap> getFansById(@Param("id") String id);
+	public List<LinkedHashMap> getFollowerById(@Param("current_id") String current_id, @Param("my_id") String my_id);
+	public List<LinkedHashMap> getFansById(@Param("current_id") String current_id, @Param("my_id") String my_id);
 }

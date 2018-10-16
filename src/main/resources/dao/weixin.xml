@@ -101,9 +101,11 @@
 
 	<!-- 我关注的 -->
 	<select id="getFollowerById" resultType="java.util.Map">
-		select id, headimgurl, realname, job, company, tag1, tag2, tag3, 1 as isFollow
+		select id, headimgurl, realname, job, company, tag1, tag2, tag3, case when follower_id is null  then 0 else 1 end as isFollow from
+		(	select id, headimgurl, realname, job, company, tag1, tag2, tag3
 		<include refid="left_join_card_and_tag"/>
-		,follower f where t.id = f.follower_id and f.user_id = #{id}
+		,follower f where t.id = f.follower_id and f.user_id = #{current_id}
+		) a left join (select follower_id from follower where user_id = #{my_id} ) x on a.id = x.follower_id
 	</select>
 
 	<!-- 关注我的 -->
@@ -111,7 +113,7 @@
 		select id, headimgurl, realname, job, company, tag1, tag2, tag3, case when follower_id is null  then 0 else 1 end as isFollow from
 		(	select id, headimgurl, realname, job, company, tag1, tag2, tag3
 		<include refid="left_join_card_and_tag"/>
-		,follower f where t.id = f.user_id and f.follower_id = #{id}
-		) a left join (select follower_id from follower where user_id = #{id} ) x on a.id = x.follower_id
+		,follower f where t.id = f.user_id and f.follower_id = #{current_id}
+		) a left join (select follower_id from follower where user_id = #{my_id} ) x on a.id = x.follower_id
 	</select>
 </mapper>
