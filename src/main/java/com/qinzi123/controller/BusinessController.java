@@ -37,6 +37,12 @@ public class BusinessController {
 		return businessWeixinService.addFollower(userId, followerId);
 	}
 
+	@ApiOperation(value = "取消关注", notes = "取消关注")
+	@RequestMapping(value="/business/deleteFollower/{userId}-{followerId}", method=RequestMethod.GET)
+	private int deleteFollower(@PathVariable int userId, @PathVariable int followerId){
+		return businessWeixinService.deleteFollower(userId, followerId);
+	}
+
 	@ApiOperation(value = "服务列表", notes = "服务列表")
 	@RequestMapping(value="/business/service/list", method=RequestMethod.GET)
 	private List<LinkedHashMap> getAllService(){

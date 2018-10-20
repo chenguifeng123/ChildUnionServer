@@ -35,6 +35,10 @@ public class BusinessWeixinService extends AbstractWeixinService{
 		return weixinDao.addFollower(userId, followerId);
 	}
 
+	public int deleteFollower(int userId, int followerId){
+		return weixinDao.deleteFollower(userId, followerId);
+	}
+
 	public List<LinkedHashMap> getAllService(){
 		return weixinDao.getAllService();
 	}

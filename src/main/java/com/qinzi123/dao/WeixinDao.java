@@ -14,6 +14,7 @@ public interface WeixinDao {
 	public List<LinkedHashMap> oneBusiness(@Param("id") String id);
 
 	public int addFollower(@Param("userId") int userId, @Param("followerId") int followerId);
+	public int deleteFollower(@Param("userId") int userId, @Param("followerId") int followerId);
 	public Map hasFollowered(@Param("userId") int userId, @Param("followerId") int followerId);
 	public List<LinkedHashMap> getAllService();
 
