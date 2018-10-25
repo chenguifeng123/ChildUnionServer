@@ -6,6 +6,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import static java.awt.SystemColor.info;
+
 /**
  * Created by chenguifeng on 2018/10/4.
  */
@@ -46,8 +48,13 @@ public class BusinessWeixinService extends AbstractWeixinService{
 	public int setUser(Map map){
 		String code = map.get("code").toString();
 		String openid = getOpenId(code);
-		Map cardInfo =weixinDao.getCardInfoByOpenId(openid);
 		map.put("openid", openid);
+		// 小程序和微信公众号共用一个表, openid 是两个
+		//Map cardInfo =weixinDao.getCardInfoByOpenId(openid);
+		String phone = map.get("phone").toString();
+		String realname = map.get("realname").toString();
+		Map cardInfo = weixinDao.getCardInfoByPhone(phone, realname);
+
 		String tag = map.get("tag").toString();
 		String[] tagList = tag.split(",");
 		int id = 0;
@@ -60,7 +67,8 @@ public class BusinessWeixinService extends AbstractWeixinService{
 			map.put("card_id", id);
 			weixinDao.addCardTag(map);
 		}else{
-			Map info = weixinDao.getCardInfoByOpenId(openid);
+			//Map info = weixinDao.getCardInfoByOpenId(openid);
+			Map info = weixinDao.getCardInfoByPhone(phone, realname);
 			id = Integer.parseInt(info.get("id").toString());
 			map.put("id", id);
 			map.put("card_id", id);

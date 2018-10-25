@@ -88,6 +88,10 @@
 		<include refid="getCardInfo"/> where id = #{id}
 	</select>
 
+	<select id="getCardInfoByPhone" resultType="java.util.Map">
+		<include refid="getCardInfo"/> where phone =#{phone} and realname = #{realname}
+	</select>
+
 	<insert id="addCardTag" parameterType="java.util.Map">
 		insert into card_tag(card_id, tag1, tag2, tag3)
 		values(#{card_id}, #{tag1}, #{tag2}, #{tag3})
