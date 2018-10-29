@@ -20,7 +20,7 @@
 		select id, headimgurl, realname, job, company, tag1, tag2, tag3, case when follower_id is null  then 0 else 1 end as isFollow
 		<include refid="left_join_card_and_tag"/>
 		left join (select follower_id from follower where user_id = #{id}) x on t.id = x.follower_id
-		order by id desc limit #{start}, #{num}
+		order by datetime desc,id desc limit #{start}, #{num}
     </select>
 
 	<!-- 获取商户列表 -->
@@ -64,13 +64,13 @@
 	</select>
 
 	<insert id="addCardInfo" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
-		insert into card_info(phone, realname, company, job, headimgurl, openid, workaddress, introduce)
-		values(#{phone}, #{realname}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce})
+		insert into card_info(phone, realname, company, job, headimgurl, openid, workaddress, introduce, datetime)
+		values(#{phone}, #{realname}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce}, #{datetime})
 	</insert>
 
 	<update id="updateCardInfo" parameterType="java.util.Map">
 		update card_info
-		set phone = #{phone}, realname = #{realname}, company=#{company}, job=#{job},
+		set phone = #{phone}, realname = #{realname}, company=#{company}, job=#{job}, datetime=#{datetime},
 		headimgurl = #{headimgurl}, workaddress = #{workaddress}, introduce = #{introduce}
 		where id = #{id}
 	</update>
