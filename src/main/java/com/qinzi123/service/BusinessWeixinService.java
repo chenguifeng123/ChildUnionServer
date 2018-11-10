@@ -22,12 +22,23 @@ public class BusinessWeixinService extends AbstractWeixinService{
 		return "fbe69347542e83483ea49e4e5fed2d3c";
 	}
 
-	public List<LinkedHashMap> listBusiness(String id, int start, int num){
-		return weixinDao.listBusiness(id, start, num);
+	public List<LinkedHashMap> listBusiness(String id, int start, int num, String search){
+		if (search == null || search.trim().length() == 0)
+			search = null;
+		else
+			search = String.format("%%%s%%", search);
+		return weixinDao.listBusiness(id, start, num, search);
 	}
 
 	public List<LinkedHashMap> oneBusiness(String id){
 		return weixinDao.oneBusiness(id);
+	}
+
+	public int getIdByCode(String code){
+		String openid = getOpenId(code);
+		Map map = weixinDao.getCardInfoByOpenId(openid);
+		if (map == null || map.size() == 0) return -1;
+		return Integer.parseInt(map.get("id").toString());
 	}
 
 	public int addFollower(int userId, int followerId){

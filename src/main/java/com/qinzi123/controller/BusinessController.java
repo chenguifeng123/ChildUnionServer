@@ -19,16 +19,33 @@ public class BusinessController {
 	private BusinessWeixinService businessWeixinService;
 	
 	@ApiOperation(value = "商户列表", notes = "商户列表")
-	@RequestMapping(value="/business/list/{id}-{start}-{num}", method=RequestMethod.GET)
-	private List<LinkedHashMap> listBusiness(@PathVariable String id, @PathVariable int start,
-											 @PathVariable int num){
-		return businessWeixinService.listBusiness(id, start, num);
+	@RequestMapping(value="/business/list", method=RequestMethod.POST)
+	private List<LinkedHashMap> listBusiness(@RequestBody Map map){
+		String id = map.get("id").toString();
+		int start = Integer.parseInt(map.get("start").toString());
+		int num = Integer.parseInt(map.get("num").toString());
+		String search = map.get("search").toString();
+		return businessWeixinService.listBusiness(id, start, num, search);
 	}
+
+	@ApiOperation(value = "商户列表", notes = "商户列表")
+	@RequestMapping(value="/business/list/{id}-{start}-{num}", method=RequestMethod.GET)
+	private List<LinkedHashMap> listBusinessNoSearch(@PathVariable String id, @PathVariable int start,
+											 @PathVariable int num){
+		return businessWeixinService.listBusiness(id, start, num, null);
+	}
+
 
 	@ApiOperation(value = "具体商户信息", notes = "具体商户信息")
 	@RequestMapping(value="/business/info/{id}", method=RequestMethod.GET)
 	private List<LinkedHashMap> oneBusiness(@PathVariable String id){
 		return businessWeixinService.oneBusiness(id);
+	}
+
+	@ApiOperation(value = "获取根据code信息", notes = "具体商户信息")
+	@RequestMapping(value="/business/info/code/{code}", method=RequestMethod.GET)
+	private int getIdByCode(@PathVariable String code){
+		return businessWeixinService.getIdByCode(code);
 	}
 
 	@ApiOperation(value = "关注", notes = "关注")
@@ -61,13 +78,11 @@ public class BusinessController {
 		return businessWeixinService.getCardTagById(id);
 	}
 
-
 	@ApiOperation(value = "获取我关注的", notes = "获取我关注的")
 	@RequestMapping(value="/business/my/follower/{current_id}-{my_id}", method=RequestMethod.GET)
 	private List<LinkedHashMap> getFollowerById(@PathVariable String current_id, @PathVariable String my_id){
 		return businessWeixinService.getFollowerById(current_id, my_id);
 	}
-
 
 	@ApiOperation(value = "获取关注我的", notes = "获取关注我的")
 	@RequestMapping(value="/business/my/fans/{current_id}-{my_id}", method=RequestMethod.GET)

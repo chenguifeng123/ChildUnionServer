@@ -10,7 +10,8 @@ public interface WeixinDao {
 
 	public List<LinkedHashMap> listBusiness(@Param("id") String id,
 											@Param("start") int start,
-											@Param("num") int num);
+											@Param("num") int num,
+											@Param("search") String search);
 	public List<LinkedHashMap> oneBusiness(@Param("id") String id);
 
 	public int addFollower(@Param("userId") int userId, @Param("followerId") int followerId);
