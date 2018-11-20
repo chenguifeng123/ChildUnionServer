@@ -129,4 +129,57 @@
 	</select>
 
 
+	<!-- ***************************************** 消息发送  ***************************************          -->
+
+	<insert id="addMessage" useGeneratedKeys="true" parameterType="com.qinzi123.dto.CardMessage">
+		insert into card_message(card_id, form_id, title, message) values(#{cardId}, #{formId}, #{title}, #{message})
+	</insert>
+
+	<resultMap type="com.qinzi123.dto.CardMessage" id="cardMessage">
+		<id property="id" column="id"/>
+		<result property="cardId" column="card_id"/>
+		<result property="formId" column="form_id"/>
+		<result property="title" column="title"/>
+		<result property="message" column="message"/>
+		<result property="updateTime" column="update_time"/>
+		<result property="last" column="last"/>
+		<association property="cardInfo" javaType="com.qinzi123.dto.CardInfo">
+			<id property="id" column="bid"/>
+			<result property="openid" column="openid"/>
+			<result property="phone" column="phone"/>
+			<result property="realname" column="realname"/>
+			<result property="company" column="company"/>
+			<result property="job" column="job"/>
+			<result property="headimgurl" column="headimgurl"/>
+		</association>
+	</resultMap>
+
+	<select id="getAllCardMessage" resultMap="cardMessage">
+		select a.id, card_id, form_id, title, message, update_time, TIMESTAMPDIFF(MINUTE, update_time, sysdate()) as last,
+			b.id as bid, openid, phone, realname, company, job, headimgurl
+			from card_message a, card_info b where a.card_id = b.id
+		order by update_time desc
+		limit #{start}, #{num}
+	</select>
+
+	<!-- 发送消息-->
+	<select id="getFansUser2Push" resultType="java.lang.String">
+		select c.openid from card_info c, follower f where c.id = f.user_id and f.follower_id = #{followerId}
+	</select>
+	<insert id="addMessageSend" useGeneratedKeys="true" parameterType="com.qinzi123.dto.CardMessageSend">
+		insert into card_message_send(message_id, openid) values(#{messageId}, #{openid})
+	</insert>
+	<insert id="addCurrentToken" useGeneratedKeys="true" parameterType="com.qinzi123.dto.WxSmallToken">
+		insert into wx_small_token(token) values(#{token})
+	</insert>
+	<resultMap type="com.qinzi123.dto.WxSmallToken" id="smallToken">
+		<id property="id" column="id"/>
+		<result property="token" column="token"/>
+		<result property="createTime" column="create_time"/>
+	</resultMap>
+	<select id="getCurrentToken" resultMap="smallToken">
+		select id, token, DATE_FORMAT(create_time,'%Y-%m-%d %H:%i:%S') as create_time from wx_small_token
+		ORDER BY create_time desc limit 1
+	</select>
+
 </mapper>

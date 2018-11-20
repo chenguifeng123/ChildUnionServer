@@ -1,7 +1,7 @@
 package com.qinzi123;
 
 import com.qinzi123.dao.WeixinDao;
-import com.qinzi123.service.BusinessWeixinService;
+import com.qinzi123.service.impl.BusinessWeixinServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +22,7 @@ public class BusinessWeixinServiceTest {
 	WeixinDao weixinDao;
 
 	@Autowired
-	private BusinessWeixinService businessWeixinService;
+	private BusinessWeixinServiceImpl businessWeixinService;
 
 	@Test
 	public void testSetUser(){
