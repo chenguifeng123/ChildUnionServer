@@ -96,5 +96,9 @@ public class BusinessController {
 		return businessWeixinService.batchAddFollower(userId, followerIdList.split(","));
 	}
 
-
+	@ApiOperation(value = "是否关注", notes = "获取某用户是否关注")
+	@RequestMapping(value = "/business/hasFollowed/{userId}-{followerId}", method = RequestMethod.GET)
+	private int hashFollowed(@PathVariable int userId, @PathVariable int followerId){
+		return businessWeixinService.hasFollowed(userId, followerId) ? 1 : 0;
+	}
 }

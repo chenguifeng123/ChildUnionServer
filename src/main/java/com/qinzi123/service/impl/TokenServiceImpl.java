@@ -36,7 +36,7 @@ public class TokenServiceImpl extends AbstractWeixinService implements TokenServ
 		log.info("新增新的token");
 		WxSmallToken wxSmallToken = new WxSmallToken();
 		wxSmallToken.setToken(token);
-		weixinDao.addCurrentToken(wxSmallToken);
+		cooperateDao.addCurrentToken(wxSmallToken);
 		return wxSmallToken;
 	}
 
@@ -47,7 +47,7 @@ public class TokenServiceImpl extends AbstractWeixinService implements TokenServ
 	private WxSmallToken getCurrentToken(){
 		synchronized (current_token) {
 			if (current_token.getId() == 0) {
-				WxSmallToken result = weixinDao.getCurrentToken();
+				WxSmallToken result = cooperateDao.getCurrentToken();
 				current_token = result != null ? result : addCurrentToken(getAccessToken());
 			}
 			long last = Utils.dateLast(current_token.getCreateTime());

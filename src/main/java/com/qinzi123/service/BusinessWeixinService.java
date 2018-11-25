@@ -13,6 +13,7 @@ public interface BusinessWeixinService {
 	int getIdByCode(String code);
 	int addFollower(int userId, int followerId);
 	int deleteFollower(int userId, int followerId);
+	boolean hasFollowed(int userId, int followerId);
 	List<LinkedHashMap> getAllService();
 
 	int setUser(Map map);

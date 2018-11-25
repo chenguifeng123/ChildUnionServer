@@ -1,10 +1,11 @@
 package com.qinzi123;
 
-import com.qinzi123.dao.WeixinDao;
+import com.qinzi123.dao.CardDao;
 import com.qinzi123.dto.CardMessage;
+import com.qinzi123.dto.CardMessageReply;
 import com.qinzi123.service.CooperateWeixinService;
 import com.qinzi123.service.PushService;
-import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ import java.util.Map;
 public class PushServiceTest {
 
 	@Autowired
-	WeixinDao weixinDao;
+	CardDao weixinDao;
 
 	@Autowired
 	PushService pushService;
@@ -36,24 +37,28 @@ public class PushServiceTest {
 		return cardMessageList.get(0);
 	}
 
+	@Ignore
 	@Test
 	public void testPushOneMessage(){
 		CardMessage cardMessage = getCardMessage();
 		if(cardMessage != null) {
 			Map map = weixinDao.getCardInfoById("479");
 			String openid = map.get("openid").toString();
-			boolean result = pushService.pushMessage2OneUser(openid, cardMessage);
+			boolean result = pushService.pushMessage2OneUser(cardMessage);
 			//Assert.assertTrue(result);
 		}
 
 	}
 
+	@Ignore
 	@Test
-	public void testPushAllMessage(){
-		CardMessage cardMessage = getCardMessage();
-		if(cardMessage != null) {
-			boolean result = pushService.pushMessage2User(cardMessage);
-			Assert.assertTrue(result);
-		}
+	public void testPushReplyMessage(){
+		CardMessageReply cardMessageReply = new CardMessageReply();
+		cardMessageReply.setMessageId(22);
+		cardMessageReply.setReplyId(32);
+		cardMessageReply.setCardId(479);
+		cardMessageReply.setId(33);
+		pushService.pushMessageReply2OneUser(cardMessageReply);
 	}
+
 }

@@ -1,6 +1,7 @@
 package com.qinzi123.service.impl;
 
-import com.qinzi123.dao.WeixinDao;
+import com.qinzi123.dao.CardDao;
+import com.qinzi123.dao.CooperateDao;
 import com.qinzi123.dto.SendObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,12 +21,15 @@ public abstract class AbstractWeixinService {
 	private Logger logger = LoggerFactory.getLogger(AbstractWeixinService.class);
 
 	protected HashMap<String, String> codeOpenIdMap = new HashMap<String, String>();
-	
+
 	@Autowired
 	protected RestTemplate restTemplate;
 	
 	@Autowired
-	protected WeixinDao weixinDao;
+	CardDao cardDao;
+
+	@Autowired
+	CooperateDao cooperateDao;
 
 	/**
 	 *  没有公众号,暂时 appid和 secret 还是统一的
@@ -87,7 +91,7 @@ public abstract class AbstractWeixinService {
 	 */
 	String getOpenId(String code){
 		logger.info(String.format("获取OPEN ID, 从code %s", code));
-		String openId = codeOpenIdMap.get(code); 
+		String openId = codeOpenIdMap.get(code);
 		if(openId != null) return openId;
 		String getUrl = getSessionUrl(code);
 		Map map= getJsonFromWeixin(getUrl);

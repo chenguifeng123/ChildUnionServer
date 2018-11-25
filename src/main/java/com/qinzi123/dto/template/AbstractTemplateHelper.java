@@ -19,13 +19,14 @@ public abstract class AbstractTemplateHelper {
 		return keyword;
 	}
 
-	public SendObject generateSendObject(String toUser, String formId, Object object){
+	public SendObject generateSendObject(String toUser, String formId,
+										 Object pageData, Object showData){
 		SendObject sendObject = new SendObject();
 		sendObject.setTouser(toUser);
 		sendObject.setTemplate_id(templateId());
-		if(!StringUtils.isEmpty(page(object))) sendObject.setPage(page(object));
+		if(!StringUtils.isEmpty(page(pageData))) sendObject.setPage(page(pageData));
 		sendObject.setForm_id(formId);
-		sendObject.setData(data(object));
+		sendObject.setData(data(showData));
 		if(!StringUtils.isEmpty(emphasis())) sendObject.setEmphasis_keyword(emphasis());
 		return sendObject;
 	}

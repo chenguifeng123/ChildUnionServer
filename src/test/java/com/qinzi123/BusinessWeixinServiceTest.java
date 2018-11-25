@@ -1,6 +1,6 @@
 package com.qinzi123;
 
-import com.qinzi123.dao.WeixinDao;
+import com.qinzi123.dao.CardDao;
 import com.qinzi123.service.impl.BusinessWeixinServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
@@ -19,11 +19,12 @@ import java.util.Map;
 public class BusinessWeixinServiceTest {
 
 	@Autowired
-	WeixinDao weixinDao;
+	CardDao weixinDao;
 
 	@Autowired
 	private BusinessWeixinServiceImpl businessWeixinService;
 
+	//@Ignore
 	@Test
 	public void testSetUser(){
 		Map map = weixinDao.getCardInfoById("479");

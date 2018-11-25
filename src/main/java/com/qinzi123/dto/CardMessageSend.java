@@ -5,6 +5,7 @@ package com.qinzi123.dto;
  */
 public class CardMessageSend {
 	int id;
+	int cardId;
 	int messageId;
 	String openid;
 	String createTime;
@@ -15,6 +16,14 @@ public class CardMessageSend {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public int getCardId() {
+		return cardId;
+	}
+
+	public void setCardId(int cardId) {
+		this.cardId = cardId;
 	}
 
 	public int getMessageId() {
