@@ -23,7 +23,7 @@ public class CooperateMessageTemplateHelper extends AbstractTemplateHelper{
 			put("id", cardMessage.getId());
 			put("title", cardMessage.getTitle());
 			put("message", cardMessage.getMessage());
-			put("last", cardMessage.getLast());
+			put("last", Utils.getDateLast(cardMessage.getLast()));
 			put("card", cardMessage.getCardId());
 			put("phone", cardMessage.getCardInfo().getPhone());
 			put("realname", cardMessage.getCardInfo().getRealname());
