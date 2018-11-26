@@ -31,7 +31,7 @@ public class CooperateMessageTemplateHelper extends AbstractTemplateHelper{
 			put("company", cardMessage.getCardInfo().getCompany());
 			put("headimgurl", cardMessage.getCardInfo().getHeadimgurl());
 		}};
-		return Utils.fillUrlParams("/pages/cooperate/oneMessage", map);
+		return Utils.fillUrlParams("pages/cooperate/oneMessage", map);
 	}
 
 	@Override
