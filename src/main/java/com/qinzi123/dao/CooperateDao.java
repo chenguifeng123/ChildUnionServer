@@ -26,4 +26,7 @@ public interface CooperateDao {
 	int addCardMessageReply(CardMessageReply cardMessageReply);
 	List<CardMessageReply> getAllCardMessageReplyByMessageId(@Param("messageId") int messageId);
 	CardMessageReply getCardMessageReplyById(@Param("replyId") int replyId);
+
+	int updateMessageRead(@Param("id")int id);
+	int updateMessageLike(@Param("id")int id);
 }

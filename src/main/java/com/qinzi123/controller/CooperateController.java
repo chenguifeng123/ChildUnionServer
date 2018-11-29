@@ -44,6 +44,20 @@ public class CooperateController {
 		return cooperateWeixinService.addMessage(cardMessage);
 	}
 
+	@ApiOperation(value = "消息阅读数", notes = "消息阅读数")
+	@RequestMapping(value="/cooperate/message/read/{messageId}", method= RequestMethod.GET)
+	private int updateMessageRead(@PathVariable("messageId") int messageId){
+		return cooperateWeixinService.updateMessageRead(messageId);
+	}
+
+
+	@ApiOperation(value = "消息点赞数", notes = "消息点赞数")
+	@RequestMapping(value="/cooperate/message/like/{messageId}", method= RequestMethod.GET)
+	private int updateMessageLike(@PathVariable("messageId") int messageId){
+		return cooperateWeixinService.updateMessageLike(messageId);
+	}
+
+
 	@ApiOperation(value = "新增合作回复消息", notes = "合作消息列表")
 	@RequestMapping(value="/cooperate/messageReply", method= RequestMethod.POST)
 	private int addMessageReply(@RequestBody CardMessageReply cardMessageReply){

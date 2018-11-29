@@ -24,6 +24,8 @@ public class CooperateMessageTemplateHelper extends AbstractTemplateHelper{
 			put("title", cardMessage.getTitle());
 			put("message", cardMessage.getMessage());
 			put("last", Utils.getDateLast(cardMessage.getLast()));
+			put("read", cardMessage.getReadCount());
+			put("like", cardMessage.getGiveLike());
 			put("card", cardMessage.getCardId());
 			put("phone", cardMessage.getCardInfo().getPhone());
 			put("realname", cardMessage.getCardInfo().getRealname());

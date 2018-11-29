@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="793ea66d-21f0-4942-8b9e-fe5e590e2ed9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/childunion-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/childunion-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/childunion-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/childunion-1.0-SNAPSHOT.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/qinzi123/dto/template/CooperateMessageTemplateHelper$1.class" afterPath="$PROJECT_DIR$/target/classes/com/qinzi123/dto/template/CooperateMessageTemplateHelper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/qinzi123/dto/template/CooperateMessageTemplateHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/qinzi123/dto/template/CooperateMessageTemplateHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/CooperateController.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/CooperateController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CooperateDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CooperateDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/CardMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/CardMessage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageTemplateHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageTemplateHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.BusinessWeixinServiceTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.BusinessWeixinServiceTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.PushServiceTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.PushServiceTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.qinzi123.BusinessWeixinServiceTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qinzi123.BusinessWeixinServiceTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/service/CooperateWeixinService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/service/CooperateWeixinService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/CooperateWeixinServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/CooperateWeixinServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/cooperate.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/cooperate.xml" />
     </list>
     <ignored path="ChildUnionServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,100 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="CardMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/CardMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/BaseParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CooperateWeixinServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/CooperateWeixinServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="36" column="60" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="60" />
-              <folding>
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#1027#1028#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CooperateController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CooperateController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/controller/CooperateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-              <folding>
-                <element signature="e#1631#1632#0" expanded="true" />
-                <element signature="e#1691#1692#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CooperateMessageReplyTemplateHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageReplyTemplateHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CooperateMessageTemplateHelper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageTemplateHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding>
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1202#1203#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/util/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BusinessWeixinService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/BusinessWeixinService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CardDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="375">
+              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -137,9 +47,11 @@
       <file leaf-file-name="CooperateWeixinService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/CooperateWeixinService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="425">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,7 +105,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/FormIdService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/Use.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/BaseParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/CardMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/CardMessageReply.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/WxSmallFormId.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/PushService.java" />
@@ -202,21 +113,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/AbstractTemplateHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/FormIdServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/AbstractWeixinService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CooperateDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qinzi123/BusinessWeixinServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageReplyTemplateHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/CooperateWeixinServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/dao/cooperate.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/qinzi123/PushServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/PushServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/BusinessWeixinServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/BusinessController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/CooperateWeixinService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/BusinessWeixinService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CardDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/card.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/CardMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CooperateDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/CooperateWeixinService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/CooperateWeixinServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/CooperateController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageTemplateHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dao/cooperate.xml" />
       </list>
     </option>
   </component>
@@ -307,8 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -678,6 +588,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1342,6 +1254,9 @@
       <workItem from="1543150042587" duration="168000" />
       <workItem from="1543150379993" duration="483000" />
       <workItem from="1543209801285" duration="101000" />
+      <workItem from="1543235256838" duration="133000" />
+      <workItem from="1543451459497" duration="1790000" />
+      <workItem from="1543466785753" duration="2136000" />
     </task>
     <servers />
   </component>
@@ -1378,11 +1293,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147406000" />
+    <option name="totallyTimeSpent" value="151465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="1" />
-    <editor active="false" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1391,7 +1306,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14947917" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4240363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3356009" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1439,8 +1354,14 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qinzi123/controller/CooperateController.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
@@ -1670,13 +1591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CooperateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/PushService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1705,32 +1619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/cooperate.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-          <folding>
-            <marker date="1543051615957" expanded="true" signature="299:408" placeholder="insert into card_message... " />
-            <marker date="1543051615957" expanded="true" signature="1267:1506" placeholder="select a.id,... " />
-            <marker date="1543051615957" expanded="true" signature="1575:1666" placeholder="select a.id,... " />
-            <marker date="1543051615957" expanded="true" signature="2090:2191" placeholder="select c.ope... card_info" />
-            <marker date="1543051615957" expanded="true" signature="2308:2409" placeholder="insert into card_message_send... " />
-            <marker date="1543051615957" expanded="true" signature="2524:2574" placeholder="insert into wx_small_token... " />
-            <marker date="1543051615957" expanded="true" signature="2855:2988" placeholder="select id, t... wx_small_token" />
-            <marker date="1543051615957" expanded="true" signature="3118:3210" placeholder="insert into card_message... " />
-            <marker date="1543051615957" expanded="true" signature="3299:3360" placeholder="update wx_sm... " />
-            <marker date="1543051615957" expanded="true" signature="3805:3917" placeholder="select id, c... wx_small_formId" />
-            <marker date="1543051615957" expanded="true" signature="3805:3921" placeholder="select id, c... wx_small_formId" />
-            <marker date="1543051615957" expanded="true" signature="3805:3957" placeholder="select id, c... wx_small_formId" />
-            <marker date="1543051615957" expanded="true" signature="3805:3975" placeholder="select id, c... wx_small_formId" />
-            <marker date="1543051615957" expanded="true" signature="3805:3998" placeholder="select id, c... wx_small_formId" />
-            <marker date="1543051615957" expanded="true" signature="4123:4262" placeholder="insert into card_message_reply... " />
-            <marker date="1543051615957" expanded="true" signature="5155:5437" placeholder="select a.id,... " />
-            <marker date="1543051615957" expanded="true" signature="5527:5600" placeholder="select a.id,... card_message_reply" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qinzi123/PushServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1751,8 +1639,8 @@
         <state relative-caret-position="3925">
           <caret line="169" column="13" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
           <folding>
-            <element signature="e#1955#1956#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="false" />
+            <element signature="e#1992#1993#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1764,95 +1652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/BusinessWeixinService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dao/card.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <marker date="1543054623120" expanded="true" signature="867:1131" placeholder="select id, h... " />
-            <marker date="1543054623120" expanded="true" signature="867:1284" placeholder="select id, h... " />
-            <marker date="1543054623120" expanded="true" signature="995:1036" placeholder="select t.hea... card_info" />
-            <marker date="1543054623120" expanded="true" signature="1383:1727" placeholder="select headi... " />
-            <marker date="1543054623120" expanded="true" signature="1556:1623" placeholder="select count... follower" />
-            <marker date="1543054623120" expanded="true" signature="1634:1703" placeholder="select count... follower" />
-            <marker date="1543054623120" expanded="true" signature="1836:1911" placeholder="insert into follower... " />
-            <marker date="1543054623120" expanded="true" signature="1998:2076" placeholder="delete from " />
-            <marker date="1543054623120" expanded="true" signature="2145:2225" placeholder="select * fro... follower" />
-            <marker date="1543054623120" expanded="true" signature="2926:3029" placeholder="select servi... tag_service_info" />
-            <marker date="1543054623120" expanded="true" signature="3142:3369" placeholder="insert into card_info... " />
-            <marker date="1543054623120" expanded="true" signature="3444:3666" placeholder="update card_... " />
-            <marker date="1543054623120" expanded="true" signature="3706:3805" placeholder="select id, p... card_info" />
-            <marker date="1543054623120" expanded="true" signature="4790:4885" placeholder="insert into card_tag... " />
-            <marker date="1543054623120" expanded="true" signature="4959:5056" placeholder="update card_... " />
-            <marker date="1543054623120" expanded="true" signature="5128:5201" placeholder="select card_... " />
-            <marker date="1543054623120" expanded="true" signature="5289:5705" placeholder="select id, h... id" />
-            <marker date="1543054623120" expanded="true" signature="5424:5602" placeholder="select id, h... " />
-            <marker date="1543054623120" expanded="true" signature="5620:5677" placeholder="select follo... follower" />
-            <marker date="1543054623120" expanded="true" signature="5789:6205" placeholder="select id, h... id" />
-            <marker date="1543054623120" expanded="true" signature="5924:6089" placeholder="select id, h... " />
-            <marker date="1543054623120" expanded="true" signature="5924:6102" placeholder="select id, h... " />
-            <marker date="1543054623120" expanded="true" signature="6120:6169" placeholder="select follo... follower" />
-            <marker date="1543054623120" expanded="true" signature="6120:6177" placeholder="select follo... follower" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CardDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/CooperateWeixinService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/controller/CooperateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding>
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageReplyTemplateHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/CardMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1864,25 +1667,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/CooperateWeixinServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageReplyTemplateHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/BusinessWeixinService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CardDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
-          <caret line="36" column="60" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="60" />
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/CooperateWeixinService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/template/CooperateMessageTemplateHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="296">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
           <folding>
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/cooperate.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <marker date="1543466914224" expanded="true" signature="299:439" placeholder="insert into card_message... " />
+            <marker date="1543466914224" expanded="true" signature="532:555" placeholder="update card_... " />
+            <marker date="1543466914224" expanded="true" signature="532:566" placeholder="update card_... " />
+            <marker date="1543466914224" expanded="true" signature="532:572" placeholder="update card_... " />
+            <marker date="1543466914224" expanded="true" signature="532:574" placeholder="update card_... " />
+            <marker date="1543466914224" expanded="true" signature="532:599" placeholder="update card_... " />
+            <marker date="1543466914224" expanded="true" signature="692:757" placeholder="update card_... " />
+            <marker date="1543466914224" expanded="true" signature="1721:1982" placeholder="select a.id,... " />
+            <marker date="1543466914224" expanded="true" signature="2566:2667" placeholder="select c.ope... card_info" />
+            <marker date="1543466914224" expanded="true" signature="2784:2885" placeholder="insert into card_message_send... " />
+            <marker date="1543466914224" expanded="true" signature="3000:3050" placeholder="insert into wx_small_token... " />
+            <marker date="1543466914224" expanded="true" signature="3331:3464" placeholder="select id, t... wx_small_token" />
+            <marker date="1543466914224" expanded="true" signature="3594:3686" placeholder="insert into wx_small_formId... " />
+            <marker date="1543466914224" expanded="true" signature="3775:3836" placeholder="update wx_sm... " />
+            <marker date="1543466914224" expanded="true" signature="4281:4474" placeholder="select id, c... wx_small_formId" />
+            <marker date="1543466914224" expanded="true" signature="4599:4738" placeholder="insert into card_message_reply... " />
+            <marker date="1543466914224" expanded="true" signature="5631:5913" placeholder="select a.id,... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dto/CardMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/CooperateWeixinServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dao/CooperateDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/controller/CooperateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

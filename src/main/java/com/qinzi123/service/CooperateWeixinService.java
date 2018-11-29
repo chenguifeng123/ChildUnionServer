@@ -10,6 +10,8 @@ import java.util.List;
  */
 public interface CooperateWeixinService {
 	int addMessage(CardMessage cardMessage);
+	int updateMessageRead(int id);
+	int updateMessageLike(int id);
 	List<CardMessage> getAllCardMessage(int start, int num);
 	List<CardMessage> getCardMessageByCardId(int cardId, int start, int num);
 

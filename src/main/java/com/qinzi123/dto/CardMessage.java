@@ -8,6 +8,8 @@ public class CardMessage extends BaseParam {
 	String title;
 	String message;
 	String updateTime;
+	int readCount;
+	int giveLike;
 
 	public int getId() {
 		return id;
@@ -41,4 +43,19 @@ public class CardMessage extends BaseParam {
 		this.updateTime = updateTime;
 	}
 
+	public int getReadCount() {
+		return readCount;
+	}
+
+	public void setReadCount(int readCount) {
+		this.readCount = readCount;
+	}
+
+	public int getGiveLike() {
+		return giveLike;
+	}
+
+	public void setGiveLike(int giveLike) {
+		this.giveLike = giveLike;
+	}
 }

@@ -85,6 +85,24 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	}
 
 	/**
+	 * 阅读数
+	 * @param id
+	 * @return
+	 */
+	public int updateMessageRead(int id) {
+		return cooperateDao.updateMessageRead(id);
+	}
+
+	/**
+	 * 点赞数
+	 * @param id
+	 * @return
+	 */
+	public int updateMessageLike(int id) {
+		return cooperateDao.updateMessageLike(id);
+	}
+
+	/**
 	 * 获取所有数据
 	 * @param start
 	 * @param num
