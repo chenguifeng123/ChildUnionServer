@@ -12,6 +12,7 @@ public class CardInfo {
 	String company;
 	String job;
 	String headimgurl;
+	String weixincode;
 
 	public int getId() {
 		return id;
@@ -69,5 +70,11 @@ public class CardInfo {
 		this.job = job;
 	}
 
+	public String getWeixincode() {
+		return weixincode;
+	}
 
+	public void setWeixincode(String weixincode) {
+		this.weixincode = weixincode;
+	}
 }

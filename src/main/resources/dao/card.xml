@@ -28,7 +28,7 @@
 
 	<!-- 获取商户列表 -->
 	<select id="oneBusiness" resultType="java.util.LinkedHashMap">
-		select id, headimgurl, realname, job, company, phone, workaddress, introduce,
+		select id, headimgurl, realname, job, company, phone, workaddress, introduce,weixincode,
 		tag1, tag2, tag3, follow_count,fans_count
 		<include refid="left_join_card_and_tag"/>,
      (select count(*) as follow_count from follower where user_id = #{id}) u,
@@ -67,20 +67,20 @@
 	</select>
 
 	<insert id="addCardInfo" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
-		insert into card_info(phone, realname, company, job, headimgurl, openid, workaddress, introduce, datetime)
-		values(#{phone}, #{realname}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce}, #{datetime})
+		insert into card_info(phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode, datetime)
+		values(#{phone}, #{realname}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce}, #{weixincode}, #{datetime})
 	</insert>
 
 	<update id="updateCardInfo" parameterType="java.util.Map">
 		update card_info
 		set phone = #{phone}, realname = #{realname}, company=#{company}, job=#{job}, datetime=#{datetime},
-		headimgurl = #{headimgurl}, workaddress = #{workaddress}, introduce = #{introduce}
+		headimgurl = #{headimgurl}, workaddress = #{workaddress}, introduce = #{introduce}, weixincode = #{weixincode}
 		where id = #{id}
 	</update>
 
 
 	<sql id="getCardInfo">
-		select id, phone, realname, company, job, headimgurl, openid, workaddress, introduce from card_info
+		select id, phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode from card_info
 	</sql>
 
 	<select id="getCardInfoByOpenId" resultType="java.util.Map">
@@ -103,6 +103,7 @@
 		<result property="company" column="company"/>
 		<result property="job" column="job"/>
 		<result property="headimgurl" column="headimgurl"/>
+		<result property="weixincode" column="weixincode"/>
 	</resultMap>
 
 	<select id="getCardInfoBeanById" resultMap="cardInfo">
