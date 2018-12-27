@@ -21,14 +21,14 @@
 		<include refid="left_join_card_and_tag"/>
 		left join (select follower_id from follower where user_id = #{id}) x on t.id = x.follower_id
 		<if test="search != null" >
-			where realname like #{search} or company like #{search}
+			where realname like #{search} or company like #{search} or introduce like #{search}
 		</if>
 		order by datetime desc,id desc limit #{start}, #{num}
     </select>
 
 	<!-- 获取商户列表 -->
 	<select id="oneBusiness" resultType="java.util.LinkedHashMap">
-		select id, headimgurl, realname, job, company, phone, workaddress, introduce,weixincode,
+		select id, headimgurl, realname, job, company, phone, workaddress, introduce, weixincode, score,
 		tag1, tag2, tag3, follow_count,fans_count
 		<include refid="left_join_card_and_tag"/>,
      (select count(*) as follow_count from follower where user_id = #{id}) u,
@@ -77,7 +77,6 @@
 		headimgurl = #{headimgurl}, workaddress = #{workaddress}, introduce = #{introduce}, weixincode = #{weixincode}
 		where id = #{id}
 	</update>
-
 
 	<sql id="getCardInfo">
 		select id, phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode from card_info
@@ -141,6 +140,23 @@
 		<include refid="left_join_card_and_tag"/>
 		,follower f where t.id = f.user_id and f.follower_id = #{current_id}
 		) a left join (select follower_id from follower where user_id = #{my_id} ) x on a.id = x.follower_id
+	</select>
+
+
+	<!-- 更新分数 -->
+	<update id="updateScore" parameterType="java.util.Map">
+		update card_info
+		set score = score + #{score}
+		where id = #{id}
+	</update>
+
+	<insert id="addScoreHistory" parameterType="java.util.Map">
+		insert into card_score_history(card_id, score_type, score)
+		values(#{card_id}, #{score_type}, #{score})
+	</insert>
+
+	<select id="hasScoreHistory" resultType="java.util.Map">
+		select * from card_score_history where card_id = #{card_id} and score_type = #{score_type} and TO_DAYS(create_time) = TO_DAYS(NOW())
 	</select>
 
 </mapper>

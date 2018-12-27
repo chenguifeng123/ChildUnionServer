@@ -4,6 +4,7 @@ import com.qinzi123.dto.*;
 import com.qinzi123.service.CooperateWeixinService;
 import com.qinzi123.service.FormIdService;
 import com.qinzi123.service.PushService;
+import com.qinzi123.service.ScoreService;
 import com.qinzi123.util.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +27,9 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 
 	@Autowired
 	FormIdService formIdService;
+
+	@Autowired
+	ScoreService scoreService;
 
 	private Logger logger = LoggerFactory.getLogger(CooperateWeixinServiceImpl.class);
 
@@ -81,6 +85,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 		logger.info("插入消息数据成功, 批量插入formId");
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessage))
 			formIdService.addFormId(wxSmallFormId);
+		scoreService.addScore(cardMessage.getCardId(), ScoreType.Message);
 		return result;
 	}
 
@@ -157,6 +162,5 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 		Collections.reverse(cardMessageReplyList);
 		return cardMessageReplyList;
 	}
-
 
 }

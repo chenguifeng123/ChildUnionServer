@@ -1,7 +1,13 @@
 package com.qinzi123.service.impl;
 
+import com.qinzi123.dto.ScoreType;
 import com.qinzi123.service.BusinessWeixinService;
+import com.qinzi123.service.ScoreService;
 import com.qinzi123.util.Utils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Component;
 
 import java.util.LinkedHashMap;
@@ -12,7 +18,13 @@ import java.util.Map;
  * Created by chenguifeng on 2018/10/4.
  */
 @Component
+@EnableAsync
 public class BusinessWeixinServiceImpl extends AbstractWeixinService implements BusinessWeixinService{
+
+	@Autowired
+	ScoreService scoreService;
+
+	private Logger logger = LoggerFactory.getLogger(BusinessWeixinServiceImpl.class);
 
 	/**
 	 * 列出所有商户, 可查询
@@ -125,6 +137,10 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 			id = Integer.parseInt(map.get("id").toString());
 			map.put("card_id", id);
 			cardDao.addCardTag(map);
+			if(map.get("invite") != null){
+				int inviteId = Integer.parseInt(map.get("invite").toString());
+				if(inviteId != -1) scoreService.addScore(inviteId, ScoreType.Invite);
+			}
 		}else{
 			//Map info = cardDao.getCardInfoByOpenId(openid);
 			Map info = cardDao.getCardInfoByPhone(phone, realname);
@@ -176,5 +192,20 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 		for(String id : idList)
 			addFollower(userId, Integer.parseInt(id));
 		return 1;
+	}
+
+	/**
+	 * 签到积分
+	 * @param cardId
+	 * @return
+	 */
+	public int sign(int cardId) {
+		scoreService.addScore(cardId, ScoreType.Sign);
+		return 1;
+	}
+
+	public int hasScoreHistory(int cardId) {
+		Map map = cardDao.hasScoreHistory(cardId, ScoreType.Sign.getType());
+		return map != null && map.size() > 0 ? 1 : 0;
 	}
 }

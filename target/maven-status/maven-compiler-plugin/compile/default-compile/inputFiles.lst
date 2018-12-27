@@ -12,6 +12,7 @@ F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dao\Cooperat
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\CardMessage.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\WxSmallToken.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\BaseParam.java
+F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\impl\ScoreServiceImpl.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\impl\BusinessWeixinServiceImpl.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\controller\BusinessController.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\WxSmallFormId.java
@@ -29,8 +30,10 @@ F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\controller\C
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\util\Utils.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\config\HttpsConfig.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\CooperateWeixinService.java
+F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\ScoreService.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\CardMessageSend.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\TokenService.java
+F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\ScoreType.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\CardInfo.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\template\CooperateMessageReplyTemplateHelper.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\template\CooperateTemplate.java

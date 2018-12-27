@@ -35,6 +35,9 @@ public interface CardDao {
 	public List<LinkedHashMap> getFollowerById(@Param("current_id") String current_id, @Param("my_id") String my_id);
 	public List<LinkedHashMap> getFansById(@Param("current_id") String current_id, @Param("my_id") String my_id);
 
+	public int updateScore(Map map);
+	public int addScoreHistory(Map map);
+	public Map hasScoreHistory(@Param("card_id") int card_id, @Param("score_type") int score_type);
 
 
 }

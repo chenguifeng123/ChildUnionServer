@@ -21,4 +21,7 @@ public interface BusinessWeixinService {
 	List<LinkedHashMap> getFollowerById(String current_id, String my_id);
 	List<LinkedHashMap> getFansById(String current_id, String my_id);
 	int batchAddFollower(int userId, String[] idList);
+
+	int sign(int cardId);
+	int hasScoreHistory(int cardId);
 }

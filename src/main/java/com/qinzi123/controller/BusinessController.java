@@ -101,4 +101,16 @@ public class BusinessController {
 	private int hashFollowed(@PathVariable int userId, @PathVariable int followerId){
 		return businessWeixinService.hasFollowed(userId, followerId) ? 1 : 0;
 	}
+
+	@ApiOperation(value = "签到", notes = "签到")
+	@RequestMapping(value = "/business/sign/{id}", method = RequestMethod.GET)
+	private int sign(@PathVariable("id") int id){
+		return businessWeixinService.sign(id);
+	}
+
+	@ApiOperation(value = "是否签到", notes = "签到")
+	@RequestMapping(value = "/business/hasSigned/{id}", method = RequestMethod.GET)
+	private int hashSigned(@PathVariable("id") int id){
+		return businessWeixinService.hasScoreHistory(id);
+	}
 }
