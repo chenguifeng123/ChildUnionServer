@@ -205,7 +205,7 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 	}
 
 	public int hasScoreHistory(int cardId) {
-		Map map = cardDao.hasScoreHistory(cardId, ScoreType.Sign.getType());
-		return map != null && map.size() > 0 ? 1 : 0;
+		List<Map> list = cardDao.hasScoreHistory(cardId, ScoreType.Sign.getType());
+		return list != null && list.size() > 0 ? 1 : 0;
 	}
 }
