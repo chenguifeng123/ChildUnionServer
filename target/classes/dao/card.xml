@@ -17,7 +17,7 @@
 
 	<!-- 获取商户列表 -->
 	<select id="listBusiness" resultType="java.util.LinkedHashMap">
-		select id, headimgurl, realname, job, company, tag1, tag2, tag3, case when follower_id is null  then 0 else 1 end as isFollow
+		select id, headimgurl, realname, job, company, score, tag1, tag2, tag3, case when follower_id is null  then 0 else 1 end as isFollow
 		<include refid="left_join_card_and_tag"/>
 		left join (select follower_id from follower where user_id = #{id}) x on t.id = x.follower_id
 		<if test="search != null" >
