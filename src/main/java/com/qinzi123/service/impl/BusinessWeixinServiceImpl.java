@@ -133,14 +133,15 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 
 		// 判断是更新还是插入
 		if(cardInfo == null || cardInfo.size() == 0){
+			if(map.get("invite") == null){
+				map.put("invite", -1);
+			}
 			cardDao.addCardInfo(map);
 			id = Integer.parseInt(map.get("id").toString());
 			map.put("card_id", id);
 			cardDao.addCardTag(map);
-			if(map.get("invite") != null){
-				int inviteId = Integer.parseInt(map.get("invite").toString());
-				if(inviteId != -1) scoreService.addScore(inviteId, ScoreType.Invite);
-			}
+			int inviteId = Integer.parseInt(map.get("invite").toString());
+			if(inviteId != -1) scoreService.addScore(inviteId, ScoreType.Invite);
 		}else{
 			//Map info = cardDao.getCardInfoByOpenId(openid);
 			Map info = cardDao.getCardInfoByPhone(phone, realname);

@@ -67,8 +67,8 @@
 	</select>
 
 	<insert id="addCardInfo" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
-		insert into card_info(phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode, datetime)
-		values(#{phone}, #{realname}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce}, #{weixincode}, #{datetime})
+		insert into card_info(phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode, datetime, invite)
+		values(#{phone}, #{realname}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce}, #{weixincode}, #{datetime}, #{invite})
 	</insert>
 
 	<update id="updateCardInfo" parameterType="java.util.Map">
