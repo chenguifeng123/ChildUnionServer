@@ -1,0 +1,19 @@
+
+]
+-src/main/resources/application-dev.properties,c\3\c37467157e01027b51d4a92acec42e9af665ad9b
+Y
+)src/main/resources/application.properties,0\6\06f65155ec73600b9fc5c4dc2883d4bb84d8e284
+r
+Bsrc/main/java/com/qinzi123/service/impl/AbstractWeixinService.java,0\5\057d7dcb5e2d9e9adb714e8a480ccf60e188d4fb
+w
+Gsrc/main/java/com/qinzi123/service/impl/CooperateWeixinServiceImpl.java,8\b\8b254ef356360271b250d897a5403c158aaab83c
+O
+src/main/resources/dao/card.xml,2\a\2a9f3459cf11dbb96a04b5ac6b4d2796e447f8cc
+m
+=src/main/java/com/qinzi123/service/BusinessWeixinService.java,b\9\b9e3e457530b067542885420264cc2959d7fa808
+[
++src/main/java/com/qinzi123/dao/CardDao.java,4\9\49eeea6d0d891fdf8d5527b5c4b70852d2c6f1ba
+v
+Fsrc/main/java/com/qinzi123/service/impl/BusinessWeixinServiceImpl.java,2\6\261985bc8dc9eecf4083ce30bd17334447a25951
+m
+=src/main/java/com/qinzi123/controller/BusinessController.java,6\3\63721d06be31b51595c7075e43fbf90d8c0a06be

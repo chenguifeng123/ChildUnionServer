@@ -34,12 +34,14 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 	 * @param search 搜索字段值
 	 * @return
 	 */
-	public List<LinkedHashMap> listBusiness(String id, int start, int num, String search){
+	public List<LinkedHashMap> listBusiness(String id, int start, int num, String search, Integer tagId){
 		if (search == null || search.trim().length() == 0)
 			search = null;
 		else
 			search = String.format("%%%s%%", search);
-		return cardDao.listBusiness(id, start, num, search);
+		if (tagId == null || tagId == -1)
+			tagId = null;
+		return cardDao.listBusiness(id, start, num, search, tagId);
 	}
 
 	/**

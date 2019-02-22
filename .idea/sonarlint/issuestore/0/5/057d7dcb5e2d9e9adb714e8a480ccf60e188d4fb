@@ -1,0 +1,11 @@
+
+@squid:S2629B"$Invoke method(s) only conditionally.(ïÈ“¹ûÿÿÿÿ
+@squid:S2629F"$Invoke method(s) only conditionally.(³Õ±–ûÿÿÿÿ
+@squid:S2629Q"$Invoke method(s) only conditionally.(â¯—êşÿÿÿÿ
+:squid:S2629S"$Invoke method(s) only conditionally.(ÛÜ 
+@squid:S2629]"$Invoke method(s) only conditionally.(È¸‰øÿÿÿÿ
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(šÅ¦¡
+tsquid:S1488n"]Immediately return this expression instead of assigning it to the temporary variable "token".(İŞÖ¤
+Usquid:S3400'"9Remove this method and declare a constant for this value.(˜üÏûÿÿÿÿ
+Usquid:S3400+"9Remove this method and declare a constant for this value.(Ùˆ¹Öşÿÿÿÿ
+Usquid:S11558">Use isEmpty() to check whether the collection is empty or not.(íˆÄ’

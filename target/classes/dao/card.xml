@@ -5,23 +5,28 @@
 
 	<sql id="left_join_card_and_tag">
 		from card_info t left join
-			(select card_id, max(tag1) as tag1, max(tag2) as tag2, max(tag3) as tag3 from
-				(select card_id, tag_name as tag1, '' as tag2, '' as tag3 from card_tag a, tag_service_info b where tag1 = tag_id
+			(select card_id, max(tag1) as tag1, max(tag2) as tag2, max(tag3) as tag3, max(tagid1) as tagid1, max(tagid2) as tagid2, max(tagid3) as tagid3 from
+				(select card_id, tag_name as tag1, tag_id as tagid1, '' as tag2, 0 as tagid2, '' as tag3, 0 as tagid3 from card_tag a, tag_service_info b where tag1 = tag_id
 				UNION all
-				select card_id, '' as tag1, tag_name as tag2, '' as tag3 from card_tag a, tag_service_info b where tag2 = tag_id
+				select card_id, '' as tag1, 0 as tagid1, tag_name as tag2, tag_id as tagid2, '' as tag3, 0 as tagid3 from card_tag a, tag_service_info b where tag2 = tag_id
 				union ALL
-				select card_id, '' as tag1, '' as tag2, tag_name as tag3 from card_tag a, tag_service_info b where tag3 = tag_id
+				select card_id, '' as tag1, 0 as tagid1, '' as tag2, 0 as tagid2, tag_name as tag3, tag_id as tagid3 from card_tag a, tag_service_info b where tag3 = tag_id
 				) m group by card_id ) s
 		on t.id = s.card_id
 	</sql>
 
 	<!-- 获取商户列表 -->
 	<select id="listBusiness" resultType="java.util.LinkedHashMap">
-		select id, headimgurl, realname, job, company, score, tag1, tag2, tag3, case when follower_id is null  then 0 else 1 end as isFollow
+		select id, headimgurl, realname, job, company, score, tag1, tag2, tag3, tagid1, tagid2, tagid3, case when follower_id is null  then 0 else 1 end as isFollow
 		<include refid="left_join_card_and_tag"/>
 		left join (select follower_id from follower where user_id = #{id}) x on t.id = x.follower_id
+		where 1 = 1
 		<if test="search != null" >
-			where realname like #{search} or company like #{search} or introduce like #{search}
+			and realname like #{search} or company like #{search} or introduce like #{search}
+		</if>
+		<!-- 此处SQL后续需要优化改写 -->
+		<if test="tagId != null" >
+			and tagid1 = #{tagId} or tagid2 = #{tagId} or tagid3 = #{tagId}
 		</if>
 		order by datetime desc,id desc limit #{start}, #{num}
     </select>

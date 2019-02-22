@@ -25,14 +25,17 @@ public class BusinessController {
 		int start = Integer.parseInt(map.get("start").toString());
 		int num = Integer.parseInt(map.get("num").toString());
 		String search = map.get("search").toString();
-		return businessWeixinService.listBusiness(id, start, num, search);
+		int tagId = -1;
+		if(map.get("tag") != null)
+			tagId = Integer.parseInt(map.get("tag").toString());
+		return businessWeixinService.listBusiness(id, start, num, search, tagId);
 	}
 
 	@ApiOperation(value = "商户列表", notes = "商户列表")
 	@RequestMapping(value="/business/list/{id}-{start}-{num}", method=RequestMethod.GET)
 	private List<LinkedHashMap> listBusinessNoSearch(@PathVariable String id, @PathVariable int start,
 											 @PathVariable int num){
-		return businessWeixinService.listBusiness(id, start, num, null);
+		return businessWeixinService.listBusiness(id, start, num, null, -1);
 	}
 
 

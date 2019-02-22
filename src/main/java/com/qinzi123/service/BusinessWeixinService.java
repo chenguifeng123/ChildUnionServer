@@ -8,7 +8,8 @@ import java.util.Map;
  * Created by chenguifeng on 2018/11/17.
  */
 public interface BusinessWeixinService {
-	List<LinkedHashMap> listBusiness(String id, int start, int num, String search);
+	// tagName 标签名称应该是 ID, SQL 比较复杂暂 先使用Name
+	List<LinkedHashMap> listBusiness(String id, int start, int num, String search, Integer tagId);
 	List<LinkedHashMap> oneBusiness(String id);
 	int getIdByCode(String code);
 	int addFollower(int userId, int followerId);

@@ -14,7 +14,8 @@ public interface CardDao {
 	public List<LinkedHashMap> listBusiness(@Param("id") String id,
 											@Param("start") int start,
 											@Param("num") int num,
-											@Param("search") String search);
+											@Param("search") String search,
+											@Param("tagId") Integer tagId);
 	public List<LinkedHashMap> oneBusiness(@Param("id") String id);
 
 	public int addFollower(@Param("userId") int userId, @Param("followerId") int followerId);

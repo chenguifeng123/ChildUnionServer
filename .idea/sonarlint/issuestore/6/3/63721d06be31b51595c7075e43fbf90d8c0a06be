@@ -1,0 +1,21 @@
+
+dsquid:S4488M"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÙşÿÿÿÿ
+_squid:S4488S"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·£Í…
+_squid:S4488_"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÇÕ¡
+asquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ğ«» 
+^squid:S4488)"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ï¶ñ
+dsquid:S4488!"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³ş’°úÿÿÿÿ
+dsquid:S4488/"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(å“¸•şÿÿÿÿ
+^squid:S4488Y"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(±üŠ
+_squid:S44885"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–ùÛŸ
+dsquid:S4488A"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( ÃÃÂıÿÿÿÿ
+_squid:S4488q"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İ“çÃ
+`squid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(Ö”¢Öşÿÿÿÿ
+isquid:S00117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
+fsquid:S4488G"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¥åü’øÿÿÿÿ
+dsquid:S4488;"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğø•øÿÿÿÿ
+_squid:S4488k"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ëóÚ¸
+nsquid:S00117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
+isquid:S00117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
+dsquid:S4488e"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İñĞãüÿÿÿÿ
+nsquid:S00117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
