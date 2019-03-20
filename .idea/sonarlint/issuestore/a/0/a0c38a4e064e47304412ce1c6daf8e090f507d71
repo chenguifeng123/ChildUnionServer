@@ -1,0 +1,17 @@
+
+vsquid:S00117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¬¾Äÿÿÿÿÿ8£æÉ‚™-
+msquid:S1192™"IDefine a constant instead of duplicating this literal "prepayId" 3 times.(Çİøïûÿÿÿÿ8¡ÅÙ‚™-
+Gsquid:S2629|"$Invoke method(s) only conditionally.(¼ˆî‡ùÿÿÿÿ8şëÖ„™-
+vsquid:S00117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ˆŒáıÿÿÿÿ8£æÉ‚™-
+Hsquid:S2629¹"$Invoke method(s) only conditionally.(ä€Ó‡ûÿÿÿÿ8şëÖ„™-
+lsquid:S1192v"IDefine a constant instead of duplicating this literal "nonceStr" 3 times.(ØöÛ‰üÿÿÿÿ8ôì ƒ™-
+asquid:S1858"="get" returns a string, there's no need to call "toString()".(ÓŠÛ“ıÿÿÿÿ8é„ï„™-
+}squid:S1149a"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8ÈóÊ‚™-
+Fsquid:S1148G"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¯ş¢œ™-
+|squid:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡ğÁŠÿÿÿÿÿ8¯ş¢œ™-
+esquid:S1192."GDefine a constant instead of duplicating this literal "openid" 6 times.(µ¹‰Î8ë½¢ı˜-
+}squid:S1149t"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8àŸƒ™-
+Csquid:S2629’"$Invoke method(s) only conditionally.(¹ÅíØ8şëÖ„™-
+Hsquid:S2629‰"$Invoke method(s) only conditionally.(ëİÓëÿÿÿÿÿ8ÊÄä„™-
+Csquid:S2629"$Invoke method(s) only conditionally.(…—Ä¼8Œ—ç„™-
+Gsquid:S2629o"$Invoke method(s) only conditionally.(¼ˆî‡ùÿÿÿÿ8şëÖ„™-

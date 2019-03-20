@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.qinzi123.BusinessWeixinServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.21 sec - in com.qinzi123.BusinessWeixinServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.309 sec - in com.qinzi123.BusinessWeixinServiceTest

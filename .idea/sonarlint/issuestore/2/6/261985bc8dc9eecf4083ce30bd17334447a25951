@@ -1,10 +1,10 @@
 
+Fsquid:S1068"*Remove this unused "logger" private field.(È‰‡íÿÿÿÿÿ
+gsquid:CommentedOutCodeLine{"<This block of commented-out lines of code should be removed.(ñ´·€øÿÿÿÿ
+jsquid:S00117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
+jsquid:S00117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
 jsquid:S00117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
 _squid:S1192Š"GDefine a constant instead of duplicating this literal "invite" 3 times.(†öÖß
-gsquid:CommentedOutCodeLine{"<This block of commented-out lines of code should be removed.(ñ´·€øÿÿÿÿ
 jsquid:S00117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
-jsquid:S00117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
 [squid:S1155Ô">Use isEmpty() to check whether the collection is empty or not.(Â‹Óéÿÿÿÿÿ
-Fsquid:S1068"*Remove this unused "logger" private field.(È‰‡íÿÿÿÿÿ
-jsquid:S00117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
 hsquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(‹ÐØåûÿÿÿÿ

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qinzi123.dao.CampaignDao" >
+
+	<select id="listCampaign" resultType="java.util.LinkedHashMap">
+		select id, main_image, name, date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time from wx_product
+		order by create_time desc, id desc limit #{start}, #{num}
+    </select>
+
+	<select id="oneCampaign" resultType="java.util.LinkedHashMap">
+		select id, main_image, name, channel_price, price, limit_stock, stock, remain_stock, detail, company
+ 		from wx_product where id = #{id}
+	</select>
+
+	<sql id="order">
+		select o.id, p.`name`, p.company, p.main_image, i.price, i.num, i.total, o.`status`, o.order_no,
+		o.phone, o.wx_code, o.card_id, date_format(o.create_time,'%Y-%m-%d %H:%i:%s') as create_time
+ 		from wx_order o, wx_product p, wx_order_item i
+		where o.id = i.order_id and i.product_id = p.id
+	</sql>
+
+	<select id="listOrder" resultType="java.util.LinkedHashMap">
+		<include refid="order"/>
+		and o.card_id = ${cardId}
+		order by o.create_time desc limit #{start}, #{num}
+	</select>
+
+	<select id="oneOrder" resultType="java.util.LinkedHashMap">
+		<include refid="order"/>
+		and o.id = ${id}
+	</select>
+
+
+	<insert id="addOrder" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
+		insert into wx_order(order_no, payment, card_id, status, create_time)
+		values(#{orderNo}, #{total}, #{cardId}, 0, #{createTime})
+	</insert>
+
+	<insert id="addOrderItem" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
+		insert into wx_order_item(order_id, product_id, price, num, total, create_time)
+		values(#{orderId}, #{productId}, #{price}, #{num}, #{total}, #{createTime})
+	</insert>
+
+	<insert id="addPayment" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
+		insert into wx_order_pay(order_id, order_no, payment, message)
+		values(#{orderId}, #{orderNo}, #{payment}, #{message})
+	</insert>
+
+	<update id="updateOrder" parameterType="java.util.Map">
+		update wx_order set status = 1 where id = #{id}
+	</update>
+
+
+</mapper>

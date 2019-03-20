@@ -17,6 +17,8 @@ public abstract class AbstractWeixinService {
 	private static final String QUEST_URL = "https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code";
 	private static final String TOKEN_URL = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s";
 	private static final String SEND_URL = "https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=%s";
+	protected static final String PREPAY_URL = "https://api.mch.weixin.qq.com/pay/unifiedorder";
+	protected static final String NOTIFY_URL = "https://www.qinzi123.com/order/callback";
 
 	private Logger logger = LoggerFactory.getLogger(AbstractWeixinService.class);
 
@@ -42,7 +44,11 @@ public abstract class AbstractWeixinService {
 	protected String getSecret(){
 		return "fbe69347542e83483ea49e4e5fed2d3c";
 	}
-	
+
+	protected String getMchId(){return "1527081391";}
+
+	protected String getLocalIp() {return "121.43.58.101";}
+
 	protected String getSessionUrl(String code){
 		return String.format(QUEST_URL, getAppId(), getSecret(), code);
 	}
@@ -55,7 +61,6 @@ public abstract class AbstractWeixinService {
 	protected Map composeList(List<LinkedHashMap> list){
 		return list.size() == 0 ? new HashMap() : list.get(0);
 	}
-
 
 	/**
 	 * 从微信获取json数据
@@ -120,4 +125,7 @@ public abstract class AbstractWeixinService {
 	Map sendTemplateMessage(String token, SendObject sendObject){
 		return sendTemplate(String.format(SEND_URL, token), sendObject);
 	}
+
+
+
 }
