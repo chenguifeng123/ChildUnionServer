@@ -1,0 +1,31 @@
+spring.application.name=childunion
+
+# 8080 default http port 8443 default https port 
+server.port=443
+
+spring.datasource.url=jdbc:mysql://localhost:3306/childunion?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true
+spring.datasource.username=root
+spring.datasource.password=Wuyang123
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+mybatis.mapper-locations=classpath*:dao/*.xml
+
+web.upload-path=/home/childunion/
+spring.mvc.static-path-pattern=/**
+spring.resources.static-locations=classpath:/META-INF/resources/,classpath:/resources/,\
+  classpath:/static/,classpath:/public/,file:${web.upload-path},file:/home/tomcat-6.0.16/webapps/HappinessMarket/
+
+spring.mvc.view.suffix=.html
+
+my.ssl.change.port=8080
+#server.ssl.key-store=classpath:keystore.p12
+#server.ssl.key-store-password=123456
+#server.ssl.keyStoreType=PKCS12
+#server.ssl.keyAlias:tomcat
+
+server.ssl.key-store=classpath:www.qinzi123.com.jks
+server.ssl.key-store-password=ix5d875y1n1n1s1
+server.ssl.keyStoreType=JKS
+#server.ssl.keyAlias:tomcat
+
+spring.http.multipart.maxFileSize=100Mb
+spring.http.multipart.maxRequestSize=1000Mb

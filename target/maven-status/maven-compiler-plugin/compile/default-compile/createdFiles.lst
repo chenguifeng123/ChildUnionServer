@@ -3,6 +3,7 @@ com\qinzi123\util\Utils.class
 com\qinzi123\service\impl\CooperateWeixinServiceImpl$1.class
 com\qinzi123\dao\DaoScan.class
 com\qinzi123\dto\WxSmallFormId.class
+com\qinzi123\happiness\util\HttpResponseUtil.class
 com\qinzi123\config\HttpsConfig.class
 com\qinzi123\dto\template\CooperateMessageTemplateHelper.class
 com\qinzi123\service\PayService.class
