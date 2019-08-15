@@ -159,7 +159,7 @@
 
 
 	<select id="getBussLeagues" resultMap="businessLeagueInfo">
-		select * from buss_league_info order by submittime desc  limit #{start}, #{pageSize}
+		select * from buss_league_info order by leaguetype desc, submittime desc  limit #{start}, #{pageSize}
 	</select>
 
 	<select id="getBussLeaguesTotalRecords" resultType="java.lang.Integer">

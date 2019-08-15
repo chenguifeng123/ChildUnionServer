@@ -22,5 +22,7 @@
         select * from ${tableName}
     </select>
 
-	
+    <select id="findSpecialEntitys" resultType="java.util.LinkedHashMap">
+        select ${selectList} from ${tableName}
+    </select>
 </mapper>

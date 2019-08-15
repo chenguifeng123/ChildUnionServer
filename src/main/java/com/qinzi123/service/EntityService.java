@@ -16,6 +16,7 @@ public interface EntityService {
     public int deleteService(String tableName, List<Map<String, Object>> list);
     public List<LinkedHashMap> showService(String tableName, Map<String, Object> map);
     public List<LinkedHashMap> showAllService(String tableName);
+    public List<LinkedHashMap> showSpecialService(Map<String, Object> map);
 
 }
 

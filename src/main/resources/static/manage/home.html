@@ -81,8 +81,15 @@
 							</el-upload>
 
 							<!-- 7 时间框 -->
+							<el-date-picker
+									v-model="column.value"
+									type="date"
+									placeholder="选择日期"
+									v-else-if="column.type == 7">
+							</el-date-picker>
+
 							<!--el-date-picker v-model="column.value" type="date" value="String" placeholder="选择日期时间" v-else-if="column.type == 7">
-							</el-date-picker-->
+							</el-date-picker>
 							
 							<input type="datetime-local" v-model="column.value" :name="column.name" class="home-date-control"  v-else-if="column.type == 7">
 							

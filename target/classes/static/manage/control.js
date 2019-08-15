@@ -54,7 +54,16 @@
         var vm = window.vm;
         var translate = !!vm.columnTranslate[columnName] ? vm.columnTranslate[columnName].translate : [];
         // 如果字段没有翻译,直接返回
-        if(translate.length == 0) return typeof value == 'number' ? value.toString() : value;
+        //if(translate.length == 0) return typeof value == 'number' ? value.toString() : value;
+        if(translate.length == 0) {
+            if( typeof value == 'number'){
+                if(columnName.indexOf("time") >= 0)
+                    return new Date(value).format("yyyy-mm-dd HH:mm:ss");
+                else
+                    return value.toString();
+            }else
+                return value;
+        }
         // 在翻译结果中寻找值
         var isMulti = isMultiColumn(columnName);
         var result = "";
@@ -72,85 +81,7 @@
         }
         return result;
     }
-    
-    // 下来框关联初始化
-    function loading_select_init(classId){
-        var vm = window.vm;
 
-        var lastClassNumberIndex = getIndexForMeta("lastClassNumber");
-        var lastTeachingPeriodIndex = getIndexForMeta("lastTeachingPeriod");
-        setValueForMeta(lastClassNumberIndex, "value", 0);
-        setValueForMeta(lastTeachingPeriodIndex, "value", 0);
-        setValueForMeta(getIndexForMeta("beLate"), "value", 21);
-		setValueForMeta(getIndexForMeta("teachingType"), "value", 0);
-		setValueForMeta(getIndexForMeta("teachingDate"), "value", new Date().format("yyyy-MM-dd"));
-
-        for(var index = 0; index < vm.allLoadData.length; index ++){
-            if(vm.allLoadData[index]["teachingType"] != 2 && vm.allLoadData[index]["classId"] == classId){
-                setValueForMeta(lastClassNumberIndex, "value", vm.allLoadData[index]["currentClassNumber"]);
-                setValueForMeta(lastTeachingPeriodIndex, "value", vm.allLoadData[index]["currentTeachingPeriod"]);
-                break;
-            }
-        }
-        setValueForMeta(getIndexForMeta("currentClassNumber"), "value", getValueForMeta(lastClassNumberIndex, "value") + 1);
-		
-		// 以下是特殊流程, 这里简单写死, 就是课程加 + 1 看看是否是测评  2018-04-14
-		try{
-			var lastTeachingPeriod = getValueForMeta(lastTeachingPeriodIndex, "value");
-			if(!!lastTeachingPeriod && lastTeachingPeriod.indexOf("FP") == 0){
-				lastTeachingPeriod = lastTeachingPeriod.split("&&")[0];
-				var lastTeachingPeriodLeft = lastTeachingPeriod.substring(0, lastTeachingPeriod.length - 1);
-				var lastTeachingPeriodRight = lastTeachingPeriod.substring(lastTeachingPeriod.length - 1, lastTeachingPeriod.length);
-				if(!isNaN(lastTeachingPeriodRight)){
-					var currentTeachingPeriod = lastTeachingPeriodLeft + (Number(lastTeachingPeriodRight) + 1);
-					var arrayP = currentTeachingPeriod.split("-");
-					var currentP = arrayP.length > 1 ? arrayP[1] : 0;
-					if(checkResult["FP"]["data"].indexOf(currentP) >= 0){
-						setValueForMeta(getIndexForMeta("currentTeachingPeriod"), "value", currentTeachingPeriod + "&&" + checkResult["FP"]["desc"]);
-					}
-				}
-			}
-		}catch(err){
-			
-		}
-		// end 2018-04-14
-
-        if(!!this.teachingTime){
-            for(var index = 0; index < this.teachingTime.length; index ++){
-                if(this.teachingTime[index]["classId"] == classId){
-                    var teacherInit = [];
-                    var translate = getTranslateByName("teacherId");
-                    for(var teacherIndex = 0; teacherIndex < translate.length; teacherIndex ++)
-                        if(translate[teacherIndex].value == this.teachingTime[index]["teacherId"])
-                            teacherInit.push(translate[teacherIndex]);
-                    setValueForMeta(getIndexForMeta("teacherId"), "initData", teacherInit);
-					if(teacherInit.length > 0) setValueForMeta(getIndexForMeta("teacherId"), "value", teacherInit[0].value);
-					
-
-                    var teachingTime1 = this.teachingTime[index]["teachingTime1"];
-                    var teachingTime2 = this.teachingTime[index]["teachingTime2"];
-                    var teachingInit = !!teachingTime2 ? [{value : teachingTime1 , desc : teachingTime1},
-                        {value : teachingTime2, desc :teachingTime2}] :[{value : teachingTime1 , desc : teachingTime1}];
-                    setValueForMeta(getIndexForMeta("teachingTime"), "initData", teachingInit);
-                    break;
-                }
-            }
-        }
-        
-        if(!! this.student){
-            var studentInit = [];
-            for(var index = 0; index < this.student.length; index ++){
-                if(this.student[index]["classId"] == classId){
-                    var studentId = this.student[index]["studentId"];
-                    var studentName = this.student[index]["chineseName"] + this.student[index]["englishName"];
-                    studentInit.push({value : studentId, desc : studentName});
-                }
-            }
-            var index = getIndexForMeta("absentStudentId");
-            setValueForMeta(index, "value", []);
-            setValueForMeta(index, "initData", studentInit);
-        }
-    }
 
     function bind_select_change(event){
         if(this.modelName == "teaching"){
@@ -208,9 +139,11 @@
 	}
     
     function update_init(oneRow) {
-        if(this.modelName == "teaching"){
-            if(!!oneRow["classId"])
-                loading_select_init(oneRow["classId"]);
+        if(this.modelName == "card_message"){
+            oneRow["update_time"] = new Date(oneRow["update_time"]).format("yyyy-mm-dd HH:mm:ss");
+        }
+        if(this.modelName == "card_message_reply"){
+            oneRow["create_time"] = new Date(oneRow["create_time"]).format("yyyy-mm-dd HH:mm:ss");
         }
     }
 	

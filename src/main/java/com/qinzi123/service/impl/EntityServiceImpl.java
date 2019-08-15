@@ -129,6 +129,12 @@ public class EntityServiceImpl implements EntityService {
 		return entityDao.findEntitys(tableName);
 	}
 
-
-
+	@Override
+	public List<LinkedHashMap> showSpecialService(Map<String, Object> map) {
+		String tableName = map.get("model").toString();
+		String key = map.get("key").toString();
+		String value =  map.get("value").toString();
+		String selectList = Utils.join(new String[]{key, value}, ",");
+		return entityDao.findSpecialEntitys(selectList, tableName);
+	}
 }

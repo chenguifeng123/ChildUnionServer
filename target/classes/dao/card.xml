@@ -17,7 +17,7 @@
 
 	<!-- 获取商户列表 -->
 	<select id="listBusiness" resultType="java.util.LinkedHashMap">
-		select id, headimgurl, realname, job, company, score, tag1, tag2, tag3, tagid1, tagid2, tagid3, case when follower_id is null  then 0 else 1 end as isFollow
+		select id, headimgurl, realname, job, company, score, tag1, tag2, tag3, tagid1, tagid2, tagid3, case when follower_id is null  then 0 else 1 end as isFollow, gender
 		<include refid="left_join_card_and_tag"/>
 		left join (select follower_id from follower where user_id = #{id}) x on t.id = x.follower_id
 		where 1 = 1
@@ -34,7 +34,7 @@
 	<!-- 获取商户列表 -->
 	<select id="oneBusiness" resultType="java.util.LinkedHashMap">
 		select id, headimgurl, realname, job, company, phone, workaddress, introduce, weixincode, score,
-		tag1, tag2, tag3, follow_count,fans_count
+		tag1, tag2, tag3, follow_count,fans_count, gender
 		<include refid="left_join_card_and_tag"/>,
      (select count(*) as follow_count from follower where user_id = #{id}) u,
      (select count(*) as fans_count from follower where follower_id = #{id}) v

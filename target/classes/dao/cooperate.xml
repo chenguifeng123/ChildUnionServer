@@ -45,20 +45,21 @@
 
 	<select id="getAllCardMessage" resultMap="cardMessage">
 		<include refid="select_card_message"/>
+		and a.verify = 1
 		order by update_time desc
 		limit #{start}, #{num}
 	</select>
 
 	<select id="getCardMessageByCardId" resultMap="cardMessage">
 		<include refid="select_card_message"/>
-		and a.card_id = #{cardId}
+		and a.card_id = #{cardId} and a.verify = 1
 		order by update_time desc
 		limit #{start}, #{num}
 	</select>
 
 	<select id="getCardMessageById" resultMap="cardMessage">
 		<include refid="select_card_message"/>
-		and a.id = #{messageId}
+		and a.id = #{messageId} and a.verify = 1
 	</select>
 
 	<!-- 发送消息-->
@@ -136,12 +137,12 @@
 
 	<select id="getAllCardMessageReplyByMessageId" resultMap="cardMessageReply">
 		<include refid="get_card_message_reply"/>
-		and message_id = #{messageId}
+		and message_id = #{messageId} and a.verify = 1
 	</select>
 
 	<select id="getCardMessageReplyById" resultMap="cardMessageReply">
 		<include refid="get_card_message_reply"/>
-		and a.id = #{replyId}
+		and a.id = #{replyId} and a.verify = 1
 	</select>
 
 </mapper>

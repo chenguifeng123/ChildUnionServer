@@ -15,5 +15,6 @@ public interface EntityDao {
 	public int deleteEntity(@Param("tableName")String tableName, @Param("keyColumns") String keyColumns);
 	public List<LinkedHashMap> findEntityByKey(@Param("tableName")String tableName, @Param("keyColumns") String keyColumns);
 	public List<LinkedHashMap> findEntitys(@Param("tableName")String tableName);
+	public List<LinkedHashMap> findSpecialEntitys(@Param("selectList")String selectList, @Param("tableName")String tableName);
 
 }

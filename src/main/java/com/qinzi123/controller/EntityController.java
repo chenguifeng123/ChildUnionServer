@@ -45,4 +45,8 @@ public class EntityController {
 		return entityService.showAllService(tableName);
 	}
 
+	@RequestMapping(value = "/showSpecialService", method = RequestMethod.POST)
+	public List<LinkedHashMap> showSpecialService(@RequestBody Map<String, Object> map) {
+		return entityService.showSpecialService(map);
+	}
 }

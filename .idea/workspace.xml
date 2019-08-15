@@ -2,37 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="793ea66d-21f0-4942-8b9e-fe5e590e2ed9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/0710ca7cf445e0e840bda6178adf803cc1b529b8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d47532013c7d4035fb91909df7539b90a3adeac" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/5418dcbbd283d7f106d331ac52164c5917d75247" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c192c87437e0e2377d2e8562fed35787362d5b74" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6d371146d20a93ba829c1065a37d04c37808137" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/057d7dcb5e2d9e9adb714e8a480ccf60e188d4fb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/057d7dcb5e2d9e9adb714e8a480ccf60e188d4fb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/261985bc8dc9eecf4083ce30bd17334447a25951" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/261985bc8dc9eecf4083ce30bd17334447a25951" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/3441d0537a0e2aee0ffc87e24bf7ed4aa0744ab1" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/3441d0537a0e2aee0ffc87e24bf7ed4aa0744ab1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/4875309707a698f3fd307a105ad93edd08158924" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/4875309707a698f3fd307a105ad93edd08158924" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58d06b83b6425e105c4721e983787a9ca67e892c" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58d06b83b6425e105c4721e983787a9ca67e892c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81b5211392cdaae81de92b923023dbb987c0e54f" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81b5211392cdaae81de92b923023dbb987c0e54f" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9ab24b7177c1d4c7c30373d8181da04e83d68e71" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9ab24b7177c1d4c7c30373d8181da04e83d68e71" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0c38a4e064e47304412ce1c6daf8e090f507d71" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0c38a4e064e47304412ce1c6daf8e090f507d71" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad235739e1bcd976d8f18cb21ad7b873dd0274af" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad235739e1bcd976d8f18cb21ad7b873dd0274af" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/d/fda2a10ef0e08fb6b6e0af11854dd3649eb6559c" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/d/fda2a10ef0e08fb6b6e0af11854dd3649eb6559c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/manage/template/card_message.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/manage/template/card_message_reply.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/5238457acff8154ba97a53624a812e2a1e45e9ae" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/5238457acff8154ba97a53624a812e2a1e45e9ae" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/childunion-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/childunion-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/childunion-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/childunion-1.0-SNAPSHOT.jar.original" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/qinzi123/controller/EntityController.class" afterPath="$PROJECT_DIR$/target/classes/com/qinzi123/controller/EntityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/qinzi123/dao/EntityDao.class" afterPath="$PROJECT_DIR$/target/classes/com/qinzi123/dao/EntityDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/qinzi123/service/EntityService.class" afterPath="$PROJECT_DIR$/target/classes/com/qinzi123/service/EntityService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/qinzi123/service/impl/EntityServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/qinzi123/service/impl/EntityServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChildUnionServer.iml" afterPath="$PROJECT_DIR$/ChildUnionServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/EntityController.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/EntityController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/dao/EntityDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/dao/EntityDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/service/EntityService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/service/EntityService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/EntityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/EntityServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/card.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/card.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/cooperate.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/cooperate.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/entity.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/entity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/pcshow.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/pcshow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/manage/control.js" afterPath="$PROJECT_DIR$/src/main/resources/static/manage/control.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/manage/home.html" afterPath="$PROJECT_DIR$/src/main/resources/static/manage/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/manage/menu.js" afterPath="$PROJECT_DIR$/src/main/resources/static/manage/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/card.xml" afterPath="$PROJECT_DIR$/target/classes/dao/card.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/cooperate.xml" afterPath="$PROJECT_DIR$/target/classes/dao/cooperate.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/entity.xml" afterPath="$PROJECT_DIR$/target/classes/dao/entity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/pcshow.xml" afterPath="$PROJECT_DIR$/target/classes/dao/pcshow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/manage/control.js" afterPath="$PROJECT_DIR$/target/classes/static/manage/control.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/manage/home.html" afterPath="$PROJECT_DIR$/target/classes/static/manage/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/manage/menu.js" afterPath="$PROJECT_DIR$/target/classes/static/manage/menu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.BusinessWeixinServiceTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.BusinessWeixinServiceTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.LocalTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.LocalTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.PayServiceTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.PayServiceTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.PushServiceTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.qinzi123.PushServiceTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.qinzi123.BusinessWeixinServiceTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qinzi123.BusinessWeixinServiceTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.qinzi123.PushServiceTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.qinzi123.PushServiceTest.txt" />
     </list>
     <ignored path="ChildUnionServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,62 +59,110 @@
     <favorites_list name="ChildUnionServer" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pcshow.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/dao/pcshow.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="card_message.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/template/card_message.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="202" column="35" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="35" />
+            <state relative-caret-position="158">
+              <caret line="61" column="39" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="155" column="152" selection-start-line="155" selection-start-column="132" selection-end-line="155" selection-end-column="152" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/EntityServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="90" column="23" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dao/EntityDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entity.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/dao/entity.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
-                <marker date="1565442668670" expanded="true" signature="1450:1474" placeholder="select * fro... card_scope" />
-                <marker date="1565442668670" expanded="true" signature="1450:1499" placeholder="select * fro... card_scope" />
-                <marker date="1565442668670" expanded="true" signature="1562:1613" placeholder="select * fro... card_info" />
-                <marker date="1565442668670" expanded="true" signature="1585:1613" placeholder="select id, m... wx_product" />
-                <marker date="1565442668670" expanded="true" signature="1697:1727" placeholder="select id, m... wx_product" />
-                <marker date="1565442668670" expanded="true" signature="2559:3238" placeholder="select count... card_info" />
-                <marker date="1565442668670" expanded="true" signature="2559:3268" placeholder="select a.id,... id" />
-                <marker date="1565442668670" expanded="true" signature="2797:3113" placeholder="select a.id,... campaign_info" />
-                <marker date="1565442668670" expanded="true" signature="3132:3218" placeholder="select id, s... campaign_sign_up" />
-                <marker date="1565442668670" expanded="true" signature="3352:3818" placeholder="select count... card_info" />
-                <marker date="1565442668670" expanded="true" signature="3377:3693" placeholder="select a.id,... campaign_info" />
-                <marker date="1565442668670" expanded="true" signature="3712:3798" placeholder="select id, s... campaign_sign_up" />
-                <marker date="1565442668670" expanded="true" signature="5018:5063" placeholder="select * fro... bussiness_info" />
-                <marker date="1565442668670" expanded="true" signature="5750:5827" placeholder="select * fro... bussiness_message" />
-                <marker date="1565442668670" expanded="true" signature="5913:5951" placeholder="select count... bussiness_message" />
-                <marker date="1565442668670" expanded="true" signature="7241:7325" placeholder="select * fro... buss_league_info" />
-                <marker date="1565442668670" expanded="true" signature="7413:7450" placeholder="select count... buss_league_info" />
-                <marker date="1565442668670" expanded="true" signature="7523:7600" placeholder="select * fro... buss_league_info" />
-                <marker date="1565442668670" expanded="true" signature="7685:7741" placeholder="select count... buss_league_info" />
-                <marker date="1565442668670" expanded="true" signature="8832:8915" placeholder="select * fro... campaign_info" />
-                <marker date="1565442668670" expanded="true" signature="8995:9043" placeholder="select * fro... buss_league_info" />
-                <marker date="1565442668670" expanded="true" signature="9109:9155" placeholder="select * fro... card_info" />
-                <marker date="1565442668670" expanded="true" signature="9610:9672" placeholder="select * fro... buss_league_cooperate" />
-                <marker date="1565442668670" expanded="true" signature="9754:10128" placeholder="select * fro... buss_league_info" />
-                <marker date="1565442668670" expanded="true" signature="10213:10402" placeholder="select a.id,... campaign_info" />
-                <marker date="1565442668670" expanded="true" signature="10485:10574" placeholder="select * fro... bussiness_message" />
-                <marker date="1565442668670" expanded="true" signature="10661:10727" placeholder="select count... bussiness_message" />
-                <marker date="1565442668670" expanded="true" signature="10806:10928" placeholder="select * fro... buss_league_info" />
-                <marker date="1565442668670" expanded="true" signature="11016:11115" placeholder="select count... buss_league_info" />
+                <marker date="1565871919876" expanded="true" signature="235:299" placeholder="insert into ${tableName}... " />
+                <marker date="1565871919876" expanded="true" signature="354:414" placeholder="update ${tab... " />
+                <marker date="1565871919876" expanded="true" signature="470:514" placeholder="delete from " />
+                <marker date="1565871919876" expanded="true" signature="609:655" placeholder="select * fro... ${tableName}" />
+                <marker date="1565871919876" expanded="true" signature="746:772" placeholder="select * fro... ${tableName}" />
+                <marker date="1565871919876" expanded="true" signature="870:908" placeholder="select ${sel... ${tableName}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PCShowServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/happiness/service/impl/PCShowServiceImpl.java">
+      <file leaf-file-name="EntityController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/controller/EntityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#2172#2193#0" expanded="true" />
-                <element signature="e#3583#3604#0" expanded="true" />
-                <element signature="e#5898#5919#0" expanded="true" />
-                <element signature="e#7599#7620#0" expanded="true" />
-                <element signature="e#9175#9196#0" expanded="true" />
-                <element signature="e#10799#10820#0" expanded="true" />
-                <element signature="e#12498#12519#0" expanded="true" />
-                <element signature="e#13378#13396#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/EntityService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card_message_reply.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/template/card_message_reply.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="65" column="39" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="control.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/control.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,18 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/dao/entity.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/manage/template/wx_product.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/dao/config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/CampaignService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/CampaignController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/config/TransactionConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/CampaignServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/WxPayment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/util/Signature.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/util/RandomUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/util/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/WxSignInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/util/CommonUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/util/MD5Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dto/WxPayInfo.java" />
@@ -190,6 +229,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/PCShowController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/pcshow.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/dao/card.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/dao/cooperate.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/manage/menu.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/dao/EntityDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dao/entity.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/EntityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/EntityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qinzi123/controller/EntityController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/manage/template/card_message.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/manage/template/card_message_reply.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/manage/home.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/manage/control.js" />
       </list>
     </option>
   </component>
@@ -294,7 +345,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -324,18 +375,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qinzi123" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,6 +448,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChildUnionServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChildUnionServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChildUnionServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChildUnionServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -430,201 +533,11 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qinzi123" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qinzi123" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happiness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qinzi123" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happiness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qinzi123" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happiness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qinzi123" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happiness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChildUnionServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -653,11 +566,11 @@
       <recent name="com.qinzi123.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workspace\git\wuyang\ChildUnionServer\src\main\resources\static\manage\template" />
       <recent name="F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\happiness\util" />
       <recent name="F:\workspace\git\wuyang\ChildUnionServer\src\main\resources\dao" />
       <recent name="F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\happiness\util" />
       <recent name="F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\happiness\domain" />
-      <recent name="F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi\happiness\dao\impl" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.QinziApplication">
@@ -1337,6 +1250,11 @@
       <workItem from="1565313543628" duration="27000" />
       <workItem from="1218262364095" duration="20000" />
       <workItem from="1565424332753" duration="16356000" />
+      <workItem from="1565572877024" duration="17000" />
+      <workItem from="1565615291798" duration="793000" />
+      <workItem from="1565702237465" duration="1169000" />
+      <workItem from="1565858109427" duration="1808000" />
+      <workItem from="1565870714841" duration="5344000" />
     </task>
     <servers />
   </component>
@@ -1373,30 +1291,28 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289475000" />
+    <option name="totallyTimeSpent" value="298606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1390625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.165625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11678004" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3356009" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29635417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25572917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2936508" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1406,7 +1322,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2936508" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1485,106 +1403,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/PayServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4450">
-          <caret line="178" column="19" selection-start-line="178" selection-start-column="19" selection-end-line="178" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qinzi123/PayServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qinzi123/BusinessWeixinServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/campaign.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
-          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/control.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi/happiness/bean/pcshow/BussinessPcShowCampaigns.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi/happiness/bean/pcshow/CampaignPcshowInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi/happiness/dao/interfaces/IPCShowDao.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi/happiness/dao/impl/PCShowDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/happiness/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/happiness/A.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/AbstractWeixinService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1592,7 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1608,7 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1616,9 +1438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1626,7 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="13" column="70" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1634,23 +1452,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/happiness/dao/DaoScan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/happiness/dao/DaoScan.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dao/DaoScan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1658,9 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1668,7 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1676,7 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1684,7 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1699,43 +1502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/card.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-          <folding>
-            <marker date="1550802903331" expanded="true" signature="1068:1685" placeholder="select id, h... " />
-            <marker date="1550802903331" expanded="true" signature="1784:2147" placeholder="select id, h... " />
-            <marker date="1550802903331" expanded="true" signature="1976:2043" placeholder="select count... follower" />
-            <marker date="1550802903331" expanded="true" signature="2054:2123" placeholder="select count... follower" />
-            <marker date="1550802903331" expanded="true" signature="2256:2331" placeholder="insert into follower... " />
-            <marker date="1550802903331" expanded="true" signature="2418:2496" placeholder="delete from " />
-            <marker date="1550802903331" expanded="true" signature="2565:2645" placeholder="select * fro... follower" />
-            <marker date="1550802903331" expanded="true" signature="3346:3449" placeholder="select servi... tag_service_info" />
-            <marker date="1550802903331" expanded="true" signature="3562:3835" placeholder="insert into card_info... " />
-            <marker date="1550802903331" expanded="true" signature="3910:4160" placeholder="update card_... " />
-            <marker date="1550802903331" expanded="true" signature="4199:4310" placeholder="select id, p... card_info" />
-            <marker date="1550802903331" expanded="true" signature="5349:5444" placeholder="insert into card_tag... " />
-            <marker date="1550802903331" expanded="true" signature="5518:5615" placeholder="update card_... " />
-            <marker date="1550802903331" expanded="true" signature="5687:5760" placeholder="select card_... card_tag" />
-            <marker date="1550802903331" expanded="true" signature="5848:6264" placeholder="select id, h... id" />
-            <marker date="1550802903331" expanded="true" signature="5983:6161" placeholder="select id, h... " />
-            <marker date="1550802903331" expanded="true" signature="6179:6236" placeholder="select follo... follower" />
-            <marker date="1550802903331" expanded="true" signature="6348:6764" placeholder="select id, h... id" />
-            <marker date="1550802903331" expanded="true" signature="6483:6661" placeholder="select id, h... " />
-            <marker date="1550802903331" expanded="true" signature="6679:6736" placeholder="select follo... follower" />
-            <marker date="1550802903331" expanded="true" signature="6852:6918" placeholder="update card_... " />
-            <marker date="1550802903331" expanded="true" signature="6994:7098" placeholder="insert into card_score_history... " />
-            <marker date="1550802903331" expanded="true" signature="7171:7303" placeholder="select * fro... card_score_history" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/happiness/domain/BussinessInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="49" column="28" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1743,7 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1751,9 +1520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="173" column="36" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1761,7 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="23" column="37" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1769,9 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="49" column="31" selection-start-line="21" selection-start-column="0" selection-end-line="49" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1779,23 +1541,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/happiness/util/HttpsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2025">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/happiness/util/HttpsUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/wxpay/sdk/WXPayConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1803,7 +1556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1811,9 +1563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-800">
           <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1821,7 +1570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1829,7 +1577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5050">
           <caret line="212" column="5" selection-start-line="212" selection-start-column="5" selection-end-line="212" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1837,7 +1584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-625">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1845,7 +1591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-285">
           <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1853,7 +1598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1085">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1861,7 +1605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5006">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1869,7 +1612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1877,62 +1619,216 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/pcshow.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="202" column="35" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="35" />
-          <folding>
-            <marker date="1565442668670" expanded="true" signature="1450:1474" placeholder="select * fro... card_scope" />
-            <marker date="1565442668670" expanded="true" signature="1450:1499" placeholder="select * fro... card_scope" />
-            <marker date="1565442668670" expanded="true" signature="1562:1613" placeholder="select * fro... card_info" />
-            <marker date="1565442668670" expanded="true" signature="1585:1613" placeholder="select id, m... wx_product" />
-            <marker date="1565442668670" expanded="true" signature="1697:1727" placeholder="select id, m... wx_product" />
-            <marker date="1565442668670" expanded="true" signature="2559:3238" placeholder="select count... card_info" />
-            <marker date="1565442668670" expanded="true" signature="2559:3268" placeholder="select a.id,... id" />
-            <marker date="1565442668670" expanded="true" signature="2797:3113" placeholder="select a.id,... campaign_info" />
-            <marker date="1565442668670" expanded="true" signature="3132:3218" placeholder="select id, s... campaign_sign_up" />
-            <marker date="1565442668670" expanded="true" signature="3352:3818" placeholder="select count... card_info" />
-            <marker date="1565442668670" expanded="true" signature="3377:3693" placeholder="select a.id,... campaign_info" />
-            <marker date="1565442668670" expanded="true" signature="3712:3798" placeholder="select id, s... campaign_sign_up" />
-            <marker date="1565442668670" expanded="true" signature="5018:5063" placeholder="select * fro... bussiness_info" />
-            <marker date="1565442668670" expanded="true" signature="5750:5827" placeholder="select * fro... bussiness_message" />
-            <marker date="1565442668670" expanded="true" signature="5913:5951" placeholder="select count... bussiness_message" />
-            <marker date="1565442668670" expanded="true" signature="7241:7325" placeholder="select * fro... buss_league_info" />
-            <marker date="1565442668670" expanded="true" signature="7413:7450" placeholder="select count... buss_league_info" />
-            <marker date="1565442668670" expanded="true" signature="7523:7600" placeholder="select * fro... buss_league_info" />
-            <marker date="1565442668670" expanded="true" signature="7685:7741" placeholder="select count... buss_league_info" />
-            <marker date="1565442668670" expanded="true" signature="8832:8915" placeholder="select * fro... campaign_info" />
-            <marker date="1565442668670" expanded="true" signature="8995:9043" placeholder="select * fro... buss_league_info" />
-            <marker date="1565442668670" expanded="true" signature="9109:9155" placeholder="select * fro... card_info" />
-            <marker date="1565442668670" expanded="true" signature="9610:9672" placeholder="select * fro... buss_league_cooperate" />
-            <marker date="1565442668670" expanded="true" signature="9754:10128" placeholder="select * fro... buss_league_info" />
-            <marker date="1565442668670" expanded="true" signature="10213:10402" placeholder="select a.id,... campaign_info" />
-            <marker date="1565442668670" expanded="true" signature="10485:10574" placeholder="select * fro... bussiness_message" />
-            <marker date="1565442668670" expanded="true" signature="10661:10727" placeholder="select count... bussiness_message" />
-            <marker date="1565442668670" expanded="true" signature="10806:10928" placeholder="select * fro... buss_league_info" />
-            <marker date="1565442668670" expanded="true" signature="11016:11115" placeholder="select count... buss_league_info" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/happiness/service/impl/PCShowServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/pcshow.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1042">
+          <caret line="162" column="13" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
           <folding>
-            <element signature="e#2172#2193#0" expanded="true" />
-            <element signature="e#3583#3604#0" expanded="true" />
-            <element signature="e#5898#5919#0" expanded="true" />
-            <element signature="e#7599#7620#0" expanded="true" />
-            <element signature="e#9175#9196#0" expanded="true" />
-            <element signature="e#10799#10820#0" expanded="true" />
-            <element signature="e#12498#12519#0" expanded="true" />
-            <element signature="e#13378#13396#0" expanded="true" />
+            <marker date="1565615419949" expanded="true" signature="1450:1474" placeholder="select * fro... card_scope" />
+            <marker date="1565615419949" expanded="true" signature="1450:1499" placeholder="select * fro... card_scope" />
+            <marker date="1565615419949" expanded="true" signature="1562:1613" placeholder="select * fro... card_info" />
+            <marker date="1565615419949" expanded="true" signature="1585:1613" placeholder="select id, m... wx_product" />
+            <marker date="1565615419949" expanded="true" signature="1697:1727" placeholder="select id, m... wx_product" />
+            <marker date="1565615419949" expanded="true" signature="2559:3238" placeholder="select count... card_info" />
+            <marker date="1565615419949" expanded="true" signature="2559:3268" placeholder="select a.id,... id" />
+            <marker date="1565615419949" expanded="true" signature="2797:3113" placeholder="select a.id,... campaign_info" />
+            <marker date="1565615419949" expanded="true" signature="3132:3218" placeholder="select id, s... campaign_sign_up" />
+            <marker date="1565615419949" expanded="true" signature="3352:3818" placeholder="select count... card_info" />
+            <marker date="1565615419949" expanded="true" signature="3377:3693" placeholder="select a.id,... campaign_info" />
+            <marker date="1565615419949" expanded="true" signature="3712:3798" placeholder="select id, s... campaign_sign_up" />
+            <marker date="1565615419949" expanded="true" signature="5018:5063" placeholder="select * fro... bussiness_info" />
+            <marker date="1565615419949" expanded="true" signature="5750:5827" placeholder="select * fro... bussiness_message" />
+            <marker date="1565615419949" expanded="true" signature="5913:5951" placeholder="select count... bussiness_message" />
+            <marker date="1565615419949" expanded="true" signature="7241:7342" placeholder="select * fro... buss_league_info" />
+            <marker date="1565615419949" expanded="true" signature="7430:7467" placeholder="select count... buss_league_info" />
+            <marker date="1565615419949" expanded="true" signature="7540:7617" placeholder="select * fro... buss_league_info" />
+            <marker date="1565615419949" expanded="true" signature="7702:7758" placeholder="select count... buss_league_info" />
+            <marker date="1565615419949" expanded="true" signature="8849:8932" placeholder="select * fro... campaign_info" />
+            <marker date="1565615419949" expanded="true" signature="9012:9060" placeholder="select * fro... buss_league_info" />
+            <marker date="1565615419949" expanded="true" signature="9126:9172" placeholder="select * fro... card_info" />
+            <marker date="1565615419949" expanded="true" signature="9627:9689" placeholder="select * fro... buss_league_cooperate" />
+            <marker date="1565615419949" expanded="true" signature="9771:10145" placeholder="select * fro... buss_league_info" />
+            <marker date="1565615419949" expanded="true" signature="10230:10419" placeholder="select a.id,... campaign_info" />
+            <marker date="1565615419949" expanded="true" signature="10502:10591" placeholder="select * fro... bussiness_message" />
+            <marker date="1565615419949" expanded="true" signature="10678:10744" placeholder="select count... bussiness_message" />
+            <marker date="1565615419949" expanded="true" signature="10823:10945" placeholder="select * fro... buss_league_info" />
+            <marker date="1565615419949" expanded="true" signature="11033:11132" placeholder="select count... buss_league_info" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/template/wx_product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/card.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4100">
+          <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
+          <folding>
+            <marker date="1565702805471" expanded="true" signature="1068:1693" placeholder="select id, h... " />
+            <marker date="1565702805471" expanded="true" signature="1792:2163" placeholder="select id, h... " />
+            <marker date="1565702805471" expanded="true" signature="1992:2059" placeholder="select count... follower" />
+            <marker date="1565702805471" expanded="true" signature="2070:2139" placeholder="select count... follower" />
+            <marker date="1565702805471" expanded="true" signature="2272:2347" placeholder="insert into follower... " />
+            <marker date="1565702805471" expanded="true" signature="2434:2512" placeholder="delete from " />
+            <marker date="1565702805471" expanded="true" signature="2581:2661" placeholder="select * fro... follower" />
+            <marker date="1565702805471" expanded="true" signature="3362:3465" placeholder="select servi... tag_service_info" />
+            <marker date="1565702805471" expanded="true" signature="3578:3851" placeholder="insert into card_info... " />
+            <marker date="1565702805471" expanded="true" signature="3926:4176" placeholder="update card_... " />
+            <marker date="1565702805471" expanded="true" signature="4215:4326" placeholder="select id, p... card_info" />
+            <marker date="1565702805471" expanded="true" signature="5365:5460" placeholder="insert into card_tag... " />
+            <marker date="1565702805471" expanded="true" signature="5534:5631" placeholder="update card_... " />
+            <marker date="1565702805471" expanded="true" signature="5703:5776" placeholder="select card_... card_tag" />
+            <marker date="1565702805471" expanded="true" signature="5864:6280" placeholder="select id, h... id" />
+            <marker date="1565702805471" expanded="true" signature="5999:6177" placeholder="select id, h... " />
+            <marker date="1565702805471" expanded="true" signature="6195:6252" placeholder="select follo... follower" />
+            <marker date="1565702805471" expanded="true" signature="6364:6780" placeholder="select id, h... id" />
+            <marker date="1565702805471" expanded="true" signature="6499:6677" placeholder="select id, h... " />
+            <marker date="1565702805471" expanded="true" signature="6695:6752" placeholder="select follo... follower" />
+            <marker date="1565702805471" expanded="true" signature="6868:6934" placeholder="update card_... " />
+            <marker date="1565702805471" expanded="true" signature="7010:7114" placeholder="insert into card_score_history... " />
+            <marker date="1565702805471" expanded="true" signature="7187:7319" placeholder="select * fro... card_score_history" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/cooperate.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="97" column="57" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
+          <folding>
+            <marker date="1565859247031" expanded="true" signature="299:439" placeholder="insert into card_message... " />
+            <marker date="1565859247031" expanded="true" signature="532:599" placeholder="update card_... " />
+            <marker date="1565859247031" expanded="true" signature="692:757" placeholder="update card_... " />
+            <marker date="1565859247031" expanded="true" signature="1721:1982" placeholder="select a.id,... " />
+            <marker date="1565859247031" expanded="true" signature="2619:2720" placeholder="select c.ope... card_info" />
+            <marker date="1565859247031" expanded="true" signature="2837:2938" placeholder="insert into card_message_send... " />
+            <marker date="1565859247031" expanded="true" signature="3053:3103" placeholder="insert into wx_small_token... " />
+            <marker date="1565859247031" expanded="true" signature="3384:3517" placeholder="select id, t... wx_small_token" />
+            <marker date="1565859247031" expanded="true" signature="3647:3739" placeholder="insert into wx_small_formId... " />
+            <marker date="1565859247031" expanded="true" signature="3828:3889" placeholder="update wx_sm... " />
+            <marker date="1565859247031" expanded="true" signature="4334:4527" placeholder="select id, c... wx_small_formId" />
+            <marker date="1565859247031" expanded="true" signature="4652:4791" placeholder="insert into card_message_reply... " />
+            <marker date="1565859247031" expanded="true" signature="5684:5966" placeholder="select a.id,... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/BusinessWeixinServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4176">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/dao/EntityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/entity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <marker date="1565871919876" expanded="true" signature="235:299" placeholder="insert into ${tableName}... " />
+            <marker date="1565871919876" expanded="true" signature="354:414" placeholder="update ${tab... " />
+            <marker date="1565871919876" expanded="true" signature="470:514" placeholder="delete from " />
+            <marker date="1565871919876" expanded="true" signature="609:655" placeholder="select * fro... ${tableName}" />
+            <marker date="1565871919876" expanded="true" signature="746:772" placeholder="select * fro... ${tableName}" />
+            <marker date="1565871919876" expanded="true" signature="870:908" placeholder="select ${sel... ${tableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/EntityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/controller/EntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qinzi123/service/impl/EntityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="90" column="23" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="155" column="152" selection-start-line="155" selection-start-column="132" selection-end-line="155" selection-end-column="152" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/template/card_message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/template/card_message_reply.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="65" column="39" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/manage/control.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
