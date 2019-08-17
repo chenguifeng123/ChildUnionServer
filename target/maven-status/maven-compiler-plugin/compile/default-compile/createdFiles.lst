@@ -18,6 +18,7 @@ com\qinzi123\dto\Follower.class
 com\qinzi123\service\impl\PayServiceImpl.class
 com\qinzi123\dto\BaseParam.class
 com\qinzi123\dto\template\CooperateMessageTemplateHelper$1.class
+com\qinzi123\service\impl\ServiceHelper.class
 com\qinzi123\config\HttpsConfig$1.class
 com\qinzi123\controller\PayController.class
 com\qinzi123\config\RestTemplateConfig.class

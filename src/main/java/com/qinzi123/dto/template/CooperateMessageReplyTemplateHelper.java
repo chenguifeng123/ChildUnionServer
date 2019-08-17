@@ -13,7 +13,8 @@ public class CooperateMessageReplyTemplateHelper extends CooperateMessageTemplat
 	Object data(Object object) {
 		CardMessageReply cardMessageReply = (CardMessageReply)object;
 		CooperateTemplate cooperateTemplate = new CooperateTemplate();
-		cooperateTemplate.setKeyword1(getKeyword("有新回复消息"));
+		//cooperateTemplate.setKeyword1(getKeyword("有新回复消息"));
+		cooperateTemplate.setKeyword1(getKeyword(cardMessageReply.getTitle()));
 		cooperateTemplate.setKeyword2(getKeyword(cardMessageReply.getReplyMessage()));
 		cooperateTemplate.setKeyword3(getKeyword(cardMessageReply.getCardInfo().getRealname()));
 		cooperateTemplate.setKeyword4(getKeyword(cardMessageReply.getCreateTime()));

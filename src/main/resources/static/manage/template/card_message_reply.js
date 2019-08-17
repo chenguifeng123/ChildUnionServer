@@ -23,6 +23,7 @@
                     desc : "消息",
                     type : 4,
                     needInput : false,
+                    disabled : true,
                     initData :[],
                     refs:{
                         model : "card_message",
@@ -36,6 +37,7 @@
                     desc : "发布者",
                     type : 4,
                     needInput : true,
+                    disabled : true,
                     initData :[],
                     refs:{
                         model : "card_info",
@@ -49,6 +51,7 @@
                     desc : "回复编号",
                     type : 1,
                     needInput : false,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : ""
@@ -58,6 +61,7 @@
                     desc : "回复详情",
                     type : 10,
                     needInput : true,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : '0'
@@ -67,6 +71,7 @@
                     desc : "创建时间",
                     type : 7,
                     needInput : false,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : '0'
@@ -76,7 +81,7 @@
                     desc : "审核情况",
                     type : 2,
                     needInput : true,
-                    initData :[{value:0, desc:'待审批'},{value:1, desc:'审批通过'}],
+                    initData :[{value:0, desc:'待审批'},{value:1, desc:'审批通过'},{value:2, desc:'审批不通过'}],
                     refs:{},
                     value : 0
                 }

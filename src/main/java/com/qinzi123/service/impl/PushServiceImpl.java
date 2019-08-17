@@ -84,11 +84,20 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 	 * @return
 	 */
 	public boolean pushMessage2OneUser(CardMessage cardMessage){
-		SendObject sendObject = cooperateMessageTemplateHelper.generateSendObject(
-				cardMessage.getCardInfo().getOpenid(), cardMessage.getFormId(),
-				cardMessage, cardMessage);
-		if(pushSendObject2OneUser(sendObject))
-			addMessageSend(cardMessage, cardMessage.getId());
+		// 批量拿formId, 发送失败就继续取一个
+		List<WxSmallFormId> wxSmallFormIdList = formIdService.getCanUseSmallFormId(
+				cardMessage.getCardId());
+		cardMessage.setUpdateTime(Utils.getCurrentDate());
+		for(WxSmallFormId wxSmallFormId : wxSmallFormIdList) {
+			SendObject sendObject = cooperateMessageTemplateHelper.generateSendObject(
+					cardMessage.getCardInfo().getOpenid(), wxSmallFormId.getFormId(),
+					cardMessage, cardMessage);
+			if (pushSendObject2OneUser(sendObject)) {
+				logger.info("插入发送成功记录");
+				addMessageSend(cardMessage, cardMessage.getId());
+				break;
+			}
+		}
 		return true;
 	}
 

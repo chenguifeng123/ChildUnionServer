@@ -45,6 +45,7 @@ public class CooperateMessageTemplateHelper extends AbstractTemplateHelper{
 	Object data(Object object) {
 		CardMessage cardMessage = (CardMessage)object;
 		CooperateTemplate cooperateTemplate = new CooperateTemplate();
+		//cooperateTemplate.setKeyword1(getKeyword(""));
 		cooperateTemplate.setKeyword1(getKeyword(cardMessage.getTitle()));
 		cooperateTemplate.setKeyword2(getKeyword(cardMessage.getMessage()));
 		cooperateTemplate.setKeyword3(getKeyword(cardMessage.getCardInfo().getRealname()));

@@ -1,10 +1,11 @@
 package com.qinzi123.service.impl;
 
+import com.qinzi123.dao.CardDao;
 import com.qinzi123.dao.EntityDao;
 import com.qinzi123.dao.TableConfigDao;
-import com.qinzi123.dto.Column;
-import com.qinzi123.dto.TableConfig;
+import com.qinzi123.dto.*;
 import com.qinzi123.service.EntityService;
+import com.qinzi123.service.PushService;
 import com.qinzi123.util.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -19,6 +20,12 @@ public class EntityServiceImpl implements EntityService {
 
 	@Autowired
 	public TableConfigDao tableConfigDao;
+
+	@Autowired
+	PushService pushService;
+
+	@Autowired
+	CardDao cardDao;
 
 	private HashMap<String, List<String>> tableKeyMap = new HashMap<String, List<String>>();
 	private HashMap<String, HashMap<String, Column>> tableColumnMap = new HashMap<String, HashMap<String, Column>>();
@@ -97,11 +104,30 @@ public class EntityServiceImpl implements EntityService {
 		});
 	}
 
+	public void callMessageUser(String tableName, Map<String, Object> map){
+		int verify = Integer.parseInt(map.get("verify").toString());
+		if(verify == 1 || verify == 2){
+			String message = String.format("审批%s通过", verify == 2 ? "不" : "");
+			CardInfo cardInfo = cardDao.getCardInfoBeanById(Integer.parseInt(map.get("card_id").toString()));
+			if(tableName.equalsIgnoreCase("card_message")) {
+				CardMessage cardMessage = ServiceHelper.convertMap2CardMessage(map, cardInfo,
+						message);
+				pushService.pushMessage2OneUser(cardMessage);
+			}else{
+				CardMessageReply cardMessageReply = ServiceHelper.convertMap2CardMessageReply(
+						map,message);
+				pushService.pushMessageReply2OneUser(cardMessageReply);
+			}
+		}
+	}
+
 	// 修改数据
 	public int updateService(String tableName, Map<String, Object> map){
 		List<String> updateColumns = new LinkedList<String>();
 		List<String> keyColumns = new LinkedList<String>();
 		loadKeyColumns(tableName, map, keyColumns, getKeyByTable(tableName), updateColumns);
+		if(tableName.equalsIgnoreCase("card_message") || tableName.equalsIgnoreCase("card_message_reply"))
+			callMessageUser(tableName, map);
 		return entityDao.updateEntity(tableName, Utils.join(updateColumns, ","), Utils.join(keyColumns, Utils.AND));
 	}
 

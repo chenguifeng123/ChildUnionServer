@@ -1,5 +1,7 @@
 package com.qinzi123.dto;
 
+import java.util.Optional;
+
 /**
  * Created by chenguifeng on 2018/11/21.
  */
@@ -9,6 +11,7 @@ public class CardMessageReply extends BaseParam {
 	int replyId;
 	String replyMessage;
 	String createTime;
+	String title;
 
 	CardMessageReply replyInfo;
 
@@ -58,5 +61,13 @@ public class CardMessageReply extends BaseParam {
 
 	public void setReplyInfo(CardMessageReply replyInfo) {
 		this.replyInfo = replyInfo;
+	}
+
+	public String getTitle() {
+		return Optional.ofNullable(title).orElse("有新回复消息");
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 }

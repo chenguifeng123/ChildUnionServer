@@ -23,6 +23,7 @@
                     desc : "发布者",
                     type : 4,
                     needInput : true,
+                    disabled : true,
                     initData :[],
                     refs:{
                         model : "card_info",
@@ -36,6 +37,7 @@
                     desc : "发送表单编号",
                     type : 0,
                     needInput : false,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : 0
@@ -45,6 +47,7 @@
                     desc : "消息标题",
                     type : 1,
                     needInput : true,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : ""
@@ -54,6 +57,7 @@
                     desc : "消息内容",
                     type : 1,
                     needInput : true,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : '0'
@@ -63,6 +67,7 @@
                     desc : "更新时间",
                     type : 7,
                     needInput : false,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : '0'
@@ -72,6 +77,7 @@
                     desc : "阅读次数",
                     type : 1,
                     needInput : false,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : 0
@@ -81,6 +87,7 @@
                     desc : "点赞次数",
                     type : 1,
                     needInput : false,
+                    disabled : true,
                     initData :[],
                     refs:{},
                     value : 0
@@ -90,7 +97,7 @@
                     desc : "审核情况",
                     type : 2,
                     needInput : true,
-                    initData :[{value:0, desc:'待审批'},{value:1, desc:'审批通过'}],
+                    initData :[{value:0, desc:'待审批'},{value:1, desc:'审批通过'},{value:2, desc:'审批不通过'}],
                     refs:{},
                     value : 0
                 }
