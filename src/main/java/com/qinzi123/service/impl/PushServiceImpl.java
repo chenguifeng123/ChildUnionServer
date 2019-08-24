@@ -1,13 +1,14 @@
 package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.*;
+import com.qinzi123.dto.template.CardInfoTemplateHelper;
 import com.qinzi123.dto.template.CooperateMessageReplyTemplateHelper;
 import com.qinzi123.dto.template.CooperateMessageTemplateHelper;
 import com.qinzi123.service.BusinessWeixinService;
-import com.qinzi123.service.FormIdService;
 import com.qinzi123.service.PushService;
 import com.qinzi123.service.TokenService;
 import com.qinzi123.util.Utils;
+import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,13 +32,41 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 	TokenService tokenService;
 
 	@Autowired
-	FormIdService formIdService;
+	CardInfoTemplateHelper cardInfoTemplateHelper;
 
 	@Autowired
 	CooperateMessageTemplateHelper cooperateMessageTemplateHelper;
 
 	@Autowired
 	CooperateMessageReplyTemplateHelper cooperateMessageReplyTemplateHelper;
+
+	public List<String> getFansUser2Push(@Param("followerId") int followerId) {
+		return pushDao.getFansUser2Push(followerId);
+	}
+
+	public int addCardSend(CardInfoSend cardInfoSend) {
+		return pushDao.addCardSend(cardInfoSend);
+	}
+
+	public int addFormId(WxSmallFormId wxSmallFormId) {
+		logger.info(String.format("插入新的formId %s", wxSmallFormId.toString()));
+		return pushDao.addFormId(wxSmallFormId);
+	}
+
+	public int updateFormId(WxSmallFormId wxSmallFormId) {
+		logger.info(String.format("更新formId %s", wxSmallFormId.toString()));
+		return pushDao.updateFormId(wxSmallFormId);
+	}
+
+	public List<WxSmallFormId> getCanUseSmallFormId(@Param("cardId") int cardId) {
+		logger.info(String.format("获取%d可用formId列表", cardId));
+		return pushDao.getCanUseSmallFormId(cardId);
+	}
+
+	public List<Map> getEveryUserCanUseSmallFormId() {
+		logger.info("获取所有可用formId列表");
+		return pushDao.getEveryUserCanUseSmallFormId();
+	}
 
 	/**
 	 * 增加发送消息的记录
@@ -50,7 +79,7 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 		cardMessageSend.setMessageId(messageId);
 		cardMessageSend.setOpenid(baseParam.getCardInfo().getOpenid());
 		cardMessageSend.setCardId(baseParam.getCardId());
-		return cooperateDao.addMessageSend(cardMessageSend);
+		return pushDao.addMessageSend(cardMessageSend);
 	}
 
 	/**
@@ -78,6 +107,32 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 		return false;
 	}
 
+	@Override
+	public boolean pushCard2AllUser(Map cardMap) {
+		// 批量拿formId, 发送失败就继续取一个
+		List<Map> cardFormList = getEveryUserCanUseSmallFormId();
+		for(Map cardFormMap : cardFormList) {
+			SendObject sendObject = cardInfoTemplateHelper.generateSendObject(
+					cardFormMap.get("openid").toString(),
+					cardFormMap.get("form_id").toString(),
+					cardMap, cardMap);
+			if (pushSendObject2OneUser(sendObject)) {
+				logger.info("插入发送成功记录");
+				CardInfoSend cardInfoSend = new CardInfoSend();
+				cardInfoSend.setCardId(Integer.parseInt(cardFormMap.get("card_id").toString()));
+				cardInfoSend.setNewCardId(Integer.parseInt(cardMap.get("card_id").toString()));
+				cardInfoSend.setOpenid(cardFormMap.get("openid").toString());
+				addCardSend(cardInfoSend);
+
+				WxSmallFormId wxSmallFormId = new WxSmallFormId();
+				wxSmallFormId.setId(Integer.parseInt(cardFormMap.get("id").toString()));
+				wxSmallFormId.setIsUse(1);
+				updateFormId(wxSmallFormId);
+			}
+		}
+		return true;
+	}
+
 	/**
 	 * 发送消息给指定客户
 	 * @param cardMessage
@@ -85,7 +140,7 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 	 */
 	public boolean pushMessage2OneUser(CardMessage cardMessage){
 		// 批量拿formId, 发送失败就继续取一个
-		List<WxSmallFormId> wxSmallFormIdList = formIdService.getCanUseSmallFormId(
+		List<WxSmallFormId> wxSmallFormIdList = getCanUseSmallFormId(
 				cardMessage.getCardId());
 		cardMessage.setUpdateTime(Utils.getCurrentDate());
 		for(WxSmallFormId wxSmallFormId : wxSmallFormIdList) {
@@ -95,6 +150,7 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 			if (pushSendObject2OneUser(sendObject)) {
 				logger.info("插入发送成功记录");
 				addMessageSend(cardMessage, cardMessage.getId());
+				updateFormId(wxSmallFormId);
 				break;
 			}
 		}
@@ -131,7 +187,7 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 		}
 
 		// 批量拿formId, 发送失败就继续取一个
-		List<WxSmallFormId> wxSmallFormIdList = formIdService.getCanUseSmallFormId(cardId);
+		List<WxSmallFormId> wxSmallFormIdList = getCanUseSmallFormId(cardId);
 		for(WxSmallFormId wxSmallFormId : wxSmallFormIdList){
 			SendObject sendObject = cooperateMessageReplyTemplateHelper.generateSendObject(openId,
 					wxSmallFormId.getFormId(), cardMessage, cardMessageReply);
@@ -140,7 +196,7 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 				logger.info("插入发送成功记录");
 				addMessageSend(cardMessageReply, cardMessageReply.getMessageId());
 				wxSmallFormId.setIsUse(Use.USE.getIsUse());
-				formIdService.updateFormId(wxSmallFormId);
+				updateFormId(wxSmallFormId);
 				break;
 			}else
 				logger.info(String.format("该formId发送失败, %s", wxSmallFormId.toString()));

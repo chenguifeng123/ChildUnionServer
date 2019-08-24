@@ -13,15 +13,8 @@ public interface CooperateDao {
 	int addMessage(CardMessage cardMessage);
 	List<CardMessage> getAllCardMessage(@Param("start") int start, @Param("num")int num);
 	List<String> getFansUser2Push(@Param("followerId") int followerId);
-	int addMessageSend(CardMessageSend cardMessageSend);
-	int addCurrentToken(WxSmallToken wxSmallToken);
-	WxSmallToken getCurrentToken();
 	List<CardMessage> getCardMessageByCardId(@Param("cardId") int cardId, @Param("start") int start, @Param("num")int num);
 	CardMessage getCardMessageById(@Param("messageId") int messageId);
-
-	int addFormId(WxSmallFormId wxSmallFormId);
-	int updateFormId(WxSmallFormId wxSmallFormId);
-	List<WxSmallFormId> getCanUseSmallFormId(@Param("cardId") int cardId);
 
 	int addCardMessageReply(CardMessageReply cardMessageReply);
 	List<CardMessageReply> getAllCardMessageReplyByMessageId(@Param("messageId") int messageId);

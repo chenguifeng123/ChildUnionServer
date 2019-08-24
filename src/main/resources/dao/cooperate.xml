@@ -69,6 +69,11 @@
 	<insert id="addMessageSend" useGeneratedKeys="true" parameterType="com.qinzi123.dto.CardMessageSend">
 		insert into card_message_send(card_id, message_id, openid) values(#{cardId}, #{messageId}, #{openid})
 	</insert>
+
+	<insert id="addCardSend" useGeneratedKeys="true" parameterType="com.qinzi123.dto.CardInfoSend">
+		insert into card_message_send(card_id, new_card_id, openid) values(#{cardId}, #{newCardId}, #{openid})
+	</insert>
+
 	<insert id="addCurrentToken" useGeneratedKeys="true" parameterType="com.qinzi123.dto.WxSmallToken">
 		insert into wx_small_token(token) values(#{token})
 	</insert>
@@ -98,9 +103,19 @@
 		<!--result property="updateTime" column="update_time"/-->
 
 	</resultMap>
-	<select id="getCanUseSmallFormId" resultMap="smallFormId">
+
+	<sql id="select_small_formId">
 		select id, card_id, form_id, is_use, create_time from wx_small_formId
-		where card_id = #{cardId} and is_use = 0 and DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= create_time
+		where is_use = 0 and DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= create_time
+	</sql>
+
+	<select id="getCanUseSmallFormId" resultMap="smallFormId">
+		<include refid="select_small_formId"/> and card_id = #{cardId}
+		order by create_time
+	</select>
+
+	<select id="getEveryUserCanUseSmallFormId" resultMap="smallFormId">
+		<include refid="select_small_formId"/> group by card_id
 		order by create_time
 	</select>
 

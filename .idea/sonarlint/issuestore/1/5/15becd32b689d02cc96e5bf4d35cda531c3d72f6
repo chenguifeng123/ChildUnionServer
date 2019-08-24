@@ -1,0 +1,5 @@
+
+usquid:S00116"XRename this field "current_token" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú‡«ùÿÿÿÿ
+osquid:S24450"S"current_token" is not "private final", and should not be used for synchronization.(Æ¤­…ùÿÿÿÿ
+osquid:S24450"S"current_token" is not "private final", and should not be used for synchronization.(Æ¤­…ùÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¤¡Ã¤

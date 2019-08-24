@@ -2,6 +2,7 @@ package com.qinzi123.service.impl;
 
 import com.qinzi123.dao.CardDao;
 import com.qinzi123.dao.CooperateDao;
+import com.qinzi123.dao.PushDao;
 import com.qinzi123.dto.SendObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,6 +33,9 @@ public abstract class AbstractWeixinService {
 
 	@Autowired
 	CooperateDao cooperateDao;
+
+	@Autowired
+	PushDao pushDao;
 
 	/**
 	 *  没有公众号,暂时 appid和 secret 还是统一的

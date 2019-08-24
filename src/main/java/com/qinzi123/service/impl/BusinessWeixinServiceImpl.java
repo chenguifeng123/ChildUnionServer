@@ -2,6 +2,7 @@ package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.ScoreType;
 import com.qinzi123.service.BusinessWeixinService;
+import com.qinzi123.service.PushService;
 import com.qinzi123.service.ScoreService;
 import com.qinzi123.util.Utils;
 import org.slf4j.Logger;
@@ -23,6 +24,9 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 
 	@Autowired
 	ScoreService scoreService;
+
+	@Autowired
+	PushService pushService;
 
 	private Logger logger = LoggerFactory.getLogger(BusinessWeixinServiceImpl.class);
 
@@ -144,6 +148,12 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 			cardDao.addCardTag(map);
 			int inviteId = Integer.parseInt(map.get("invite").toString());
 			if(inviteId != -1) scoreService.addScore(inviteId, ScoreType.Invite);
+			try{
+				logger.info("注册成功，准备给所有用户推送消息");
+				pushService.pushCard2AllUser(map);
+			}catch (Exception e){
+				logger.error("推送新注册用户，给所有用户失败", e);
+			}
 		}else{
 			//Map info = cardDao.getCardInfoByOpenId(openid);
 			Map info = cardDao.getCardInfoByPhone(phone, realname);

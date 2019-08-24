@@ -2,7 +2,6 @@ package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.*;
 import com.qinzi123.service.CooperateWeixinService;
-import com.qinzi123.service.FormIdService;
 import com.qinzi123.service.PushService;
 import com.qinzi123.service.ScoreService;
 import com.qinzi123.util.Utils;
@@ -24,9 +23,6 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 
 	@Autowired
 	PushService pushService;
-
-	@Autowired
-	FormIdService formIdService;
 
 	@Autowired
 	ScoreService scoreService;
@@ -84,7 +80,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 		int result = cooperateDao.addMessage(cardMessage);
 		logger.info("插入消息数据成功, 批量插入formId");
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessage))
-			formIdService.addFormId(wxSmallFormId);
+			pushService.addFormId(wxSmallFormId);
 		scoreService.addScore(cardMessage.getCardId(), ScoreType.Message);
 		return result;
 	}
@@ -140,7 +136,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 		int result = cooperateDao.addCardMessageReply(cardMessageReply);
 		logger.info("回复消息成功, 批量插入formId");
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessageReply))
-			formIdService.addFormId(wxSmallFormId);
+			pushService.addFormId(wxSmallFormId);
 		pushMessage(cardMessageReply);
 		return result;
 	}
