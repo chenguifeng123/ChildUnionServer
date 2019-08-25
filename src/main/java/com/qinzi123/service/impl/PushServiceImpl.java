@@ -112,22 +112,26 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 		// 批量拿formId, 发送失败就继续取一个
 		List<Map> cardFormList = getEveryUserCanUseSmallFormId();
 		for(Map cardFormMap : cardFormList) {
-			SendObject sendObject = cardInfoTemplateHelper.generateSendObject(
-					cardFormMap.get("openid").toString(),
-					cardFormMap.get("form_id").toString(),
-					cardMap, cardMap);
-			if (pushSendObject2OneUser(sendObject)) {
-				logger.info("插入发送成功记录");
-				CardInfoSend cardInfoSend = new CardInfoSend();
-				cardInfoSend.setCardId(Integer.parseInt(cardFormMap.get("card_id").toString()));
-				cardInfoSend.setNewCardId(Integer.parseInt(cardMap.get("card_id").toString()));
-				cardInfoSend.setOpenid(cardFormMap.get("openid").toString());
-				addCardSend(cardInfoSend);
+			try {
+				SendObject sendObject = cardInfoTemplateHelper.generateSendObject(
+						cardFormMap.get("openid").toString(),
+						cardFormMap.get("form_id").toString(),
+						cardMap, cardMap);
+				if (pushSendObject2OneUser(sendObject)) {
+					logger.info("插入发送成功记录");
+					CardInfoSend cardInfoSend = new CardInfoSend();
+					cardInfoSend.setCardId(Integer.parseInt(cardFormMap.get("card_id").toString()));
+					cardInfoSend.setNewCardId(Integer.parseInt(cardMap.get("card_id").toString()));
+					cardInfoSend.setOpenid(cardFormMap.get("openid").toString());
+					addCardSend(cardInfoSend);
 
-				WxSmallFormId wxSmallFormId = new WxSmallFormId();
-				wxSmallFormId.setId(Integer.parseInt(cardFormMap.get("id").toString()));
-				wxSmallFormId.setIsUse(1);
-				updateFormId(wxSmallFormId);
+					WxSmallFormId wxSmallFormId = new WxSmallFormId();
+					wxSmallFormId.setId(Integer.parseInt(cardFormMap.get("id").toString()));
+					wxSmallFormId.setIsUse(1);
+					updateFormId(wxSmallFormId);
+				}
+			}catch (Exception e){
+				logger.error("当前记录发送失败" + cardFormMap.toString(), e);
 			}
 		}
 		return true;

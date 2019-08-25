@@ -51,13 +51,13 @@
 
 	<select id="getCanUseSmallFormId" resultMap="smallFormId">
 		select id, card_id, form_id, is_use, create_time from wx_small_formId
-		where card_id = #{cardId} and is_use = 0 and DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= create_time
+		where card_id = #{cardId} and is_use = 0 and DATE_SUB(CURDATE(), INTERVAL 6 DAY) &lt;= create_time
 		order by create_time
 	</select>
 
 	<select id="getEveryUserCanUseSmallFormId" resultType="java.util.LinkedHashMap">
 		select w.id, w.card_id, w.form_id, w.is_use, w.create_time, c.openid from wx_small_formId w, card_info c
-		where w.card_id = c.id and is_use = 0 and DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= create_time group by w.card_id
+		where w.card_id = c.id and is_use = 0 and DATE_SUB(CURDATE(), INTERVAL 6 DAY) &lt;= create_time group by w.card_id
 		order by create_time
 	</select>
 
