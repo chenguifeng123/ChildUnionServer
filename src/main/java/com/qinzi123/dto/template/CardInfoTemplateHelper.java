@@ -14,7 +14,7 @@ public class CardInfoTemplateHelper extends AbstractTemplateHelper{
 
 	@Override
 	String templateId() {
-		return "jrdTdI5M8zeqHVBA-utX6J9SZaQJG4uPGPNBpOPxIFc";
+		return "ItOTSJYKqVjynN9sWJo_z1_F5XH1YXw2LaaqXAlpwgk";
 	}
 
 	@Override
@@ -37,8 +37,9 @@ public class CardInfoTemplateHelper extends AbstractTemplateHelper{
 		Map card = (Map)object;
 		CardInfoTemplate cardInfoTemplate = new CardInfoTemplate();
 		cardInfoTemplate.setKeyword1(getKeyword(card.get("realname").toString()));
-		cardInfoTemplate.setKeyword2(getKeyword(card.get("phone").toString()));
+		cardInfoTemplate.setKeyword2(getKeyword(card.get("job").toString()));
 		cardInfoTemplate.setKeyword3(getKeyword(card.get("company").toString()));
+		cardInfoTemplate.setKeyword4(getKeyword(card.get("workaddress").toString()));
 		return cardInfoTemplate;
 	}
 }

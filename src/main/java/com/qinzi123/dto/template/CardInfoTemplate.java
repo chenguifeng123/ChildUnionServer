@@ -8,6 +8,7 @@ public class CardInfoTemplate {
 	Keyword keyword1;
 	Keyword keyword2;
 	Keyword keyword3;
+	Keyword keyword4;
 
 	public Keyword getKeyword1() {
 		return keyword1;
@@ -31,5 +32,13 @@ public class CardInfoTemplate {
 
 	public void setKeyword3(Keyword keyword3) {
 		this.keyword3 = keyword3;
+	}
+
+	public Keyword getKeyword4() {
+		return keyword4;
+	}
+
+	public void setKeyword4(Keyword keyword4) {
+		this.keyword4 = keyword4;
 	}
 }
