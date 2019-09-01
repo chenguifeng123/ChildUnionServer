@@ -7,4 +7,6 @@ import com.qinzi123.dto.ScoreType;
  */
 public interface ScoreService {
 	public int addScore(int cardId, ScoreType scoreType);
+	public int addScore(int cardId, ScoreType scoreType, int score);
+	public int minusScore(int cardId, int score);
 }

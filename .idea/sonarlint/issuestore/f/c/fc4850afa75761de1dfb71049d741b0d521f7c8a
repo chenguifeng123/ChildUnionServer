@@ -1,18 +1,0 @@
-
-esquid:S1192ˆ"HDefine a constant instead of duplicating this literal "status" 10 times.(Æ‹óÁùÿÿÿÿ
-fsquid:S1192¶"IDefine a constant instead of duplicating this literal "buyUser" 12 times.(Ý°Ä™ýÿÿÿÿ
-osquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
-csquid:S00112Z"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
-Tsquid:S11553">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
-asquid:S1192Ä"IDefine a constant instead of duplicating this literal "payTime" 10 times.(Ú¬ï
-isquid:S1192€"LDefine a constant instead of duplicating this literal "createTime" 10 times.(·í“°øÿÿÿÿ
-dsquid:S1192ü"GDefine a constant instead of duplicating this literal "phone" 12 times.(ºÔñŠÿÿÿÿÿ
-]squid:S00112h"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
-
-esquid:S1192Â"HDefine a constant instead of duplicating this literal "wxCode" 12 times.(®¹Èíÿÿÿÿÿ
-fsquid:S1192´"IDefine a constant instead of duplicating this literal "orderNo" 12 times.(Ö„þóùÿÿÿÿ
-Zsquid:S1155M">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
-fsquid:S1192ú"IDefine a constant instead of duplicating this literal "payment" 10 times.(–ÆºÄûÿÿÿÿ
-psquid:S2293I"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
-wsquid:S1488:"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
-csquid:S00112a"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºþÿÿÿÿ

@@ -15,6 +15,7 @@ public interface CampaignService {
 	List<LinkedHashMap> oneOrder(int id);
 
 	int addOrder(Map map);
+	int addPayOrder(Map map);
 
 /*	int addProduct(WxProduct wxProduct);
 	int updateProduct(WxProduct wxProduct);

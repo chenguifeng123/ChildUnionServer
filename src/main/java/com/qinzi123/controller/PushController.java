@@ -19,7 +19,7 @@ public class PushController {
 
 	@ApiOperation(value = "更新用户", notes = "更新用户")
 	@RequestMapping(value="/formId/{id}", method= RequestMethod.POST)
-	private int addUserCard(@PathVariable("id") int id,
+	private int addUserCard(@PathVariable("id") String id,
 							@RequestBody WxSmallFormId wxSmallFormId){
 		return pushService.addFormId(wxSmallFormId);
 	}

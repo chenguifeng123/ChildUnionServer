@@ -149,7 +149,14 @@
 
 
 	<!-- 更新分数 -->
-	<update id="updateScore" parameterType="java.util.Map">
+	<update id="minusScore" parameterType="java.util.Map">
+		update card_info
+		set score = score - #{score}
+		where id = #{id} and score > 0
+	</update>
+
+	<!-- 更新分数 -->
+	<update id="addScore" parameterType="java.util.Map">
 		update card_info
 		set score = score + #{score}
 		where id = #{id}

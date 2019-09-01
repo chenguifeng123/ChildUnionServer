@@ -16,17 +16,36 @@ public class ScoreServiceImpl extends AbstractWeixinService implements ScoreServ
 
 	private Logger logger = LoggerFactory.getLogger(ScoreServiceImpl.class);
 
-	public int addScore(int cardId, ScoreType scoreType) {
-		logger.info("增加用户积分");
+	private void addScoreHistory(int cardId, ScoreType scoreType){
+		logger.info("记录积分历史");
 		cardDao.addScoreHistory(new HashMap(){{
 			put("card_id", cardId);
 			put("score_type", scoreType.getType());
 			put("score", scoreType.getScore());
 		}});
-		cardDao.updateScore(new HashMap(){{
+	}
+
+	public int addScore(int cardId, ScoreType scoreType, int score) {
+		addScoreHistory(cardId, scoreType);
+		logger.info("增加用户积分");
+		cardDao.addScore(new HashMap(){{
 			put("id", cardId);
-			put("score", scoreType.getScore());
+			put("score", scoreType == ScoreType.Pay ? score : scoreType.getScore());
 		}});
 		return 1;
+	}
+
+	public int addScore(int cardId, ScoreType scoreType) {
+		return addScore(cardId, scoreType, 0);
+	}
+
+	@Override
+	public int minusScore(int cardId, int score) {
+		logger.info("减少用户积分");
+		cardDao.minusScore(new HashMap(){{
+			put("id", cardId);
+			put("score", score);
+		}});
+		return 0;
 	}
 }

@@ -23,6 +23,6 @@ public interface CampaignDao {
 	public int addOrder(Map map);
 	public int addOrderItem(Map map);
 	public int addPayment(Map map);
-
+	public int addPaymentScore(Map map);
 	public int updateOrder(Map map);
 }

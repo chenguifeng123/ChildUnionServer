@@ -48,4 +48,9 @@ public class CampaignController {
 	private int addOrder(@RequestBody Map map){
 		return campaignService.addOrder(map);
 	}
+
+	@RequestMapping(value = "/order/payData", method = RequestMethod.POST)
+	private int addPayOrder(@RequestBody Map map){
+		return campaignService.addPayOrder(map);
+	}
 }

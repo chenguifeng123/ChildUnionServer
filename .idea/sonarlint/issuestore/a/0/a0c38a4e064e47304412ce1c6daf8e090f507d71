@@ -1,13 +1,16 @@
 
-jsquid:S1192F"GDefine a constant instead of duplicating this literal "openid" 5 times.(˜şé‹üÿÿÿÿ8À…æÄ™-
-|squid:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡ğÁŠÿÿÿÿÿ8¯ş¢œ™-
-vsquid:S00117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö÷‚”úÿÿÿÿ8ïó»É™-
-Csquid:S2629„"$Invoke method(s) only conditionally.(…—Ä¼8¼ÿñÄ™-
-gsquid:S1858l"I"result" is already a string, there's no need to call "toString()" on it.(¹ÅíØ8©„¡Å™-
-psquid:S00117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äê÷Ö8ƒ Å™-
-[squid:S1858s"="get" returns a string, there's no need to call "toString()".(—©éı8ëòÔÅ™-
-Hsquid:S2629¢"$Invoke method(s) only conditionally.(ä€Ó‡ûÿÿÿÿ8áµõÈ™-
-isquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(Ù·ó8¢ÊÔÅ™-
-psquid:S00117n"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ƒ¹8ƒ Å™-
-Hsquid:S2629®"$Invoke method(s) only conditionally.(¤»®úÿÿÿÿ8›Ö¢Î™-
-Bsquid:S2629l"$Invoke method(s) only conditionally.(¹ÅíØ8ƒ Å™-
+Hsquid:S2629Ÿ"$Invoke method(s) only conditionally.(ä€Ó‡ûÿÿÿÿ8¶ŸõˆÎ-
+qsquid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äê÷Ö8ƒ Å™-
+msquid:S1192^"JDefine a constant instead of duplicating this literal "total_fee" 3 times.(Ü—ú˜ùÿÿÿÿ8Á×Ã¶Î-
+Csquid:S2629˜"$Invoke method(s) only conditionally.(…—Ä¼8¼ÿñÄ™-
+esquid:S1192D"GDefine a constant instead of duplicating this literal "openid" 6 times.(ëóè‚8èùñ„Î-
+|squid:S2293S"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡ğÁŠÿÿÿÿÿ8¯ş¢œ™-
+qsquid:S00117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ƒ¹8ƒ Å™-
+isquid:CommentedOutCodeLine~"<This block of commented-out lines of code should be removed.(Ù·ó8¢ÊÔÅ™-
+\squid:S1858‡"="get" returns a string, there's no need to call "toString()".(—©éı8ëòÔÅ™-
+vsquid:S00117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö÷‚”úÿÿÿÿ8ïó»É™-
+Hsquid:S2629Ô"$Invoke method(s) only conditionally.(¤»®úÿÿÿÿ8›Ö¢Î™-
+lsquid:S1192¢"HDefine a constant instead of duplicating this literal "payment" 3 times.(’ØøÒüÿÿÿÿ8ÎàÇ´Î-
+Hsquid:S2629È"$Invoke method(s) only conditionally.(ä€Ó‡ûÿÿÿÿ8áµõÈ™-
+hsquid:S1858€"I"result" is already a string, there's no need to call "toString()" on it.(¹ÅíØ8©„¡Å™-
+Csquid:S2629€"$Invoke method(s) only conditionally.(¹ÅíØ8ƒ Å™-

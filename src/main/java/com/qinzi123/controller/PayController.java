@@ -29,6 +29,13 @@ public class PayController {
 	@Autowired
 	PayService payService;
 
+	@RequestMapping(value = "/order/payScore", method = RequestMethod.POST)
+	private Map payScore(@RequestBody Map map){
+		Map result = new HashMap<>();
+		result = payService.payScore(map);
+		return result;
+	}
+
 	@RequestMapping(value = "/order/prepay", method = RequestMethod.POST)
 	private Map prepay(@RequestBody Map map){
 		Map result = new HashMap<>();

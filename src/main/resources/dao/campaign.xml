@@ -4,6 +4,7 @@
 
 	<select id="listCampaign" resultType="java.util.LinkedHashMap">
 		select id, main_image, name, date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time from wx_product
+		where product_type = 0
 		order by create_time desc, id desc limit #{start}, #{num}
     </select>
 
@@ -13,7 +14,7 @@
 	</select>
 
 	<sql id="order">
-		select o.id, p.`name`, p.company, p.main_image, i.price, i.num, i.total, o.`status`, o.order_no,
+		select o.id, p.`name`, p.company, p.main_image, i.price, i.num, i.total, o.`status`, o.order_no,o.order_type,
 		o.phone, o.wx_code, o.card_id, date_format(o.create_time,'%Y-%m-%d %H:%i:%s') as create_time
  		from wx_order o, wx_product p, wx_order_item i
 		where o.id = i.order_id and i.product_id = p.id
@@ -32,8 +33,8 @@
 
 
 	<insert id="addOrder" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
-		insert into wx_order(order_no, payment, card_id, status, create_time)
-		values(#{orderNo}, #{total}, #{cardId}, 0, #{createTime})
+		insert into wx_order(order_no, payment, card_id, status, create_time, order_type)
+		values(#{orderNo}, #{total}, #{cardId}, 0, #{createTime}, #{order_type})
 	</insert>
 
 	<insert id="addOrderItem" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
@@ -43,6 +44,11 @@
 
 	<insert id="addPayment" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
 		insert into wx_order_pay(order_id, order_no, payment, message)
+		values(#{orderId}, #{orderNo}, #{payment}, #{message})
+	</insert>
+
+	<insert id="addPaymentScore" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
+		insert into wx_order_pay_score(order_id, order_no, payment, message)
 		values(#{orderId}, #{orderNo}, #{payment}, #{message})
 	</insert>
 
