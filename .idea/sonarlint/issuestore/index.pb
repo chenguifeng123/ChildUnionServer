@@ -217,3 +217,9 @@ c
 -src/main/java/com/qinzi123/dto/ScoreType.java,1\c\1c468018b198dc107ddd5312741b2e3a6ffdda35
 m
 =src/main/java/com/qinzi123/service/impl/ScoreServiceImpl.java,9\8\98d5b6ad598ca3c7dc0ecd88f922aff34799cbfc
+d
+4src/main/java/com/qinzi123/config/SwaggerConfig.java,0\c\0c4323917b0a56e671f444a11f7d6c37dce2cbf1
+|
+Lsrc/main/java/com/qinzi123/config/WxMappingJackson2HttpMessageConverter.java,b\7\b772751e6bd77c665f6dec6506e3d3cddb3a5fde
+b
+2src/main/java/com/qinzi123/config/HttpsConfig.java,4\b\4b30d8011ac7ca9d79b116fba974ae8b78286d11

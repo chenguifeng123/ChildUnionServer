@@ -195,7 +195,7 @@ public class PayServiceImpl extends AbstractWeixinService implements PayService 
 	}
 
 	private int scoreByRate(int payment){
-		int ratio = rate == 0 ? PERCENT : payment;
+		int ratio = rate == 0 ? PERCENT : rate;
 		return (int) Math.ceil( (payment * ratio * 1.0) / PERCENT);
 	}
 
