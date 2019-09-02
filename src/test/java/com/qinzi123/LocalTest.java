@@ -22,4 +22,9 @@ public class LocalTest {
 	public void testA(){
 		System.out.println(convertFee("0.15"));
 	}
+
+	@Test
+	public void testRatio(){
+		System.out.println(  (int) Math.ceil( 5 * 10 * 1.0 / 100));
+	}
 }

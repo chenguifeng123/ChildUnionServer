@@ -11,6 +11,7 @@ import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,6 +43,9 @@ public class PayServiceImpl extends AbstractWeixinService implements PayService 
 	ScoreService scoreService;
 
 	private RestTemplate localRestTemplate;
+
+	@Value("${application.pay.rate}")
+	private int rate;
 
 	public RestTemplate getLocalRestTemplate() {
 		if(localRestTemplate == null){
@@ -190,6 +194,11 @@ public class PayServiceImpl extends AbstractWeixinService implements PayService 
 		}
 	}
 
+	private int scoreByRate(int payment){
+		int ratio = rate == 0 ? PERCENT : payment;
+		return (int) Math.ceil( (payment * ratio * 1.0) / PERCENT);
+	}
+
 	/**
 	 * 回调接口
 	 * @param map
@@ -217,7 +226,8 @@ public class PayServiceImpl extends AbstractWeixinService implements PayService 
 			Map cardInfo = cardDao.getCardInfoByOpenId(map.get("openid").toString());
 			int card = Integer.parseInt(cardInfo.get("id").toString());
 			int payment = Integer.parseInt(map.get("total_fee").toString());
-			scoreService.addScore(card, ScoreType.Pay, payment);
+			int score = scoreByRate(payment);
+			scoreService.addScore(card, ScoreType.Pay, score);
 		}
 		return pay;
 	}

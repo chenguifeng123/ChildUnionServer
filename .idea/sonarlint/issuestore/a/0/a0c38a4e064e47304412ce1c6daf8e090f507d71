@@ -1,16 +1,16 @@
 
-qsquid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äê÷Ö8ƒ Å™-
 isquid:CommentedOutCodeLine~"<This block of commented-out lines of code should be removed.(Ù·ó8¢ÊÔÅ™-
-Hsquid:S2629Ÿ"$Invoke method(s) only conditionally.(ä€Ó‡ûÿÿÿÿ8¶ŸõˆÎ-
-\squid:S1858‡"="get" returns a string, there's no need to call "toString()".(—©éı8ëòÔÅ™-
-lsquid:S1192¢"HDefine a constant instead of duplicating this literal "payment" 3 times.(’ØøÒüÿÿÿÿ8ÎàÇ´Î-
+esquid:S1192D"GDefine a constant instead of duplicating this literal "openid" 6 times.(ëóè‚8èùñ„Î-
+Hsquid:S2629Ô"$Invoke method(s) only conditionally.(¤»®úÿÿÿÿ8›Ö¢Î™-
+|squid:S2293S"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡ğÁŠÿÿÿÿÿ8¯ş¢œ™-
 Csquid:S2629€"$Invoke method(s) only conditionally.(¹ÅíØ8ƒ Å™-
 Hsquid:S2629È"$Invoke method(s) only conditionally.(ä€Ó‡ûÿÿÿÿ8áµõÈ™-
-|squid:S2293S"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡ğÁŠÿÿÿÿÿ8¯ş¢œ™-
-Hsquid:S2629Ô"$Invoke method(s) only conditionally.(¤»®úÿÿÿÿ8›Ö¢Î™-
+Hsquid:S2629Ÿ"$Invoke method(s) only conditionally.(ä€Ó‡ûÿÿÿÿ8¶ŸõˆÎ-
+Csquid:S2629˜"$Invoke method(s) only conditionally.(…—Ä¼8¼ÿñÄ™-
+qsquid:S00117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ƒ¹8ƒ Å™-
+qsquid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äê÷Ö8ƒ Å™-
+hsquid:S1858€"I"result" is already a string, there's no need to call "toString()" on it.(¹ÅíØ8©„¡Å™-
+\squid:S1858‡"="get" returns a string, there's no need to call "toString()".(—©éı8ëòÔÅ™-
+lsquid:S1192¢"HDefine a constant instead of duplicating this literal "payment" 3 times.(’ØøÒüÿÿÿÿ8ÎàÇ´Î-
 msquid:S1192^"JDefine a constant instead of duplicating this literal "total_fee" 3 times.(Ü—ú˜ùÿÿÿÿ8Á×Ã¶Î-
 vsquid:S00117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö÷‚”úÿÿÿÿ8ïó»É™-
-Csquid:S2629˜"$Invoke method(s) only conditionally.(…—Ä¼8¼ÿñÄ™-
-esquid:S1192D"GDefine a constant instead of duplicating this literal "openid" 6 times.(ëóè‚8èùñ„Î-
-hsquid:S1858€"I"result" is already a string, there's no need to call "toString()" on it.(¹ÅíØ8©„¡Å™-
-qsquid:S00117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ƒ¹8ƒ Å™-
