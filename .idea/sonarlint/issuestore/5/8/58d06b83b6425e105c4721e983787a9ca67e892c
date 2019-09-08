@@ -1,5 +1,5 @@
 
-msquid:S4488 "JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¿Í„Íýÿÿÿÿ8¯¶ä„Î-
 ]squid:S1854)":Remove this useless assignment to local variable "result".(¦ªçîøÿÿÿÿ8Š’Î€™-
-]squid:S1854"":Remove this useless assignment to local variable "result".(¦ªçîøÿÿÿÿ8±Ôä„Î-
+msquid:S4488 "JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¿Í„Íýÿÿÿÿ8¯¶ä„Î-
 hsquid:S4488'"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ðñŸ‰8æâÒó˜-
+]squid:S1854"":Remove this useless assignment to local variable "result".(¦ªçîøÿÿÿÿ8±Ôä„Î-
