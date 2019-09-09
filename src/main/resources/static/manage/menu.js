@@ -19,6 +19,10 @@
                         index : "template/card_message_reply",
                         desc : "合作消息回复"
                     },
+                    {
+                        index : "template/order_view",
+                        desc : "订单查询"
+                    },
                 ]
             }
         ];
