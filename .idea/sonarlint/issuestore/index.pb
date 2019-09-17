@@ -223,3 +223,7 @@ d
 Lsrc/main/java/com/qinzi123/config/WxMappingJackson2HttpMessageConverter.java,b\7\b772751e6bd77c665f6dec6506e3d3cddb3a5fde
 b
 2src/main/java/com/qinzi123/config/HttpsConfig.java,4\b\4b30d8011ac7ca9d79b116fba974ae8b78286d11
+a
+1src/main/resources/static/manage/template/meta.js,9\1\91b08aeadd0f06728511b6a0a76db2bd66360e3c
+g
+7src/main/resources/static/manage/template/order_view.js,2\3\2342e7e9f0f860ff952066c2f3c9ccda3bff256a
