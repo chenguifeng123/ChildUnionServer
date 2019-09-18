@@ -1,6 +1,8 @@
 package com.qinzi123.service;
 
-import com.qinzi123.dto.*;
+import com.qinzi123.dto.CardMessage;
+import com.qinzi123.dto.CardMessageReply;
+import com.qinzi123.dto.WxSmallFormId;
 
 import java.util.Map;
 
@@ -13,6 +15,7 @@ public interface PushService {
 	boolean pushMessageReply2OneUser(CardMessageReply cardMessageReply);
 
 	int addFormId(WxSmallFormId wxSmallFormId);
+	int batchAddFormId(int cardId, String[] formIdList);
 	int updateFormId(WxSmallFormId wxSmallFormId);
 
 }

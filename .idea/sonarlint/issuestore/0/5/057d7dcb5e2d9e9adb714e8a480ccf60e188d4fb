@@ -1,13 +1,13 @@
 
-Gsquid:S2629K"$Invoke method(s) only conditionally.(ïÈ“¹ûÿÿÿÿ8‘¦»ß˜-
-Asquid:S2629\"$Invoke method(s) only conditionally.(ÛÜ 8‘¦»ß˜-
-Gsquid:S2629Z"$Invoke method(s) only conditionally.(â¯—êşÿÿÿÿ8‘¦»ß˜-
+{squid:S1488w"]Immediately return this expression instead of assigning it to the temporary variable "token".(İŞÖ¤8‘¦»ß˜-
+\squid:S34001"9Remove this method and declare a constant for this value.(Ùˆ¹Öşÿÿÿÿ8‘¦»ß˜-
+Gsquid:S2629f"$Invoke method(s) only conditionally.(È¸‰øÿÿÿÿ8‘¦»ß˜-
 Gsquid:S2629O"$Invoke method(s) only conditionally.(³Õ±–ûÿÿÿÿ8‘¦»ß˜-
 wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(šÅ¦¡8‘¦»ß˜-
-Gsquid:S2629f"$Invoke method(s) only conditionally.(È¸‰øÿÿÿÿ8‘¦»ß˜-
-\squid:S34001"9Remove this method and declare a constant for this value.(Ùˆ¹Öşÿÿÿÿ8‘¦»ß˜-
-\squid:S34006"9Remove this method and declare a constant for this value.(ÕŸŞüÿÿÿÿ8‘¦»ß˜-
-{squid:S1488w"]Immediately return this expression instead of assigning it to the temporary variable "token".(İŞÖ¤8‘¦»ß˜-
-\squid:S3400-"9Remove this method and declare a constant for this value.(˜üÏûÿÿÿÿ8ÓğÆ†™-
-Wsquid:S34004"9Remove this method and declare a constant for this value.(‹ä—ø8‘¦»ß˜-
+Asquid:S2629\"$Invoke method(s) only conditionally.(ÛÜ 8‘¦»ß˜-
 \squid:S1155B">Use isEmpty() to check whether the collection is empty or not.(íˆÄ’8‘¦»ß˜-
+Gsquid:S2629K"$Invoke method(s) only conditionally.(ïÈ“¹ûÿÿÿÿ8‘¦»ß˜-
+Gsquid:S2629Z"$Invoke method(s) only conditionally.(â¯—êşÿÿÿÿ8‘¦»ß˜-
+\squid:S3400-"9Remove this method and declare a constant for this value.(˜üÏûÿÿÿÿ8ÓğÆ†™-
+\squid:S34006"9Remove this method and declare a constant for this value.(ÕŸŞüÿÿÿÿ8‘¦»ß˜-
+Wsquid:S34004"9Remove this method and declare a constant for this value.(‹ä—ø8‘¦»ß˜-

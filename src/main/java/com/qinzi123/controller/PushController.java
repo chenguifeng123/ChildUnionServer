@@ -17,11 +17,18 @@ public class PushController {
 	@Autowired
 	PushService pushService;
 
-	@ApiOperation(value = "更新用户", notes = "更新用户")
+	@ApiOperation(value = "新增form", notes = "新增form")
 	@RequestMapping(value="/formId/{id}", method= RequestMethod.POST)
-	private int addUserCard(@PathVariable("id") String id,
+	private int addFormId(@PathVariable("id") String id,
 							@RequestBody WxSmallFormId wxSmallFormId){
 		return pushService.addFormId(wxSmallFormId);
+	}
+
+	@ApiOperation(value = "批量新增form", notes = "批量新增form")
+	@RequestMapping(value="/formList/{card}-{idList}", method= RequestMethod.POST)
+	private int batchAddFormId(@PathVariable("card") int card,
+							   @PathVariable("idList") String idList){
+		return pushService.batchAddFormId(card, idList.split(","));
 	}
 
 }
