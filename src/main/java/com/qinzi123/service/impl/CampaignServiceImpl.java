@@ -55,13 +55,13 @@ public class CampaignServiceImpl extends AbstractWeixinService implements Campai
 
 	@Override
 	public int addOrder(Map map) {
-		log.info("增加积分订单");
+		log.info("*******************增加积分订单*******************");
 		return addOrder(map, OrderType.SCORE);
 	}
 
 	@Override
 	public int addPayOrder(Map map) {
-		log.info("增加支付订单");
+		log.info("*******************增加支付订单*******************");
 		return addOrder(map, OrderType.PAY);
 	}
 }

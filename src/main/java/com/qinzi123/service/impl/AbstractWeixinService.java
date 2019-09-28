@@ -4,6 +4,7 @@ import com.qinzi123.dao.CardDao;
 import com.qinzi123.dao.CooperateDao;
 import com.qinzi123.dao.PushDao;
 import com.qinzi123.dto.SendObject;
+import com.qinzi123.exception.GlobalProcessException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ public abstract class AbstractWeixinService {
 	private static final String SEND_URL = "https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=%s";
 	protected static final String PREPAY_URL = "https://api.mch.weixin.qq.com/pay/unifiedorder";
 	protected static final String NOTIFY_URL = "https://www.qinzi123.com/order/callback";
+	protected static final String MSG_CHECK_URL = "https://api.weixin.qq.com/wxa/msg_sec_check?access_token=%s";
 
 	private Logger logger = LoggerFactory.getLogger(AbstractWeixinService.class);
 
@@ -64,6 +66,22 @@ public abstract class AbstractWeixinService {
 	@SuppressWarnings("rawtypes")
 	protected Map composeList(List<LinkedHashMap> list){
 		return list.size() == 0 ? new HashMap() : list.get(0);
+	}
+
+	/**
+	 * 检查支付的用户是否存在
+	 * @param map
+	 */
+	protected Map checkUser(Map map){
+		logger.info("检查用户是否存在, 如果存在则取出openid ");
+		String card = map.get("card").toString();
+		Map cardMap = cardDao.getCardInfoById(card);
+		if(cardMap == null || cardMap.size() == 0 || cardMap.get("openid") == null)
+			throw new GlobalProcessException("用户不存在");
+		String openid = cardMap.get("openid").toString();
+		logger.info("openid 为 " + openid);
+		map.put("openid", openid);
+		return map;
 	}
 
 	/**
@@ -131,5 +149,21 @@ public abstract class AbstractWeixinService {
 	}
 
 
+	/**
+	 * 发送模板检查到微信
+	 * @param token
+	 * @param content
+	 * @return
+	 */
+	void checkMsg(String token, String content){
+		Map map = sendTemplate(String.format(MSG_CHECK_URL, token),
+				new HashMap<String, String>(){{
+					put("content", content);
+				}}
+		);
+		logger.info("微信消息检测结果, {}", map.toString());
+		if(map == null || map.size() == 0) throw new GlobalProcessException("微信消息检测失败");
+		if(!"0".equalsIgnoreCase(map.get("errcode").toString())) throw new GlobalProcessException(map.get("errMsg").toString());
+	}
 
 }

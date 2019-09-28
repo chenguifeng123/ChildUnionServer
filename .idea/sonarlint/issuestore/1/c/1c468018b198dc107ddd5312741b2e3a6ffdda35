@@ -1,5 +1,4 @@
 
-wsquid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ô×®—ÿÿÿÿÿ
-wsquid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ô×®—ÿÿÿÿÿ
-~squid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ô×®—ÿÿÿÿÿ8ÊÕÙ³Î-
-wsquid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ô×®—ÿÿÿÿÿ
+rsquid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(éÕ©
+rsquid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(éÕ©
+ysquid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(éÕ©8ÊÕÙ³Î-

@@ -70,4 +70,9 @@ public class CardMessageReply extends BaseParam {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
+	@Override
+	public String toString(){
+		return String.format("用户 %d 回复消息 %s", cardId, title);
+	}
 }

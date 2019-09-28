@@ -1,7 +1,0 @@
-
-wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚›Åå8²ÉÕ–-
-Fsquid:S1148)"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8²ÉÕ–-
-isquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(›Ö¿8²ÉÕ–-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(œõóÌşÿÿÿÿ8²ÉÕ–-
-bsquid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(µÂÅì8å†ÏÕ–-
-hsquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(…ü¶Í8²ÉÕ–-

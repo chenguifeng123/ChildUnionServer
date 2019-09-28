@@ -1,21 +1,0 @@
-
-dsquid:S4488g"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İñĞãüÿÿÿÿ
-^squid:S4488["HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(±üŠ
-_squid:S4488a"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÇÕ¡
-_squid:S44887"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–ùÛŸ
-_squid:S4488m"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ëóÚ¸
-fsquid:S4488I"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¥åü’øÿÿÿÿ
-dsquid:S4488O"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÙşÿÿÿÿ
-`squid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(Ö”¢Öşÿÿÿÿ
-dsquid:S4488#"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³ş’°úÿÿÿÿ
-dsquid:S4488C"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( ÃÃÂıÿÿÿÿ
-dsquid:S4488="HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğø•øÿÿÿÿ
-_squid:S4488U"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·£Í…
-nsquid:S00117V"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
-isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
-asquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ğ«» 
-nsquid:S00117V"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
-isquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
-dsquid:S44881"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(å“¸•şÿÿÿÿ
-_squid:S4488s"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İ“çÃ
-^squid:S4488+"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ï¶ñ

@@ -1,6 +1,7 @@
 package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.ScoreType;
+import com.qinzi123.exception.GlobalProcessException;
 import com.qinzi123.service.BusinessWeixinService;
 import com.qinzi123.service.PushService;
 import com.qinzi123.service.ScoreService;
@@ -109,26 +110,31 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 		return cardDao.getAllService();
 	}
 
-	/**
-	 * 更新用户信息
-	 * @param map
-	 * @return
-	 */
-	public int setUser(Map map){
+	private int loadUserId(Map map){
+		// 构建查询条件
+		// 小程序和微信公众号共用一个表, openid 是两个
+		//Map cardInfo =cardDao.getCardInfoByOpenId(openid);
+		String phone = map.get("phone").toString();
+		String realname = map.get("realname").toString();
+		List<Map> cardInfoMap = cardDao.getCardInfoByPhone(phone, realname);
+		if(cardInfoMap != null ) {
+			if(cardInfoMap.size() > 1) throw new GlobalProcessException("相同的用户名和手机号码已存在");
+			return Integer.parseInt(cardInfoMap.get(0).get("id").toString());
+		}
+		return 0;
+	}
+
+	private Map makeUserMap(Map map){
 		// 获取 openid
 		String code = map.get("code").toString();
 		String openid = getOpenId(code);
 		map.put("openid", openid);
 		// 更新当前时间
 		map.put("datetime", Utils.getCurrentDate());
+		return map;
+	}
 
-		// 构建查询条件
-		// 小程序和微信公众号共用一个表, openid 是两个
-		//Map cardInfo =cardDao.getCardInfoByOpenId(openid);
-		String phone = map.get("phone").toString();
-		String realname = map.get("realname").toString();
-		Map cardInfo = cardDao.getCardInfoByPhone(phone, realname);
-
+	private Map makeTagMap(Map map){
 		// 处理 标签,需要拆分成 3个标签
 		String tag = map.get("tag").toString();
 		String[] tagList = tag.split(",");
@@ -136,32 +142,43 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 		for(int index = 0; index < tagList.length; index++){
 			map.put("tag" + (index + 1), tagList[index]);
 		}
+		return map;
+	}
 
-		// 判断是更新还是插入
-		if(cardInfo == null || cardInfo.size() == 0){
-			if(map.get("invite") == null){
-				map.put("invite", -1);
-			}
-			cardDao.addCardInfo(map);
-			id = Integer.parseInt(map.get("id").toString());
-			map.put("card_id", id);
-			cardDao.addCardTag(map);
-			int inviteId = Integer.parseInt(map.get("invite").toString());
-			if(inviteId != -1) scoreService.addScore(inviteId, ScoreType.Invite);
-			try{
-				logger.info("注册成功，准备给所有用户推送消息");
-				pushService.pushCard2AllUser(map);
-			}catch (Exception e){
-				logger.error("推送新注册用户，给所有用户失败", e);
-			}
+	private void userPushMessage(Map map){
+		int inviteId = Integer.parseInt(map.get("invite").toString());
+		if(inviteId != -1) scoreService.addScore(inviteId, ScoreType.Invite);
+		try{
+			logger.info("注册成功，准备给所有用户推送消息");
+			pushService.pushCard2AllUser(map);
+		}catch (Exception e){
+			logger.error("推送新注册用户，给所有用户失败", e);
+		}
+	}
+
+	/**
+	 * 更新用户信息
+	 * @param map
+	 * @return
+	 */
+	public int setUser(Map map){
+		int id = loadUserId(map);
+		Map userMap = makeUserMap(map);
+		Map tagMap = makeTagMap(map);
+		if(id == 0){
+			cardDao.addCardInfo(userMap);
+			logger.info("新增用户成功, {}", userMap.toString());
+			tagMap.put("card_id", Integer.parseInt(userMap.get("id").toString()));
+			cardDao.addCardTag(tagMap);
+			logger.info("新增用户标签成功, {}", tagMap.toString());
+			userPushMessage(userMap);
 		}else{
-			//Map info = cardDao.getCardInfoByOpenId(openid);
-			Map info = cardDao.getCardInfoByPhone(phone, realname);
-			id = Integer.parseInt(info.get("id").toString());
-			map.put("id", id);
-			map.put("card_id", id);
-			cardDao.updateCardInfo(map);
-			cardDao.updateCardTag(map);
+			userMap.put("id", id);
+			tagMap.put("card_id", id);
+			cardDao.updateCardInfo(userMap);
+			logger.info("修改用户成功, {}", userMap.toString());
+			cardDao.updateCardTag(tagMap);
+			logger.info("修改用户标签成功, {}", tagMap.toString());
 		}
 		return id;
 	}

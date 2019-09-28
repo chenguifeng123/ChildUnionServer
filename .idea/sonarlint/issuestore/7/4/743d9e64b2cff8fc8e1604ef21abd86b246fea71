@@ -1,8 +1,0 @@
-
-ssquid:S2068"U'PASSWORD' detected in this expression, review this potentially hardcoded credential.(ÅË¬“8ä§ÎÚ–-
-ksquid:S1192"HDefine a constant instead of duplicating this literal "message" 3 times.(º¤úöüÿÿÿÿ8ä§ÎÚ–-
-msquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(øÊÒÈúÿÿÿÿ8ä§ÎÚ–-
-ksquid:S4488+"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(›¿””øÿÿÿÿ8ä§ÎÚ–-
-U
-squid:S106$"9Replace this use of System.out or System.err by a logger.(Í§\8ä§ÎÚ–-
-|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(™ºöºıÿÿÿÿ8ä§ÎÚ–-

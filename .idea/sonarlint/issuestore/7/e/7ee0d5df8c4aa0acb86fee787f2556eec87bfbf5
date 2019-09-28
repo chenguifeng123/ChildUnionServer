@@ -1,0 +1,21 @@
+
+isquid:S00117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
+`squid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(Ö”¢Öşÿÿÿÿ
+_squid:S4488r"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İ“çÃ
+dsquid:S4488N"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÙşÿÿÿÿ
+asquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ğ«» 
+nsquid:S00117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
+^squid:S4488*"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ï¶ñ
+_squid:S44886"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–ùÛŸ
+dsquid:S44880"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(å“¸•şÿÿÿÿ
+dsquid:S4488#"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³ş’°úÿÿÿÿ
+_squid:S4488T"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·£Í…
+dsquid:S4488<"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğø•øÿÿÿÿ
+_squid:S4488l"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ëóÚ¸
+nsquid:S00117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
+isquid:S00117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
+dsquid:S4488B"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( ÃÃÂıÿÿÿÿ
+fsquid:S4488H"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¥åü’øÿÿÿÿ
+_squid:S4488`"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÇÕ¡
+^squid:S4488Z"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(±üŠ
+dsquid:S4488f"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İñĞãüÿÿÿÿ

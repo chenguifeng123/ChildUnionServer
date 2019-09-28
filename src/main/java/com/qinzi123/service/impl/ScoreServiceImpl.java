@@ -15,37 +15,44 @@ import java.util.HashMap;
 public class ScoreServiceImpl extends AbstractWeixinService implements ScoreService{
 
 	private Logger logger = LoggerFactory.getLogger(ScoreServiceImpl.class);
+	private static final int PAY_TYPE = 4;
 
-	private void addScoreHistory(int cardId, ScoreType scoreType){
-		logger.info("记录积分历史");
-		cardDao.addScoreHistory(new HashMap(){{
+	private void addScoreHistory(int cardId, int type, int score){
+		int id = cardDao.addScoreHistory(new HashMap(){{
 			put("card_id", cardId);
-			put("score_type", scoreType.getType());
-			put("score", scoreType.getScore());
+			put("score_type", type);
+			put("score", score);
 		}});
-	}
-
-	public int addScore(int cardId, ScoreType scoreType, int score) {
-		addScoreHistory(cardId, scoreType);
-		logger.info("增加用户积分");
-		cardDao.addScore(new HashMap(){{
-			put("id", cardId);
-			put("score", scoreType == ScoreType.Pay ? score : scoreType.getScore());
-		}});
-		return 1;
+		logger.info("记录{} 用户 {} 积分历史", id, cardId);
 	}
 
 	public int addScore(int cardId, ScoreType scoreType) {
-		return addScore(cardId, scoreType, 0);
+		addScoreHistory(cardId, scoreType.getType(), scoreType.getScore());
+		int id = cardDao.addScore(new HashMap(){{
+			put("id", cardId);
+			put("score", scoreType.getScore());
+		}});
+		logger.info("用户 {} 积分类型 {}, 增加 {} 积分", cardId, scoreType.getType(), scoreType.getScore());
+		return id;
+	}
+
+	public int payAddScore(int cardId, int score) {
+		addScoreHistory(cardId, PAY_TYPE, score);
+		int id = cardDao.addScore(new HashMap(){{
+			put("id", cardId);
+			put("score", score);
+		}});
+		logger.info("用户 {} 支付现金, 增加 {} 积分", cardId, score);
+		return id;
 	}
 
 	@Override
 	public int minusScore(int cardId, int score) {
-		logger.info("减少用户积分");
-		cardDao.minusScore(new HashMap(){{
+		int id = cardDao.minusScore(new HashMap(){{
 			put("id", cardId);
 			put("score", score);
 		}});
-		return 0;
+		logger.info("用户 {} 减少 {} 积分", cardId, score);
+		return id;
 	}
 }

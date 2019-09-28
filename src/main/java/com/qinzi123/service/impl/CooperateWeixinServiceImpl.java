@@ -4,6 +4,7 @@ import com.qinzi123.dto.*;
 import com.qinzi123.service.CooperateWeixinService;
 import com.qinzi123.service.PushService;
 import com.qinzi123.service.ScoreService;
+import com.qinzi123.service.TokenService;
 import com.qinzi123.util.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +21,9 @@ import java.util.*;
 @Component
 @EnableAsync
 public class CooperateWeixinServiceImpl extends AbstractWeixinService implements CooperateWeixinService{
+
+	@Autowired
+	TokenService tokenService;
 
 	@Autowired
 	PushService pushService;
@@ -77,8 +81,9 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	 * @return
 	 */
 	public int addMessage(CardMessage cardMessage) {
+		checkMsg(tokenService.getToken(), cardMessage.getTitle() + cardMessage.getMessage());
 		int result = cooperateDao.addMessage(cardMessage);
-		logger.info("插入消息数据成功, 批量插入formId");
+		logger.info("插入消息数据 {} 成功, 批量插入formId", cardMessage.toString());
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessage))
 			pushService.addFormId(wxSmallFormId);
 		scoreService.addScore(cardMessage.getCardId(), ScoreType.Message);
@@ -91,6 +96,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	 * @return
 	 */
 	public int updateMessageRead(int id) {
+		logger.info("增加消息 {} 阅读数", id);
 		return cooperateDao.updateMessageRead(id);
 	}
 
@@ -100,6 +106,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	 * @return
 	 */
 	public int updateMessageLike(int id) {
+		logger.info("增加消息 {} 喜欢数", id);
 		return cooperateDao.updateMessageLike(id);
 	}
 
@@ -133,8 +140,9 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	 * @return
 	 */
 	public int addCardMessageReply(CardMessageReply cardMessageReply) {
+		checkMsg(tokenService.getToken(), cardMessageReply.getReplyMessage());
 		int result = cooperateDao.addCardMessageReply(cardMessageReply);
-		logger.info("回复消息成功, 批量插入formId");
+		logger.info("回复消息 {} 成功, 批量插入formId", cardMessageReply.toString());
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessageReply))
 			pushService.addFormId(wxSmallFormId);
 		pushMessage(cardMessageReply);

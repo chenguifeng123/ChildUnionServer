@@ -1,0 +1,7 @@
+
+isquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(õ÷øû8è≤…’ñ-
+bsquid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(µ¬≈Ï8ÂÜœ’ñ-
+Fsquid:S1148)"#Use a logger to log this exception.(Ä…‘Ö˝ˇˇˇˇ8è≤…’ñ-
+wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çõ≈Â8è≤…’ñ-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(úıÛÃ˛ˇˇˇˇ8è≤…’ñ-
+hsquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ö¸∂Õ8è≤…’ñ-

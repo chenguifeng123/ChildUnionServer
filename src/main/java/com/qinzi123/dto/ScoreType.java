@@ -6,7 +6,7 @@ import com.qinzi123.exception.GlobalProcessException;
  * Created by chenguifeng on 2018/12/27.
  */
 public enum ScoreType {
-	Invite(100, 1), Message(20, 2), Sign(10, 3), Pay(0, 4);
+	Invite(100, 1), Message(20, 2), Sign(10, 3);
 
 	int score;
 	int type;

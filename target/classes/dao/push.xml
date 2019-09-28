@@ -31,9 +31,13 @@
 	<insert id="addFormId" useGeneratedKeys="true" parameterType="com.qinzi123.dto.WxSmallFormId">
 		insert into wx_small_formId(card_id, form_id, is_use) values(#{cardId}, #{formId}, #{isUse})
 	</insert>
-	<update id="updateFormId" parameterType="com.qinzi123.dto.WxSmallFormId">
+	<!--update id="updateFormId" parameterType="com.qinzi123.dto.WxSmallFormId">
 		update wx_small_formId set is_use = #{isUse} where id = #{id}
+	</update-->
+	<update id="updateFormId" parameterType="com.qinzi123.dto.WxSmallFormId">
+		update wx_small_formId set is_use = #{isUse} where form_id = #{formId}
 	</update>
+
 	<resultMap type="com.qinzi123.dto.WxSmallFormId" id="smallFormId">
 		<id property="id" column="id"/>
 		<result property="cardId" column="card_id"/>

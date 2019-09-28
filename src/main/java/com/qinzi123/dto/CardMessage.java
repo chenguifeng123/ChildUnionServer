@@ -58,4 +58,9 @@ public class CardMessage extends BaseParam {
 	public void setGiveLike(int giveLike) {
 		this.giveLike = giveLike;
 	}
+
+	@Override
+	public String toString(){
+		return String.format("用户 %d 发布消息 %s", cardId, title);
+	}
 }

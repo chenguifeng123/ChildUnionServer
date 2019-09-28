@@ -26,7 +26,7 @@ public interface CardDao {
 	public Map getCardInfoByOpenId(@Param("openid")String openid);
 	public Map getCardInfoById(@Param("id")String id);
 	public CardInfo getCardInfoBeanById(@Param("id")int id);
-	public Map getCardInfoByPhone(@Param("phone")String phone, @Param("realname")String realname);
+	public List<Map> getCardInfoByPhone(@Param("phone")String phone, @Param("realname")String realname);
 	public int addCardInfo(Map map);
 	public int updateCardInfo(Map map);
 	public int addCardTag(Map map);
