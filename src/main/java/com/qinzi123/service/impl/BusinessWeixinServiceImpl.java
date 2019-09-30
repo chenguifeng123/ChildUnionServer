@@ -117,7 +117,7 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 		String phone = map.get("phone").toString();
 		String realname = map.get("realname").toString();
 		List<Map> cardInfoMap = cardDao.getCardInfoByPhone(phone, realname);
-		if(cardInfoMap != null ) {
+		if(cardInfoMap != null && cardInfoMap.size() > 0) {
 			if(cardInfoMap.size() > 1) throw new GlobalProcessException("相同的用户名和手机号码已存在");
 			return Integer.parseInt(cardInfoMap.get(0).get("id").toString());
 		}
