@@ -20,6 +20,11 @@ public interface CampaignDao {
 										 @Param("num") int num);
 	public List<LinkedHashMap> oneOrder(@Param("id") int id);
 
+	public List<LinkedHashMap> listRechargeOrder(@Param("cardId") int cardId,
+										 @Param("start") int start,
+										 @Param("num") int num);
+	public List<LinkedHashMap> oneRechargeOrder(@Param("id") int id);
+
 	public int addOrder(Map map);
 	public int addOrderItem(Map map);
 	public int addPayment(Map map);

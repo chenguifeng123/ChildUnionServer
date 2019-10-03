@@ -17,7 +17,7 @@
 		select o.id, p.`name`, p.company, p.main_image, i.price, i.num, i.total, o.`status`, o.order_no,o.order_type,
 		o.phone, o.wx_code, o.card_id, date_format(o.create_time,'%Y-%m-%d %H:%i:%s') as create_time
  		from wx_order o, wx_product p, wx_order_item i
-		where o.id = i.order_id and i.product_id = p.id
+		where o.id = i.order_id and i.product_id = p.id and o.order_type = 0
 	</sql>
 
 	<select id="listOrder" resultType="java.util.LinkedHashMap">
@@ -28,6 +28,24 @@
 
 	<select id="oneOrder" resultType="java.util.LinkedHashMap">
 		<include refid="order"/>
+		and o.id = ${id}
+	</select>
+
+	<sql id="rechargeOrder">
+		select o.id, p.`name`, p.company, p.main_image, i.price, i.num, i.total, o.`status`, o.order_no,o.order_type,
+		o.phone, o.wx_code, o.card_id, date_format(o.create_time,'%Y-%m-%d %H:%i:%s') as create_time
+		from wx_order o, wx_product_recharge p, wx_order_item i
+		where o.id = i.order_id and i.product_id = p.id and o.order_type = 1
+	</sql>
+
+	<select id="listRechargeOrder" resultType="java.util.LinkedHashMap">
+		<include refid="rechargeOrder"/>
+		and o.card_id = ${cardId}
+		order by o.create_time desc limit #{start}, #{num}
+	</select>
+
+	<select id="oneRechargeOrder" resultType="java.util.LinkedHashMap">
+		<include refid="rechargeOrder"/>
 		and o.id = ${id}
 	</select>
 

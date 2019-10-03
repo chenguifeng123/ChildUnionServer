@@ -1,6 +1,6 @@
 
-_squid:S3457"AFormat specifiers should be used instead of string concatenation.(ö’‰×8×ÇÙæÕ-
+Msquid:S1068"*Remove this unused "logger" private field.(ê¦ãƒüÿÿÿÿ8·‚º¶Ø-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÛÂîþÿÿÿÿ8·‚º¶Ø-
 gsquid:S3358"DExtract this nested ternary operation into an independent statement.(Á¦êýùÿÿÿÿ8³‘ÖæÕ-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(’¨ž¢8û×çª×-
 nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(«¦„•þÿÿÿÿ8ðæÕ-
-Usquid:S2629"7Use the built-in formatting to construct this argument.(ö’‰×8×ÇÙæÕ-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(’¨ž¢8û×çª×-

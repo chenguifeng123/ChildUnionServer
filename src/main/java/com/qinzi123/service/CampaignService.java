@@ -14,6 +14,9 @@ public interface CampaignService {
 	List<LinkedHashMap> listOrder(int cardId, int start, int num);
 	List<LinkedHashMap> oneOrder(int id);
 
+	List<LinkedHashMap> listRechargeOrder(int cardId, int start, int num);
+	List<LinkedHashMap> oneRechargeOrder(int id);
+
 	int addOrder(Map map);
 	int addPayOrder(Map map);
 

@@ -23,6 +23,10 @@
                         index : "template/order_view",
                         desc : "订单查询"
                     },
+                    {
+                        index : "template/recharge_view",
+                        desc : "支付查询"
+                    },
                 ]
             }
         ];

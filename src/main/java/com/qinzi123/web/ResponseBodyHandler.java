@@ -26,7 +26,7 @@ public class ResponseBodyHandler implements ResponseBodyAdvice {
 		//logger.info("统一返回结构体给客户端" + body.toString());
 		boolean hasContainMicroResponse = methodParameter.getDeclaringClass().getName().
 				contains(MICRO_PROGRAM_PATH);
-		logger.info("小程序才需要统一返回结构体, 是否小程序请求? " + hasContainMicroResponse);
+		//logger.info("小程序才需要统一返回结构体, 是否小程序请求? " + hasContainMicroResponse);
 		return hasContainMicroResponse ? (body instanceof Result ? body : Result.ok(body)) : body;
 	}
 

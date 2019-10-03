@@ -34,6 +34,7 @@ com\qinzi123\happiness\util\CalendarUtil.class
 com\qinzi123\dto\TableConfig.class
 com\github\wxpay\sdk\WXPayConstants.class
 com\qinzi123\dto\CardMessageReply.class
+com\qinzi123\controller\micro\OrderController.class
 com\qinzi123\service\impl\ScoreServiceImpl.class
 com\github\wxpay\sdk\WXPayXmlUtil.class
 com\qinzi123\service\BusinessWeixinService.class
@@ -82,6 +83,7 @@ com\github\wxpay\sdk\WXPayReport.class
 com\github\wxpay\sdk\IWXPayDomain$DomainInfo.class
 com\qinzi123\service\impl\EntityServiceImpl$1.class
 com\qinzi123\config\TransactionConfig.class
+com\qinzi123\controller\micro\RechargeOrderController.class
 com\qinzi123\happiness\service\impl\PCShowServiceImpl.class
 com\qinzi123\service\impl\EntityServiceImpl$Loop.class
 com\qinzi123\service\CampaignService.class

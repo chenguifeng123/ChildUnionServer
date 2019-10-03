@@ -3,6 +3,8 @@ package com.qinzi123.controller.micro;
 import com.qinzi123.service.BusinessWeixinService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +16,8 @@ import java.util.Map;
 @RestController
 @Api(value = "商户处理", description = "商户处理")
 public class BusinessController {
+
+	private Logger logger = LoggerFactory.getLogger(BusinessController.class);
 
 	@Autowired
 	private BusinessWeixinService businessWeixinService;
@@ -71,6 +75,7 @@ public class BusinessController {
 	@ApiOperation(value = "更新用户", notes = "更新用户")
 	@RequestMapping(value="/business/setUser", method=RequestMethod.POST)
 	private int addUserCard(@RequestBody Map map){
+		logger.info("用户从客户端发起 用户数据修改, {}", map.toString());
 		return businessWeixinService.setUser(map);
 	}
 

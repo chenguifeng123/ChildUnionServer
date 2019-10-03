@@ -31,26 +31,4 @@ public class CampaignController {
 		return campaignService.oneCampaign(id);
 	}
 
-	@RequestMapping(value = "/order/list", method = RequestMethod.POST)
-	private List<LinkedHashMap> listOrder(@RequestBody Map map){
-		int card = Integer.parseInt(map.get("card").toString());
-		int start = Integer.parseInt(map.get("start").toString());
-		int num = Integer.parseInt(map.get("num").toString());
-		return campaignService.listOrder(card, start, num);
-	}
-
-	@RequestMapping(value = "/order/{id}", method = RequestMethod.GET)
-	private List<LinkedHashMap> oneOrder(@PathVariable int id){
-		return campaignService.oneOrder(id);
-	}
-
-	@RequestMapping(value = "/order/data", method = RequestMethod.POST)
-	private int addOrder(@RequestBody Map map){
-		return campaignService.addOrder(map);
-	}
-
-	@RequestMapping(value = "/order/payData", method = RequestMethod.POST)
-	private int addPayOrder(@RequestBody Map map){
-		return campaignService.addPayOrder(map);
-	}
 }

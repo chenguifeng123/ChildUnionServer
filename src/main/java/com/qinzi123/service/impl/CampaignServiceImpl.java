@@ -40,6 +40,16 @@ public class CampaignServiceImpl extends AbstractWeixinService implements Campai
 		return campaignDao.oneOrder(id);
 	}
 
+	@Override
+	public List<LinkedHashMap> listRechargeOrder(int cardId, int start, int num) {
+		return campaignDao.listRechargeOrder(cardId, start, num);
+	}
+
+	@Override
+	public List<LinkedHashMap> oneRechargeOrder(int id) {
+		return campaignDao.oneRechargeOrder(id);
+	}
+
 	private int addOrder(Map map, OrderType orderType){
 		log.info("增加订单" + map.toString());
 		map.put("orderNo", Utils.getCurrentDateNoFlag());

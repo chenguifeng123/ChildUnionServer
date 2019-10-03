@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -114,11 +115,13 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 		// 构建查询条件
 		// 小程序和微信公众号共用一个表, openid 是两个
 		//Map cardInfo =cardDao.getCardInfoByOpenId(openid);
+		logger.info("检查用户是否存在");
 		String phone = map.get("phone").toString();
 		String realname = map.get("realname").toString();
 		List<Map> cardInfoMap = cardDao.getCardInfoByPhone(phone, realname);
 		if(cardInfoMap != null && cardInfoMap.size() > 0) {
 			if(cardInfoMap.size() > 1) throw new GlobalProcessException("相同的用户名和手机号码已存在");
+			logger.info("用户已存在, {}", cardInfoMap.toString());
 			return Integer.parseInt(cardInfoMap.get(0).get("id").toString());
 		}
 		return 0;
@@ -161,6 +164,7 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 	 * @param map
 	 * @return
 	 */
+	@Transactional
 	public int setUser(Map map){
 		int id = loadUserId(map);
 		Map userMap = makeUserMap(map);
