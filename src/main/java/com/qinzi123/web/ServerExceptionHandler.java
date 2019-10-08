@@ -13,11 +13,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ServerExceptionHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(ServerExceptionHandler.class);
+    private static final String GLOBAL_CODE = "FF000001";
 
     @ExceptionHandler(GlobalProcessException.class)
     @ResponseBody
     public Result globalExceptionHandler(GlobalProcessException e){
-        return Result.error(e.getCode(),e.getMessage());
+        return Result.error(GLOBAL_CODE,e.getMessage());
     }
 
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
