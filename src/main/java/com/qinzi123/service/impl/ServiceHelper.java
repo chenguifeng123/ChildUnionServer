@@ -17,13 +17,18 @@ public class ServiceHelper {
 	 */
 	private static final int MICRO_PERCENT = 100;
 
+	private static int mapNullNumber(Map map, String key){
+		if(map.get(key) == null) return 0;
+		return Integer.parseInt(map.get(key).toString());
+	}
+
 	public static CardMessage convertMap2CardMessage(Map map, CardInfo cardInfo, String message){
 		CardMessage cardMessage = new CardMessage();
 		cardMessage.setId(Integer.parseInt(map.get("id").toString()));
 		cardMessage.setCardId(Integer.parseInt(map.get("card_id").toString()));
 		cardMessage.setCardInfo(cardInfo);
-		cardMessage.setGiveLike(Integer.parseInt(map.get("give_like").toString()));
-		cardMessage.setReadCount(Integer.parseInt(map.get("read_count").toString()));
+		cardMessage.setGiveLike(mapNullNumber(map, "give_like"));
+		cardMessage.setReadCount(mapNullNumber(map, "read_count"));
 		//设置通知消息标题
 		//cardMessage.setTitle(message);
 		cardMessage.setTitle(map.get("title").toString());

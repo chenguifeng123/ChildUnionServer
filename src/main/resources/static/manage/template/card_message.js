@@ -23,7 +23,7 @@
                     desc : "发布者",
                     type : 4,
                     needInput : true,
-                    disabled : true,
+                    disabled : false,
                     initData :[],
                     refs:{
                         model : "card_info",
@@ -47,7 +47,7 @@
                     desc : "消息标题",
                     type : 1,
                     needInput : true,
-                    disabled : true,
+                    disabled : false,
                     initData :[],
                     refs:{},
                     value : ""
@@ -55,9 +55,9 @@
 				{
                     name : "message",
                     desc : "消息内容",
-                    type : 1,
+                    type : 10,
                     needInput : true,
-                    disabled : true,
+                    disabled : false,
                     initData :[],
                     refs:{},
                     value : '0'

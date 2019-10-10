@@ -68,6 +68,13 @@ public abstract class AbstractWeixinService {
 		return list.size() == 0 ? new HashMap() : list.get(0);
 	}
 
+	protected int getIdByOpenId(String openid){
+		List<Map> openidList = cardDao.getCardInfoByOpenId(openid);
+		if(openidList.size() > 1) throw new GlobalProcessException("用户已经注册过");
+		if(openidList.size() == 0) return -1;
+		return Integer.parseInt(openidList.get(0).get("id").toString());
+	}
+
 	/**
 	 * 检查支付的用户是否存在
 	 * @param map

@@ -159,8 +159,7 @@ public class RechargeMoneyServiceImpl extends AbstractWeixinService implements R
 	}
 
 	private int addScore(String openid, String total_fee){
-		Map cardInfo = cardDao.getCardInfoByOpenId(openid);
-		int card = Integer.parseInt(cardInfo.get("id").toString());
+		int card = getIdByOpenId(openid);
 		int score = ServiceHelper.scoreByRate(Integer.parseInt(total_fee), rate);
 		int addId = scoreService.payAddScore(card, score);
 		log.info("增加用户 {} 的积分兑换记录 {}, 增加积分 {}", card, addId, score);

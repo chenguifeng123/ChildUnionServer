@@ -66,9 +66,7 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 	 */
 	public int getIdByCode(String code){
 		String openid = getOpenId(code);
-		Map map = cardDao.getCardInfoByOpenId(openid);
-		if (map == null || map.size() == 0) return -1;
-		return Integer.parseInt(map.get("id").toString());
+		return getIdByOpenId(openid);
 	}
 
 	/**

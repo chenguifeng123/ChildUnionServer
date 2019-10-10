@@ -1,23 +1,23 @@
 
+dsquid:S4488@"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğø•øÿÿÿÿ
+_squid:S4488w"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İ“çÃ
+dsquid:S4488S"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÙşÿÿÿÿ
+„squid:S3457N"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Œû£Ëùÿÿÿÿ8­è¶Ø-
+asquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ğ«» 
+fsquid:S4488L"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¥åü’øÿÿÿÿ
+_squid:S4488Y"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·£Í…
 _squid:S4488q"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ëóÚ¸
+dsquid:S44884"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(å“¸•şÿÿÿÿ
+dsquid:S4488F"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( ÃÃÂıÿÿÿÿ
 ^squid:S4488_"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(±üŠ
-^squid:S4488."HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ï¶ñ
-_squid:S4488e"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÇÕ¡
+dsquid:S4488'"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³ş’°úÿÿÿÿ
+`squid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(Ö”¢Öşÿÿÿÿ
+isquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
+dsquid:S4488k"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İñĞãüÿÿÿÿ
+nsquid:S00117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
+isquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
+Gsquid:S2629N"$Invoke method(s) only conditionally.(Œû£Ëùÿÿÿÿ8­è¶Ø-
 nsquid:S00117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
 _squid:S4488:"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–ùÛŸ
-dsquid:S4488S"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÙşÿÿÿÿ
-_squid:S4488Y"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·£Í…
-„squid:S3457N"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Œû£Ëùÿÿÿÿ8­è¶Ø-
-dsquid:S4488k"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İñĞãüÿÿÿÿ
-isquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
-isquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
-asquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ğ«» 
-dsquid:S4488F"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( ÃÃÂıÿÿÿÿ
-nsquid:S00117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
-Gsquid:S2629N"$Invoke method(s) only conditionally.(Œû£Ëùÿÿÿÿ8­è¶Ø-
-dsquid:S44884"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(å“¸•şÿÿÿÿ
-dsquid:S4488'"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³ş’°úÿÿÿÿ
-dsquid:S4488@"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğø•øÿÿÿÿ
-`squid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(Ö”¢Öşÿÿÿÿ
-fsquid:S4488L"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¥åü’øÿÿÿÿ
-_squid:S4488w"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İ“çÃ
+^squid:S4488."HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ï¶ñ
+_squid:S4488e"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÇÕ¡

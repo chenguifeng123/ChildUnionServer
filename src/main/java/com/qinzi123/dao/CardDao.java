@@ -23,7 +23,7 @@ public interface CardDao {
 	public Map hasFollowed(@Param("userId") int userId, @Param("followerId") int followerId);
 	public List<LinkedHashMap> getAllService();
 
-	public Map getCardInfoByOpenId(@Param("openid")String openid);
+	public List<Map> getCardInfoByOpenId(@Param("openid")String openid);
 	public Map getCardInfoById(@Param("id")String id);
 	public CardInfo getCardInfoBeanById(@Param("id")int id);
 	public List<Map> getCardInfoByPhone(@Param("phone")String phone, @Param("realname")String realname);

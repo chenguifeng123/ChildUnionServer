@@ -1,4 +1,4 @@
 
-_squid:S3457""AFormat specifiers should be used instead of string concatenation.(£¯¦´8ùŞïÕ-
-zsquid:S2629""\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(£¯¦´8ùŞïÕ-
 ~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(£ĞşÆúÿÿÿÿ8¾¹ïÕ-
+zsquid:S2629""\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(£¯¦´8ùŞïÕ-
+_squid:S3457""AFormat specifiers should be used instead of string concatenation.(£¯¦´8ùŞïÕ-
