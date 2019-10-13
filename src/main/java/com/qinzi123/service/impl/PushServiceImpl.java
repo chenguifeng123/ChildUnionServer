@@ -48,21 +48,16 @@ public class PushServiceImpl extends AbstractWeixinService implements PushServic
 		return pushDao.addCardSend(cardInfoSend);
 	}
 
-
-	private int addForm(WxSmallFormId wxSmallFormId){
+	@Override
+	public int addFormId(WxSmallFormId wxSmallFormId) {
 		if(wxSmallFormId.getCardId() == -1) return 0;
 		logger.info(String.format("插入新的formId %s", wxSmallFormId.toString()));
 		return pushDao.addFormId(wxSmallFormId);
 	}
 
 	@Override
-	public int addFormId(WxSmallFormId wxSmallFormId) {
-		logger.info(String.format("插入新的formId %s", wxSmallFormId.toString()));
-		return pushDao.addFormId(wxSmallFormId);
-	}
-
-	@Override
 	public int batchAddFormId(int cardId, String[] formIdList) {
+		if(cardId == -1) return 0;
 		logger.info("批量插入新的formId ");
 		WxSmallFormId wxSmallFormId = new WxSmallFormId();
 		wxSmallFormId.setIsUse(0);
