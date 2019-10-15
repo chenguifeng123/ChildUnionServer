@@ -2,6 +2,7 @@ package com.qinzi123.controller.micro;
 
 import com.qinzi123.service.CampaignService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,6 +23,7 @@ public class RechargeOrderController {
 	@Autowired
 	CampaignService campaignService;
 
+	@ApiOperation(value = "充值订单列表", notes = "充值订单列表")
 	@RequestMapping(value = "/rechargeOrder/list", method = RequestMethod.POST)
 	private List<LinkedHashMap> listRechargeOrder(@RequestBody Map map){
 		int card = Integer.parseInt(map.get("card").toString());
@@ -30,11 +32,13 @@ public class RechargeOrderController {
 		return campaignService.listRechargeOrder(card, start, num);
 	}
 
+	@ApiOperation(value = "充值订单", notes = "充值订单")
 	@RequestMapping(value = "/rechargeOrder/{id}", method = RequestMethod.GET)
 	private List<LinkedHashMap> oneRechargeOrder(@PathVariable int id){
 		return campaignService.oneRechargeOrder(id);
 	}
 
+	@ApiOperation(value = "充值订单新增", notes = "充值订单新增")
 	@RequestMapping(value = "/rechargeOrder/data", method = RequestMethod.POST)
 	private int addPayOrder(@RequestBody Map map){
 		map.put(DEFAULT_PRODUCT, PRODUCT_ID);

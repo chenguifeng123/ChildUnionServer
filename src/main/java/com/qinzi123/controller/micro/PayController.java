@@ -2,6 +2,8 @@ package com.qinzi123.controller.micro;
 
 import com.qinzi123.service.PayScoreService;
 import com.qinzi123.service.RechargeMoneyService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,7 @@ import java.util.Map;
 /**
  * Created by chenguifeng on 2019/3/18.
  */
+@Api(value = "支付", description = "支付")
 @RestController
 public class PayController {
 
@@ -27,6 +30,7 @@ public class PayController {
 	@Autowired
 	RechargeMoneyService rechargeMoneyService;
 
+	@ApiOperation(value = "充值积分", notes = "充值积分")
 	@RequestMapping(value = "/order/payScore", method = RequestMethod.POST)
 	private Map payScore(@RequestBody Map map){
 		Map result = new HashMap<>();
@@ -34,6 +38,7 @@ public class PayController {
 		return result;
 	}
 
+	@ApiOperation(value = "预支付", notes = "预支付")
 	@RequestMapping(value = "/order/prepay", method = RequestMethod.POST)
 	private Map prepay(@RequestBody Map map){
 		Map result = new HashMap<>();

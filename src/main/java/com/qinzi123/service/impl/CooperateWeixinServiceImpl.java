@@ -75,6 +75,11 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 		pushService.pushMessageReply2OneUser(cardMessageReply);
 	}
 
+	private String fillMessage(String message){
+		logger.info("过滤非法字符");
+		return message.replaceAll("=", "等于").replaceAll("\\?", " ").replaceAll("&", "和");
+	}
+
 	/**
 	 * 把消息发保存到数据库
 	 * @param cardMessage
@@ -82,6 +87,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	 */
 	public int addMessage(CardMessage cardMessage) {
 		checkMsg(tokenService.getToken(), cardMessage.getTitle() + cardMessage.getMessage());
+		cardMessage.setMessage(fillMessage(cardMessage.getMessage()));
 		int result = cooperateDao.addMessage(cardMessage);
 		logger.info("插入消息数据 {} 成功, 批量插入formId", cardMessage.toString());
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessage))
@@ -141,10 +147,12 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	 */
 	public int addCardMessageReply(CardMessageReply cardMessageReply) {
 		checkMsg(tokenService.getToken(), cardMessageReply.getReplyMessage());
+		cardMessageReply.setReplyMessage(fillMessage(cardMessageReply.getReplyMessage()));
 		int result = cooperateDao.addCardMessageReply(cardMessageReply);
 		logger.info("回复消息 {} 成功, 批量插入formId", cardMessageReply.toString());
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessageReply))
 			pushService.addFormId(wxSmallFormId);
+		scoreService.addScore(cardMessageReply.getCardId(), ScoreType.MessageReply);
 		pushMessage(cardMessageReply);
 		return result;
 	}
