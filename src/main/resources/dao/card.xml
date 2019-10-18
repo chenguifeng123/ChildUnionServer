@@ -72,19 +72,19 @@
 	</select>
 
 	<insert id="addCardInfo" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
-		insert into card_info(phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode, datetime, invite)
-		values(#{phone}, #{realname}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce}, #{weixincode}, #{datetime}, #{invite})
+		insert into card_info(phone, realname, gender, company, job, headimgurl, openid, workaddress, introduce, weixincode, datetime, invite)
+		values(#{phone}, #{realname}, #{gender}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce}, #{weixincode}, #{datetime}, #{invite})
 	</insert>
 
 	<update id="updateCardInfo" parameterType="java.util.Map">
 		update card_info
-		set phone = #{phone}, realname = #{realname}, company=#{company}, job=#{job}, datetime=#{datetime},
+		set phone = #{phone}, realname = #{realname}, gender = #{gender}, company=#{company}, job=#{job}, datetime=#{datetime},
 		headimgurl = #{headimgurl}, workaddress = #{workaddress}, introduce = #{introduce}, weixincode = #{weixincode}
 		where id = #{id}
 	</update>
 
 	<sql id="getCardInfo">
-		select id, phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode from card_info
+		select id, phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode, score from card_info
 	</sql>
 
 	<select id="getCardInfoByOpenId" resultType="java.util.Map">
@@ -165,6 +165,11 @@
 	<insert id="addScoreHistory" parameterType="java.util.Map">
 		insert into card_score_history(card_id, score_type, score)
 		values(#{card_id}, #{score_type}, #{score})
+	</insert>
+
+	<insert id="addShowScoreHistory" parameterType="java.util.Map">
+		insert into card_score_show_history(card_id, show_card_id, score_type, score)
+		values(#{card_id}, #{show_card_id}, #{score_type}, #{score})
 	</insert>
 
 	<select id="hasScoreHistory" resultType="java.util.Map">

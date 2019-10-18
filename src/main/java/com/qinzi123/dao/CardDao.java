@@ -39,6 +39,7 @@ public interface CardDao {
 	public int minusScore(Map map);
 	public int addScore(Map map);
 	public int addScoreHistory(Map map);
+	public int addShowScoreHistory(Map map);
 	public List<Map> hasScoreHistory(@Param("card_id") int card_id, @Param("score_type") int score_type);
 
 

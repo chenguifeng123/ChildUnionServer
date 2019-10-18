@@ -251,3 +251,5 @@ x
 Hsrc/main/java/com/qinzi123/controller/micro/RechargeOrderController.java,6\1\61846b90428efff73a6b6a3796beb80206690667
 j
 :src/main/resources/static/manage/template/recharge_view.js,4\9\4976eee7d51d2887660ec3959970f70782e71890
+f
+6src/main/resources/static/manage/template/card_info.js,d\6\d62679b1ad4028b09dd8019c6f0f69a2fcc05c2f

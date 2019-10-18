@@ -93,6 +93,7 @@ com\github\wxpay\sdk\WXPayRequest.class
 com\qinzi123\dao\CardDao.class
 com\qinzi123\happiness\domain\BussinessMessage.class
 com\qinzi123\dto\Use.class
+com\qinzi123\service\impl\PayScoreServiceImpl$1.class
 com\qinzi123\dto\Column.class
 com\github\wxpay\sdk\IWXPayDomain.class
 com\qinzi123\dto\template\AbstractTemplateHelper.class

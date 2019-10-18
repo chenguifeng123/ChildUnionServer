@@ -1,12 +1,14 @@
 package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.ScoreType;
+import com.qinzi123.exception.GlobalProcessException;
 import com.qinzi123.service.ScoreService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by chenguifeng on 2018/12/27.
@@ -48,6 +50,12 @@ public class ScoreServiceImpl extends AbstractWeixinService implements ScoreServ
 
 	@Override
 	public int minusScore(int cardId, int score) {
+		Map cardMap = cardDao.getCardInfoById(String.valueOf(cardId));
+		if(cardMap == null || cardMap.size() == 0) throw new GlobalProcessException("用户不存在");
+		logger.info("用户积分信息, {}", cardMap.toString());
+		if(cardMap.get("score") == null) throw new GlobalProcessException("用户没有积分");
+		Integer currentScore = Integer.parseInt(cardMap.get("score").toString());
+		if(currentScore < score) throw new GlobalProcessException("积分不够兑换");
 		int id = cardDao.minusScore(new HashMap(){{
 			put("id", cardId);
 			put("score", score);

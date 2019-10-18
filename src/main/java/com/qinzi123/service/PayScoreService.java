@@ -7,4 +7,5 @@ import java.util.Map;
  */
 public interface PayScoreService {
 	public Map payScore(Map map);
+	public Map payShowCardScore(int card, int showCard);
 }

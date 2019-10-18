@@ -88,6 +88,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	public int addMessage(CardMessage cardMessage) {
 		checkMsg(tokenService.getToken(), cardMessage.getTitle() + cardMessage.getMessage());
 		cardMessage.setMessage(fillMessage(cardMessage.getMessage()));
+		cardMessage.setTitle(fillMessage(cardMessage.getTitle()));
 		int result = cooperateDao.addMessage(cardMessage);
 		logger.info("插入消息数据 {} 成功, 批量插入formId", cardMessage.toString());
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessage))

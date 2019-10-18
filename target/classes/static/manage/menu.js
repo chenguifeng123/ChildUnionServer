@@ -8,6 +8,10 @@
                 group : "活动管理",
                 subMenu :[
                     {
+                        index : "template/card_info",
+                        desc : "名片管理"
+                    },
+                    {
                         index : "template/wx_product",
                         desc : "活动管理"
                     },

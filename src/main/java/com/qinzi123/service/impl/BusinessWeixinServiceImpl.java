@@ -132,6 +132,10 @@ public class BusinessWeixinServiceImpl extends AbstractWeixinService implements 
 		map.put("openid", openid);
 		// 更新当前时间
 		map.put("datetime", Utils.getCurrentDate());
+		// 保护用户如果没有输入性别
+		if(map.get("gender") == null){
+			map.put("gender", "0");
+		}
 		return map;
 	}
 

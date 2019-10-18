@@ -7,10 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,6 +33,12 @@ public class PayController {
 		Map result = new HashMap<>();
 		result = payScoreService.payScore(map);
 		return result;
+	}
+
+	@ApiOperation(value = "仅仅兑付查看功能", notes = "充值积分")
+	@RequestMapping(value = "/card/show/payScore/{card}-{showCard}", method = RequestMethod.GET)
+	private Map payScore4ShowCard(@PathVariable int card, @PathVariable int showCard){
+		return payScoreService.payShowCardScore(card, showCard);
 	}
 
 	@ApiOperation(value = "预支付", notes = "预支付")

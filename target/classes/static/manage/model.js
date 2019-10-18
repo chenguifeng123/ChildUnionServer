@@ -136,6 +136,8 @@ var vm = new Vue({
                     update_init(oneData);
                     for (var key in oneData) {
                         var oneColumn = this.getColumnMetaByName(key);
+                        /** 如果没有找到, 说明该字段不要显示 **/
+                        if(oneColumn.columnIndex == -1) continue;
                         this.tableMeta.columns[oneColumn.columnIndex].value = translateDataBase2Js(oneColumn, oneData[key]);
                     }
                 }

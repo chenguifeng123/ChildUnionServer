@@ -1,6 +1,7 @@
 package com.qinzi123.service.impl;
 
 import com.qinzi123.dao.CampaignDao;
+import com.qinzi123.dto.ScoreType;
 import com.qinzi123.exception.GlobalProcessException;
 import com.qinzi123.service.PayScoreService;
 import com.qinzi123.service.ScoreService;
@@ -53,4 +54,19 @@ public class PayScoreServiceImpl extends AbstractWeixinService implements PaySco
 		return map;
 	}
 
+	@Override
+	@Transactional
+	public Map payShowCardScore(int card, int showCard) {
+		log.info("只是支付查看权限, {} 要看 {}", card, showCard);
+		scoreService.minusScore(card, ScoreType.ShowCard.getScore());
+		log.info("支付成功, 记录兑付日志");
+		Map scoreMap = new HashMap(){{
+			put("card_id", card);
+			put("show_card_id", showCard);
+			put("score_type", ScoreType.ShowCard.getType());
+			put("score", ScoreType.ShowCard.getScore());
+		}};
+		cardDao.addShowScoreHistory(scoreMap);
+		return scoreMap;
+	}
 }
