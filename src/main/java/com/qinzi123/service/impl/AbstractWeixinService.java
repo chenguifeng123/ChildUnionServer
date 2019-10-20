@@ -170,7 +170,9 @@ public abstract class AbstractWeixinService {
 		);
 		logger.info("微信消息检测结果, {}", map.toString());
 		if(map == null || map.size() == 0) throw new GlobalProcessException("微信消息检测失败");
-		if(!"0".equalsIgnoreCase(map.get("errcode").toString())) throw new GlobalProcessException(map.get("errMsg").toString());
+		if(!"0".equalsIgnoreCase(map.get("errcode").toString()))
+			//throw new GlobalProcessException(map.get("errMsg").toString());
+			throw new GlobalProcessException("内容含有违法违规内容");
 	}
 
 }

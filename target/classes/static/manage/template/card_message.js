@@ -77,7 +77,7 @@
                     desc : "阅读次数",
                     type : 1,
                     needInput : false,
-                    disabled : true,
+                    disabled : false,
                     initData :[],
                     refs:{},
                     value : 0
@@ -87,7 +87,7 @@
                     desc : "点赞次数",
                     type : 1,
                     needInput : false,
-                    disabled : true,
+                    disabled : false,
                     initData :[],
                     refs:{},
                     value : 0
