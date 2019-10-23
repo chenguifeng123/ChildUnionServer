@@ -5,7 +5,7 @@
 
         global.menu = [
             {
-                group : "活动管理",
+                group : "后台管理",
                 subMenu :[
                     {
                         index : "template/card_info",
@@ -30,6 +30,10 @@
                     {
                         index : "template/recharge_view",
                         desc : "支付查询"
+                    },
+                    {
+                        index : "template/wx_banner",
+                        desc : "小程序广告栏"
                     },
                 ]
             }
