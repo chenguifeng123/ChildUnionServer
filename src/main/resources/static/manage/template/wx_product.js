@@ -89,7 +89,17 @@
                     initData :[],
                     refs:{},
                     value : 0
-                }
+                },
+                {
+                    name : "status",
+                    desc : "是否上架",
+                    type : 2,
+                    needInput : true,
+                    disabled : false,
+                    initData :[{value:0, desc:'下架'},{value:1, desc:'上架'}],
+                    refs:{},
+                    value : 0
+                },
             ]
         };
 		

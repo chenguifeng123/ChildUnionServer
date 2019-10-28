@@ -253,3 +253,15 @@ j
 :src/main/resources/static/manage/template/recharge_view.js,4\9\4976eee7d51d2887660ec3959970f70782e71890
 f
 6src/main/resources/static/manage/template/card_info.js,d\6\d62679b1ad4028b09dd8019c6f0f69a2fcc05c2f
+]
+-src/main/java/com/qinzi123/dao/BannerDao.java,1\a\1adce5af9afbb0ee4e570969feafa02549cb4f2d
+e
+5src/main/java/com/qinzi123/service/BannerService.java,7\6\76aa2afc6c2a85b77913afcb2fc0214f2d019172
+f
+6src/main/resources/static/manage/template/wx_banner.js,4\b\4b493614bc97e7bd1e8e91189cf3b4406bbf3c9c
+Q
+!src/main/resources/dao/banner.xml,7\0\7077f93c0a5e34f87aa297f2796c3f0e4ff54fb1
+n
+>src/main/java/com/qinzi123/service/impl/BannerServiceImpl.java,8\8\88ddb697408577a676e31c321640dc28a99b8917
+q
+Asrc/main/java/com/qinzi123/controller/micro/BannerController.java,f\c\fcb8117faf9788257637fbd50d7553d7673d27c6

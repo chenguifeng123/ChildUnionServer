@@ -4,7 +4,7 @@
 
 	<select id="listCampaign" resultType="java.util.LinkedHashMap">
 		select id, main_image, name, date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time from wx_product
-		where product_type = 0
+		where product_type = 0 and status = 1
 		order by create_time desc, id desc limit #{start}, #{num}
     </select>
 
