@@ -22,7 +22,7 @@ import java.util.Map;
  * Created by chenguifeng on 2019/9/23.
  */
 @Service
-public class RechargeMoneyServiceImpl extends AbstractWeixinService implements RechargeMoneyService {
+public class RechargeMoneyServiceImpl extends AbstractWechatMiniProgramService implements RechargeMoneyService {
 
 	private static final String TRADE_TYPE = "JSAPI";
 

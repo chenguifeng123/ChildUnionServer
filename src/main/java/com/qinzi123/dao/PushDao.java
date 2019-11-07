@@ -3,7 +3,6 @@ package com.qinzi123.dao;
 import com.qinzi123.dto.CardInfoSend;
 import com.qinzi123.dto.CardMessageSend;
 import com.qinzi123.dto.WxSmallFormId;
-import com.qinzi123.dto.WxSmallToken;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -15,8 +14,6 @@ import java.util.Map;
 public interface PushDao {
 
 	int addMessageSend(CardMessageSend cardMessageSend);
-	int addCurrentToken(WxSmallToken wxSmallToken);
-	WxSmallToken getCurrentToken();
 
 	int addFormId(WxSmallFormId wxSmallFormId);
 	int updateFormId(WxSmallFormId wxSmallFormId);

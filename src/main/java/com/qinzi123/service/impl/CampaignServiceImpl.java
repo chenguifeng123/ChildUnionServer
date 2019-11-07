@@ -19,7 +19,7 @@ import java.util.Map;
  * Created by chenguifeng on 2019/2/25.
  */
 @Service
-public class CampaignServiceImpl extends AbstractWeixinService implements CampaignService {
+public class CampaignServiceImpl extends AbstractWechatMiniProgramService implements CampaignService {
 
 	private Logger log = LoggerFactory.getLogger(CampaignServiceImpl.class);
 

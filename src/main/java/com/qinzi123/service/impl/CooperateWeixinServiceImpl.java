@@ -1,10 +1,7 @@
 package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.*;
-import com.qinzi123.service.CooperateWeixinService;
-import com.qinzi123.service.PushService;
-import com.qinzi123.service.ScoreService;
-import com.qinzi123.service.TokenService;
+import com.qinzi123.service.*;
 import com.qinzi123.util.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,13 +17,13 @@ import java.util.*;
  */
 @Component
 @EnableAsync
-public class CooperateWeixinServiceImpl extends AbstractWeixinService implements CooperateWeixinService{
+public class CooperateWeixinServiceImpl extends AbstractWechatMiniProgramService implements CooperateWeixinService{
 
 	@Autowired
-	TokenService tokenService;
+	PushMiniProgramService pushService;
 
 	@Autowired
-	PushService pushService;
+	PushOfficialAccountService pushOfficialAccountService;
 
 	@Autowired
 	ScoreService scoreService;
@@ -73,6 +70,13 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	void pushMessage(CardMessageReply cardMessageReply){
 		logger.info("异步准备发送消息");
 		pushService.pushMessageReply2OneUser(cardMessageReply);
+		pushOfficialAccountService.pushMessageReply2OneUser(cardMessageReply);
+	}
+
+	@Async
+	void pushMessage(CardMessage cardMessage){
+		logger.info("异步准备发送消息");
+		pushOfficialAccountService.pushMessage2OneUser(cardMessage);
 	}
 
 	private String fillMessage(String message){
@@ -86,7 +90,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	 * @return
 	 */
 	public int addMessage(CardMessage cardMessage) {
-		checkMsg(tokenService.getToken(), cardMessage.getTitle() + cardMessage.getMessage());
+		checkMsg(getToken(), cardMessage.getTitle() + cardMessage.getMessage());
 		cardMessage.setMessage(fillMessage(cardMessage.getMessage()));
 		cardMessage.setTitle(fillMessage(cardMessage.getTitle()));
 		int result = cooperateDao.addMessage(cardMessage);
@@ -94,6 +98,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessage))
 			pushService.addFormId(wxSmallFormId);
 		scoreService.addScore(cardMessage.getCardId(), ScoreType.Message);
+		pushMessage(cardMessage);
 		return result;
 	}
 
@@ -147,7 +152,7 @@ public class CooperateWeixinServiceImpl extends AbstractWeixinService implements
 	 * @return
 	 */
 	public int addCardMessageReply(CardMessageReply cardMessageReply) {
-		checkMsg(tokenService.getToken(), cardMessageReply.getReplyMessage());
+		checkMsg(getToken(), cardMessageReply.getReplyMessage());
 		cardMessageReply.setReplyMessage(fillMessage(cardMessageReply.getReplyMessage()));
 		int result = cooperateDao.addCardMessageReply(cardMessageReply);
 		logger.info("回复消息 {} 成功, 批量插入formId", cardMessageReply.toString());

@@ -5,7 +5,7 @@ import com.qinzi123.dao.EntityDao;
 import com.qinzi123.dao.TableConfigDao;
 import com.qinzi123.dto.*;
 import com.qinzi123.service.EntityService;
-import com.qinzi123.service.PushService;
+import com.qinzi123.service.PushMiniProgramService;
 import com.qinzi123.util.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -22,7 +22,7 @@ public class EntityServiceImpl implements EntityService {
 	public TableConfigDao tableConfigDao;
 
 	@Autowired
-	PushService pushService;
+	PushMiniProgramService pushService;
 
 	@Autowired
 	CardDao cardDao;

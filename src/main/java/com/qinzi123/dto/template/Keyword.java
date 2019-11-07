@@ -6,6 +6,14 @@ package com.qinzi123.dto.template;
 public class Keyword {
 	String value;
 
+	public Keyword(){
+
+	}
+
+	public Keyword(String value){
+		setValue(value);
+	}
+
 	public String getValue() {
 		return value;
 	}

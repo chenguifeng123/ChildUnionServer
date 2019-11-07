@@ -3,7 +3,7 @@ package com.qinzi123.service.impl;
 import com.qinzi123.dto.ScoreType;
 import com.qinzi123.exception.GlobalProcessException;
 import com.qinzi123.service.BusinessWeixinService;
-import com.qinzi123.service.PushService;
+import com.qinzi123.service.PushMiniProgramService;
 import com.qinzi123.service.ScoreService;
 import com.qinzi123.util.Utils;
 import org.slf4j.Logger;
@@ -22,13 +22,13 @@ import java.util.Map;
  */
 @Component
 @EnableAsync
-public class BusinessWeixinServiceImpl extends AbstractWeixinService implements BusinessWeixinService{
+public class BusinessWeixinServiceImpl extends AbstractWechatMiniProgramService implements BusinessWeixinService{
 
 	@Autowired
 	ScoreService scoreService;
 
 	@Autowired
-	PushService pushService;
+	PushMiniProgramService pushService;
 
 	private Logger logger = LoggerFactory.getLogger(BusinessWeixinServiceImpl.class);
 

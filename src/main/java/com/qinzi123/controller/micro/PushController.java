@@ -1,7 +1,7 @@
 package com.qinzi123.controller.micro;
 
 import com.qinzi123.dto.WxSmallFormId;
-import com.qinzi123.service.PushService;
+import com.qinzi123.service.PushMiniProgramService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 public class PushController {
 
 	@Autowired
-	PushService pushService;
+	PushMiniProgramService pushService;
 
 	@ApiOperation(value = "新增form", notes = "新增form")
 	@RequestMapping(value="/formId/{id}", method= RequestMethod.POST)

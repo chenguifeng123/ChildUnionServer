@@ -14,7 +14,7 @@ import java.util.Map;
  * Created by chenguifeng on 2018/12/27.
  */
 @Component
-public class ScoreServiceImpl extends AbstractWeixinService implements ScoreService{
+public class ScoreServiceImpl extends AbstractWechatMiniProgramService implements ScoreService{
 
 	private Logger logger = LoggerFactory.getLogger(ScoreServiceImpl.class);
 	private static final int PAY_TYPE = 4;

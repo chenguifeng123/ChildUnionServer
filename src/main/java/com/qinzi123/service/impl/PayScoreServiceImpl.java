@@ -17,7 +17,7 @@ import java.util.Map;
  * Created by chenguifeng on 2019/9/23.
  */
 @Service
-public class PayScoreServiceImpl extends AbstractWeixinService implements PayScoreService{
+public class PayScoreServiceImpl extends AbstractWechatMiniProgramService implements PayScoreService{
 
 	private Logger log = LoggerFactory.getLogger(PayScoreServiceImpl.class);
 

@@ -14,19 +14,6 @@
 		insert into card_info_send(card_id, new_card_id, openid) values(#{cardId}, #{newCardId}, #{openid})
 	</insert>
 
-	<insert id="addCurrentToken" useGeneratedKeys="true" parameterType="com.qinzi123.dto.WxSmallToken">
-		insert into wx_small_token(token) values(#{token})
-	</insert>
-	<resultMap type="com.qinzi123.dto.WxSmallToken" id="smallToken">
-		<id property="id" column="id"/>
-		<result property="token" column="token"/>
-		<result property="createTime" column="create_time"/>
-	</resultMap>
-	<select id="getCurrentToken" resultMap="smallToken">
-		select id, token, DATE_FORMAT(create_time,'%Y-%m-%d %H:%i:%S') as create_time from wx_small_token
-		ORDER BY create_time desc limit 1
-	</select>
-
 	<!-- 保存formId -->
 	<insert id="addFormId" useGeneratedKeys="true" parameterType="com.qinzi123.dto.WxSmallFormId">
 		insert into wx_small_formId(card_id, form_id, is_use) values(#{cardId}, #{formId}, #{isUse})

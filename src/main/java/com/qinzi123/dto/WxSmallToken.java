@@ -7,6 +7,7 @@ public class WxSmallToken {
 	int id;
 	String token;
 	String createTime;
+	int type;
 
 	public int getId() {
 		return id;
@@ -32,7 +33,15 @@ public class WxSmallToken {
 		this.createTime = createTime;
 	}
 
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
 	public String toString(){
-		return String.format("id=%d,token=%s,createTime=%s", id, token, createTime);
+		return String.format("id=%d,token=%s,createTime=%s,type=%d", id, token, createTime, type);
 	}
 }

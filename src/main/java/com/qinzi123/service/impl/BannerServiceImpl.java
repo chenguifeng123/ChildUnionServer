@@ -12,7 +12,7 @@ import java.util.List;
  * Created by chenguifeng on 2019/10/23.
  */
 @Service
-public class BannerServiceImpl extends AbstractWeixinService implements BannerService {
+public class BannerServiceImpl extends AbstractWechatMiniProgramService implements BannerService {
 
 
 	@Autowired

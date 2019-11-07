@@ -4,7 +4,7 @@ import com.qinzi123.dao.CardDao;
 import com.qinzi123.dto.CardMessage;
 import com.qinzi123.dto.CardMessageReply;
 import com.qinzi123.service.CooperateWeixinService;
-import com.qinzi123.service.PushService;
+import com.qinzi123.service.PushMiniProgramService;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +26,7 @@ public class PushServiceTest {
 	CardDao weixinDao;
 
 	@Autowired
-	PushService pushService;
+	PushMiniProgramService pushService;
 
 	@Autowired
 	CooperateWeixinService cooperateWeixinService;
