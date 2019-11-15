@@ -47,7 +47,8 @@ public class Utils {
 	public static long dateLast(Date date){
 		long last = date.getTime();
 		long current = new Date().getTime();
-		return (current - last)/DateUtils.MILLIS_PER_SECOND;
+		long result = (current - last)/DateUtils.MILLIS_PER_SECOND;
+		return result > 0 ? result : 0;
 	}
 
 	public static String getDateLast(long last){

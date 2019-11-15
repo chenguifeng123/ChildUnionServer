@@ -1,9 +1,9 @@
 
-\squid:S3400-"9Remove this method and declare a constant for this value.(ÕŸŞüÿÿÿÿ8¾ÁßÒã-
-_squid:S3457K"AFormat specifiers should be used instead of string concatenation.(ê„¦Æ8¾¼’ïÕ-
-Wsquid:S3400+"9Remove this method and declare a constant for this value.(‹ä—ø8¾ÁßÒã-
-wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(šÅ¦¡8‘¦»ß˜-
-\squid:S1155<">Use isEmpty() to check whether the collection is empty or not.(¿ˆñ¡8ç¦İÚ-
-esquid:S1192H"GDefine a constant instead of duplicating this literal "openid" 5 times.(ëóè‚8—ØïÕ-
-Usquid:S2629K"7Use the built-in formatting to construct this argument.(ê„¦Æ8¾¼’ïÕ-
-Gsquid:S2629V"$Invoke method(s) only conditionally.(È¸‰øÿÿÿÿ8‘¦»ß˜-
+Wsquid:S3400,"9Remove this method and declare a constant for this value.(‹ä—ø8¾ÁßÒã-
+_squid:S3457O"AFormat specifiers should be used instead of string concatenation.(ê„¦Æ8¾¼’ïÕ-
+wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(šÅ¦¡8‘¦»ß˜-
+Gsquid:S2629Z"$Invoke method(s) only conditionally.(È¸‰øÿÿÿÿ8‘¦»ß˜-
+esquid:S1192L"GDefine a constant instead of duplicating this literal "openid" 5 times.(ëóè‚8—ØïÕ-
+\squid:S3400."9Remove this method and declare a constant for this value.(ÕŸŞüÿÿÿÿ8¾ÁßÒã-
+Usquid:S2629O"7Use the built-in formatting to construct this argument.(ê„¦Æ8¾¼’ïÕ-
+\squid:S1155@">Use isEmpty() to check whether the collection is empty or not.(¿ˆñ¡8ç¦İÚ-

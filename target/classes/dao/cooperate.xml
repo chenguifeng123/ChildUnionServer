@@ -3,8 +3,8 @@
 <mapper namespace="com.qinzi123.dao.CooperateDao" >
 
 	<insert id="addMessage" useGeneratedKeys="true" parameterType="com.qinzi123.dto.CardMessage">
-		insert into card_message(card_id, form_id, title, message, read_count, give_like)
-		values(#{cardId}, #{formId}, #{title}, #{message}, 0, 0)
+		insert into card_message(card_id, form_id, title, message, read_count, give_like, message_type)
+		values(#{cardId}, #{formId}, #{title}, #{message}, 0, 0, #{messageType})
 	</insert>
 
 	<update id="updateMessageRead" parameterType="com.qinzi123.dto.CardMessage">
@@ -26,6 +26,7 @@
 		<result property="last" column="last"/>
 		<result property="readCount" column="read_count"/>
 		<result property="giveLike" column="give_like"/>
+		<result property="messageType" column="message_type"/>
 		<association property="cardInfo" javaType="com.qinzi123.dto.CardInfo">
 			<id property="id" column="bid"/>
 			<result property="openid" column="openid"/>
@@ -39,7 +40,7 @@
 
 	<sql id="select_card_message">
 		select a.id, card_id, form_id, title, message, update_time, TIMESTAMPDIFF(MINUTE, update_time, sysdate()) as last,
-		read_count, give_like, b.id as bid, openid, phone, realname, company, job, headimgurl
+		read_count, give_like, b.id as bid, openid, phone, realname, company, job, headimgurl, a.message_type
 			from card_message a, card_info b where a.card_id = b.id
 	</sql>
 
