@@ -52,6 +52,16 @@
                     refs:{},
                     value : ""
                 },
+                {
+                    name : "message_type",
+                    desc : "消息类型",
+                    type : 2,
+                    needInput : true,
+                    initData :[{value:0, desc:'赞助招商'},{value:1, desc:'项目合作'},{value:2, desc:'招租转让'},
+                        {value:3, desc:'资源互换'},{value:4, desc:'求职招聘'},{value:5, desc:'其它信息'}],
+                    refs:{},
+                    value : 0
+                },
 				{
                     name : "message",
                     desc : "消息内容",
