@@ -14,6 +14,7 @@ com\qinzi123\service\impl\CooperateWeixinServiceImpl$1.class
 com\qinzi123\service\impl\BusinessWeixinServiceImpl.class
 com\github\wxpay\sdk\WXPayReport$2.class
 com\qinzi123\dao\DaoScan.class
+com\qinzi123\service\FileService.class
 com\github\wxpay\sdk\WXPayConfig.class
 com\qinzi123\service\impl\BannerServiceImpl.class
 com\github\wxpay\sdk\WXPayConstants$SignType.class
@@ -80,6 +81,8 @@ com\qinzi123\dto\template\officialAccount\OACooperateMessageTemplateHelper.class
 com\qinzi123\dto\CardInfoSend.class
 com\qinzi123\config\HttpsConfig$1.class
 com\qinzi123\service\official\OfficialService.class
+com\qinzi123\service\impl\FileServiceImpl.class
+com\qinzi123\controller\micro\MiniFileController.class
 com\qinzi123\happiness\domain\BussLeagueInfo.class
 com\qinzi123\dto\template\miniProgram\CooperateMessageReplyTemplateHelper.class
 com\qinzi123\dto\CardMessage.class

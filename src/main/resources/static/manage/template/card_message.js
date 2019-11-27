@@ -102,6 +102,25 @@
                     refs:{},
                     value : 0
                 },
+                {
+                    name : "source_type",
+                    desc : "资源类型",
+                    type : 2,
+                    needInput : true,
+                    initData :[{value:0, desc:'图片'},{value:1, desc:'视频'}],
+                    refs:{},
+                    value : 0
+                },
+                {
+                    name : "source_path",
+                    desc : "资源路径",
+                    type : 9,
+                    needInput : false,
+                    disabled : false,
+                    initData :[],
+                    refs:{},
+                    value : ''
+                },
 				{
                     name : "verify",
                     desc : "审核情况",

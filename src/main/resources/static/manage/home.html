@@ -97,7 +97,7 @@
 							<el-input v-model="column.value" :placeholder="column.placeholder" auto-complete="off" v-else-if="column.type == 8"></el-input>
 							
 							<!-- 9 文件上传 -->
-							<el-upload class="upload-demo" :action="'/uploadPicture/' + column.name" :show-file-list="false" :on-success="handleAvatarSuccess" v-else-if="column.type == 9">
+							<el-upload class="upload-demo" :action="'/manage/uploadFile/' + column.name" :show-file-list="false" :on-success="handleAvatarSuccess" v-else-if="column.type == 9">
 								<el-button size="small" type="primary">点击上传</el-button>
 								<div slot="tip" class="el-upload__tip">{{column.value}}</div>
 							</el-upload>

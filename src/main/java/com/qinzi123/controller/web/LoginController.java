@@ -1,6 +1,5 @@
 package com.qinzi123.controller.web;
 
-import com.qinzi123.controller.web.LoginFilter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,14 +16,14 @@ import java.util.Map;
 public class LoginController {
 
 	private static final String FIXED_USER = "admin";
-	private static final String FIXED_PASSWORD = "root0000";
+	private static final String FIXED_PD = "root0000";
 
 	@RequestMapping(value = "/loginPost" , method = RequestMethod.POST)
 	@ResponseBody
 	public Map<String, Object> loginPost(String user, String password, HttpSession httpSession){
 		Map<String, Object> map = new HashMap<String, Object>();
 
-		if(!FIXED_USER.equals(user) || !FIXED_PASSWORD.equals(password)){
+		if(!FIXED_USER.equals(user) || !FIXED_PD.equals(password)){
 			map.put("success", false);
 			if(!FIXED_USER.equals(user))
 				map.put("message", "001");

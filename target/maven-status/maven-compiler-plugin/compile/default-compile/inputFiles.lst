@@ -11,6 +11,7 @@ F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\WxSmallT
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\web\ResponseBodyHandler.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\controller\web\EntityController.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dao\PushDao.java
+F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\FileService.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\happiness\service\PCShowService.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\happiness\util\Constants.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\controller\web\LoginController.java
@@ -28,6 +29,7 @@ F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\controller\m
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\config\RestTemplateConfig.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dto\template\officialAccount\OACooperateMessageTemplateHelper.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\happiness\util\CalendarUtil.java
+F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\impl\FileServiceImpl.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\github\wxpay\sdk\WXPayXmlUtil.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\exception\GlobalProcessException.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\controller\micro\CooperateController.java
@@ -103,6 +105,7 @@ F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\controller\w
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\impl\AbstractWechatService.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\BusinessWeixinService.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\service\impl\CampaignServiceImpl.java
+F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\controller\micro\MiniFileController.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\dao\CardDao.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\qinzi123\config\WxMappingJackson2HttpMessageConverter.java
 F:\workspace\git\wuyang\ChildUnionServer\src\main\java\com\github\wxpay\sdk\WXPay.java

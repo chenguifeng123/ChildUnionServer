@@ -11,6 +11,8 @@ public class CardMessage extends BaseParam {
 	int readCount;
 	int giveLike;
 	int messageType;
+	int sourceType;
+	String sourcePath;
 
 	public int getId() {
 		return id;
@@ -66,6 +68,22 @@ public class CardMessage extends BaseParam {
 
 	public void setMessageType(int messageType) {
 		this.messageType = messageType;
+	}
+
+	public int getSourceType() {
+		return sourceType;
+	}
+
+	public void setSourceType(int sourceType) {
+		this.sourceType = sourceType;
+	}
+
+	public String getSourcePath() {
+		return sourcePath;
+	}
+
+	public void setSourcePath(String sourcePath) {
+		this.sourcePath = sourcePath;
 	}
 
 	@Override
