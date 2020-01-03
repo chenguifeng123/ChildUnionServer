@@ -83,6 +83,10 @@
 		where id = #{id}
 	</update>
 
+	<update id="refreshCardDate" parameterType="java.lang.Integer">
+		update card_info set datetime=SYSDATE() where id = #{id}
+	</update>
+
 	<sql id="getCardInfo">
 		select id, phone, realname, company, job, headimgurl, openid, workaddress, introduce, weixincode, score from card_info
 	</sql>

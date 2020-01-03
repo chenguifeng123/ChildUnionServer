@@ -59,6 +59,36 @@
                     value : '0'
                 },
                 {
+                    name : "headimgurl",
+                    desc : "头像url",
+                    type : 1,
+                    needInput : false,
+                    disabled : false,
+                    initData :[],
+                    refs:{},
+                    value : '0'
+                },
+                {
+                    name : "workaddress",
+                    desc : "地址",
+                    type : 1,
+                    needInput : false,
+                    disabled : false,
+                    initData :[],
+                    refs:{},
+                    value : '0'
+                },
+                {
+                    name : "introduce",
+                    desc : "简介",
+                    type : 10,
+                    needInput : false,
+                    disabled : false,
+                    initData :[],
+                    refs:{},
+                    value : '0'
+                },
+                {
                     name : "leaguer",
                     desc : "会员",
                     type : 2,

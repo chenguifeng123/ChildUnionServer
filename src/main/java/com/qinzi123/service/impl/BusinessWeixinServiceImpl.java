@@ -237,6 +237,7 @@ public class BusinessWeixinServiceImpl extends AbstractWechatMiniProgramService 
 	 */
 	public int sign(int cardId) {
 		scoreService.addScore(cardId, ScoreType.Sign);
+		cardDao.refreshCardDate(cardId);
 		return 1;
 	}
 

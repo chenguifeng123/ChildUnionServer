@@ -299,3 +299,9 @@ bsrc/main/java/com/qinzi123/dto/template/officialAccount/OACooperateMessageReply
 Ksrc/main/java/com/qinzi123/service/impl/PushOfficialAccountServiceImpl.java,d\0\d07df43e10eb3cef9d0a6048382fdf8b0461c153
 p
 @src/main/java/com/qinzi123/service/official/OfficialService.java,c\e\ce299a4d22ce16a2491e484dd83b96a8a877f742
+c
+3src/main/java/com/qinzi123/service/FileService.java,8\0\8073b44cc0e26734e44a9bba7854ca2a1e188ea1
+l
+<src/main/java/com/qinzi123/service/impl/FileServiceImpl.java,8\3\832481c013ca347289db62288f56fe33cf69875b
+s
+Csrc/main/java/com/qinzi123/controller/micro/MiniFileController.java,b\7\b7d98076e8a5d29e975c5b11c4f746ab3e65343b

@@ -1,19 +1,19 @@
 
-jsquid:S00117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
-Csquid:S2629°"$Invoke method(s) only conditionally.(çãÛ”8†ìÄáÖ-
-jsquid:S00117Ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
-Hsquid:S2629»"$Invoke method(s) only conditionally.(ì Ú“úÿÿÿÿ8ÑÈáÖ-
-€squid:S3457°"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(çãÛ”8†ìÄáÖ-
-Csquid:S2629¹"$Invoke method(s) only conditionally.(Œá»¡8óØÇáÖ-
-€squid:S3457³"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ÅØ´ñ8† ÆáÖ-
-squid:S3457z"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(îè¶8·™¸Ø-
-€squid:S3457¹"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Œá»¡8óØÇáÖ-
-Bsquid:S2629z"$Invoke method(s) only conditionally.(îè¶8·™¸Ø-
-Csquid:S2629³"$Invoke method(s) only conditionally.(ÅØ´ñ8† ÆáÖ-
-Ksquid:S1481’"'Remove this unused "id" local variable.(“¼µüÿÿÿÿ8˜†ú…Ö-
 \squid:S1155x">Use isEmpty() to check whether the collection is empty or not.(å¸Ô·8ÕýÑü×-
-jsquid:S00117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
-…squid:S3457»"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ì Ú“úÿÿÿÿ8ÑÈáÖ-
-[squid:S1155õ">Use isEmpty() to check whether the collection is empty or not.(Â‹Óéÿÿÿÿÿ
+Csquid:S2629¹"$Invoke method(s) only conditionally.(Œá»¡8óØÇáÖ-
+Ksquid:S1481’"'Remove this unused "id" local variable.(“¼µüÿÿÿÿ8˜†ú…Ö-
+€squid:S3457°"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(çãÛ”8†ìÄáÖ-
+€squid:S3457¹"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Œá»¡8óØÇáÖ-
 jsquid:S00117Ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
+Bsquid:S2629z"$Invoke method(s) only conditionally.(îè¶8·™¸Ø-
+€squid:S3457³"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ÅØ´ñ8† ÆáÖ-
+jsquid:S00117Ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
+[squid:S1155ö">Use isEmpty() to check whether the collection is empty or not.(Â‹Óéÿÿÿÿÿ
 nsquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(ñ´·€øÿÿÿÿ8ìªÙ…Ö-
+jsquid:S00117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
+squid:S3457z"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(îè¶8·™¸Ø-
+jsquid:S00117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
+Hsquid:S2629»"$Invoke method(s) only conditionally.(ì Ú“úÿÿÿÿ8ÑÈáÖ-
+Csquid:S2629°"$Invoke method(s) only conditionally.(çãÛ”8†ìÄáÖ-
+Csquid:S2629³"$Invoke method(s) only conditionally.(ÅØ´ñ8† ÆáÖ-
+…squid:S3457»"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ì Ú“úÿÿÿÿ8ÑÈáÖ-

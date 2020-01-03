@@ -3,7 +3,7 @@
 <mapper namespace="com.qinzi123.dao.BannerDao" >
 
 	<select id="listAllBanners" resultType="java.util.LinkedHashMap">
-		select id,link,url,isTab,isLocal from wx_banner
+		select id,link,url,isTab,isLocal from wx_banner order by order_id
     </select>
 
 	<select id="oneBanner" resultType="java.util.LinkedHashMap">

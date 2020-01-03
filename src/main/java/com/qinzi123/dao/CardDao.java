@@ -29,6 +29,7 @@ public interface CardDao {
 	public List<Map> getCardInfoByPhone(@Param("phone")String phone, @Param("realname")String realname);
 	public int addCardInfo(Map map);
 	public int updateCardInfo(Map map);
+	int refreshCardDate(@Param("id") int id);
 	public int addCardTag(Map map);
 	public int updateCardTag(Map map);
 	public Map getCardTagById(@Param("card_id")String card_id);

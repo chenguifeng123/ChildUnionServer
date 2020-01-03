@@ -56,6 +56,15 @@
                     refs:{},
                     value : 0
                 },
+                {
+                    name : "order_id",
+                    desc : "排序编号(从小到大)",
+                    type : 1,
+                    needInput : true,
+                    initData :[],
+                    refs:{},
+                    value : 0
+                },
             ]
         };
 		
