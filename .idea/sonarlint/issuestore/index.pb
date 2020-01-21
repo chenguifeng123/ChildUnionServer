@@ -305,3 +305,7 @@ l
 <src/main/java/com/qinzi123/service/impl/FileServiceImpl.java,8\3\832481c013ca347289db62288f56fe33cf69875b
 s
 Csrc/main/java/com/qinzi123/controller/micro/MiniFileController.java,b\7\b7d98076e8a5d29e975c5b11c4f746ab3e65343b
+[
++src/main/java/com/qinzi123/dto/WxCitys.java,5\8\58e92a82fb99b94bd82c6c7c6700f24489310ddd
+]
+-src/main/java/com/qinzi123/dto/WxOneCity.java,a\e\ae5710dbf90f2a206e3f88ad811dd8d092199d1b

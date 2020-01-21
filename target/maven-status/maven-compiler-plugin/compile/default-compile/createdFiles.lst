@@ -51,6 +51,7 @@ com\qinzi123\happiness\domain\CardInfo.class
 com\qinzi123\service\impl\PushMiniProgramServiceImpl.class
 com\qinzi123\service\impl\ScoreServiceImpl$3.class
 com\qinzi123\dao\TokenDao.class
+com\qinzi123\dto\WxCitys.class
 com\qinzi123\dto\template\officialAccount\OACooperateTemplate.class
 com\qinzi123\service\impl\PushOfficialAccountServiceImpl.class
 com\qinzi123\config\WxMappingJackson2HttpMessageConverter.class
@@ -93,6 +94,7 @@ com\qinzi123\service\impl\EntityServiceImpl.class
 com\qinzi123\service\impl\TokenServiceImpl.class
 com\qinzi123\dao\PCShowDao.class
 com\qinzi123\dao\CooperateDao.class
+com\qinzi123\dto\WxOneCity.class
 com\qinzi123\happiness\service\impl\PCShowServiceImpl$Request.class
 com\qinzi123\dto\template\officialAccount\Remark.class
 com\github\wxpay\sdk\WXPayReport.class

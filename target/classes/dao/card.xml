@@ -22,11 +22,14 @@
 		left join (select follower_id from follower where user_id = #{id}) x on t.id = x.follower_id
 		where 1 = 1
 		<if test="search != null" >
-			and realname like #{search} or company like #{search} or introduce like #{search}
+			and (realname like #{search} or company like #{search} or introduce like #{search})
 		</if>
 		<!-- 此处SQL后续需要优化改写 -->
 		<if test="tagId != null" >
-			and tagid1 = #{tagId} or tagid2 = #{tagId} or tagid3 = #{tagId}
+			and (tagid1 = #{tagId} or tagid2 = #{tagId} or tagid3 = #{tagId})
+		</if>
+		<if test="city != null" >
+			and city = #{city}
 		</if>
 		order by datetime desc,id desc limit #{start}, #{num}
     </select>
@@ -179,5 +182,19 @@
 	<select id="hasScoreHistory" resultType="java.util.Map">
 		select * from card_score_history where card_id = #{card_id} and score_type = #{score_type} and TO_DAYS(create_time) = TO_DAYS(NOW())
 	</select>
+
+	<!-- 查询所有的城市 -->
+	<resultMap id="allCitys" type="com.qinzi123.dto.WxCitys">
+		<result column="first_name" property="name"/>
+		<collection property="list" ofType="com.qinzi123.dto.WxOneCity">
+			<id column="id" property="id" />
+			<result column="city_code" property="cityCode" />
+			<result column="city_name" property="cityName" />
+		</collection>
+	</resultMap>
+
+	<select id="listCitys" resultMap="allCitys">
+		select * from wx_citys
+  	</select>
 
 </mapper>

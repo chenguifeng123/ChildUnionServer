@@ -1,5 +1,7 @@
 package com.qinzi123.service;
 
+import com.qinzi123.dto.WxCitys;
+
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,7 +10,7 @@ import java.util.Map;
  * Created by chenguifeng on 2018/11/17.
  */
 public interface BusinessWeixinService {
-	List<LinkedHashMap> listBusiness(String id, int start, int num, String search, Integer tagId);
+	List<LinkedHashMap> listBusiness(String id, int start, int num, String search, Integer tagId, Integer city);
 	List<LinkedHashMap> oneBusiness(String id);
 	int getIdByCode(String code);
 	int addFollower(int userId, int followerId);
@@ -24,4 +26,6 @@ public interface BusinessWeixinService {
 
 	int sign(int cardId);
 	int hasScoreHistory(int cardId);
+
+	List<WxCitys> listCitys();
 }

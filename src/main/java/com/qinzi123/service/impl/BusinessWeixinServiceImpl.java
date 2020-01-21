@@ -1,6 +1,7 @@
 package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.ScoreType;
+import com.qinzi123.dto.WxCitys;
 import com.qinzi123.exception.GlobalProcessException;
 import com.qinzi123.service.BusinessWeixinService;
 import com.qinzi123.service.PushMiniProgramService;
@@ -40,14 +41,17 @@ public class BusinessWeixinServiceImpl extends AbstractWechatMiniProgramService 
 	 * @param search 搜索字段值
 	 * @return
 	 */
-	public List<LinkedHashMap> listBusiness(String id, int start, int num, String search, Integer tagId){
+	public List<LinkedHashMap> listBusiness(String id, int start, int num,
+											String search, Integer tagId, Integer city){
 		if (search == null || search.trim().length() == 0)
 			search = null;
 		else
 			search = String.format("%%%s%%", search);
 		if (tagId == null || tagId == -1)
 			tagId = null;
-		return cardDao.listBusiness(id, start, num, search, tagId);
+		if (city == null || city == -1)
+			city = null;
+		return cardDao.listBusiness(id, start, num, search, tagId, city);
 	}
 
 	/**
@@ -244,5 +248,10 @@ public class BusinessWeixinServiceImpl extends AbstractWechatMiniProgramService 
 	public int hasScoreHistory(int cardId) {
 		List<Map> list = cardDao.hasScoreHistory(cardId, ScoreType.Sign.getType());
 		return list != null && list.size() > 0 ? 1 : 0;
+	}
+
+	@Override
+	public List<WxCitys> listCitys() {
+		return cardDao.listCitys();
 	}
 }

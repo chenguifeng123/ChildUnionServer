@@ -1,6 +1,7 @@
 package com.qinzi123.dao;
 
 import com.qinzi123.dto.CardInfo;
+import com.qinzi123.dto.WxCitys;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.LinkedHashMap;
@@ -15,7 +16,8 @@ public interface CardDao {
 											@Param("start") int start,
 											@Param("num") int num,
 											@Param("search") String search,
-											@Param("tagId") Integer tagId);
+											@Param("tagId") Integer tagId,
+											@Param("city") Integer city);
 	public List<LinkedHashMap> oneBusiness(@Param("id") String id);
 
 	public int addFollower(@Param("userId") int userId, @Param("followerId") int followerId);
@@ -43,5 +45,5 @@ public interface CardDao {
 	public int addShowScoreHistory(Map map);
 	public List<Map> hasScoreHistory(@Param("card_id") int card_id, @Param("score_type") int score_type);
 
-
+	List<WxCitys> listCitys();
 }

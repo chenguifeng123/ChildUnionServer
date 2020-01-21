@@ -1,5 +1,6 @@
 package com.qinzi123.controller.micro;
 
+import com.qinzi123.dto.WxCitys;
 import com.qinzi123.service.BusinessWeixinService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,17 +30,19 @@ public class BusinessController {
 		int start = Integer.parseInt(map.get("start").toString());
 		int num = Integer.parseInt(map.get("num").toString());
 		String search = map.get("search").toString();
-		int tagId = -1;
+		int tagId = -1, city = -1;
 		if(map.get("tag") != null)
 			tagId = Integer.parseInt(map.get("tag").toString());
-		return businessWeixinService.listBusiness(id, start, num, search, tagId);
+		if(map.get("city") != null)
+			city = Integer.parseInt(map.get("city").toString());
+		return businessWeixinService.listBusiness(id, start, num, search, tagId, city);
 	}
 
 	@ApiOperation(value = "商户列表", notes = "商户列表")
 	@RequestMapping(value="/business/list/{id}-{start}-{num}", method=RequestMethod.GET)
 	private List<LinkedHashMap> listBusinessNoSearch(@PathVariable String id, @PathVariable int start,
 											 @PathVariable int num){
-		return businessWeixinService.listBusiness(id, start, num, null, -1);
+		return businessWeixinService.listBusiness(id, start, num, null, -1, -1);
 	}
 
 	@ApiOperation(value = "具体商户信息", notes = "具体商户信息")
@@ -120,4 +123,12 @@ public class BusinessController {
 	private int hashSigned(@PathVariable("id") int id){
 		return businessWeixinService.hasScoreHistory(id);
 	}
+
+
+	@ApiOperation(value = "获取所有城市", notes = "获取所有城市")
+	@RequestMapping(value = "/business/listCitys", method = RequestMethod.GET)
+	private List<WxCitys> listCitys(){
+		return businessWeixinService.listCitys();
+	}
+
 }
