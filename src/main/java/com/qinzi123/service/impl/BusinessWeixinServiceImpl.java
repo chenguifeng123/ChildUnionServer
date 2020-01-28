@@ -2,6 +2,7 @@ package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.ScoreType;
 import com.qinzi123.dto.WxCitys;
+import com.qinzi123.dto.WxOneCity;
 import com.qinzi123.exception.GlobalProcessException;
 import com.qinzi123.service.BusinessWeixinService;
 import com.qinzi123.service.PushMiniProgramService;
@@ -250,8 +251,11 @@ public class BusinessWeixinServiceImpl extends AbstractWechatMiniProgramService 
 		return list != null && list.size() > 0 ? 1 : 0;
 	}
 
-	@Override
 	public List<WxCitys> listCitys() {
 		return cardDao.listCitys();
+	}
+
+	public WxOneCity oneCity(int id) {
+		return cardDao.oneCity(id);
 	}
 }

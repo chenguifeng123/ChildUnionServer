@@ -1,19 +1,19 @@
 
-€squid:S3457´"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ÅØ´ñ8† ÆáÖ-
-[squid:S1155÷">Use isEmpty() to check whether the collection is empty or not.(Â‹Óéÿÿÿÿÿ
-€squid:S3457±"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(çãÛ”8†ìÄáÖ-
-Csquid:S2629´"$Invoke method(s) only conditionally.(ÅØ´ñ8† ÆáÖ-
-jsquid:S00117Ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
-…squid:S3457¼"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ì Ú“úÿÿÿÿ8ÑÈáÖ-
-jsquid:S00117Ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
-Csquid:S2629±"$Invoke method(s) only conditionally.(çãÛ”8†ìÄáÖ-
-€squid:S3457º"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Œá»¡8óØÇáÖ-
-jsquid:S00117Ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
-jsquid:S00117Ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
-Csquid:S2629º"$Invoke method(s) only conditionally.(Œá»¡8óØÇáÖ-
-Bsquid:S2629{"$Invoke method(s) only conditionally.(îè¶8·™¸Ø-
-Hsquid:S2629¼"$Invoke method(s) only conditionally.(ì Ú“úÿÿÿÿ8ÑÈáÖ-
-Ksquid:S1481“"'Remove this unused "id" local variable.(“¼µüÿÿÿÿ8˜†ú…Ö-
-squid:S3457{"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(îè¶8·™¸Ø-
-nsquid:CommentedOutCodeLinet"<This block of commented-out lines of code should be removed.(ñ´·€øÿÿÿÿ8ìªÙ…Ö-
-\squid:S1155y">Use isEmpty() to check whether the collection is empty or not.(å¸Ô·8ÕıÑü×-
+€squid:S3457´"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(çãÛ”8† ÆáÖ-
+jsquid:S00117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
+squid:S3457~"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(îè¶8·™¸Ø-
+[squid:S1155ú">Use isEmpty() to check whether the collection is empty or not.(Â‹Óéÿÿÿÿÿ
+nsquid:CommentedOutCodeLinew"<This block of commented-out lines of code should be removed.(ñ´·€øÿÿÿÿ8ìªÙ…Ö-
+jsquid:S00117İ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
+jsquid:S00117İ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å ”Ù
+Ksquid:S1481–"'Remove this unused "id" local variable.(“¼µüÿÿÿÿ8˜†ú…Ö-
+Csquid:S2629´"$Invoke method(s) only conditionally.(çãÛ”8† ÆáÖ-
+Bsquid:S2629~"$Invoke method(s) only conditionally.(îè¶8·™¸Ø-
+Csquid:S2629·"$Invoke method(s) only conditionally.(ÅØ´ñ8ÒˆºÒş-
+Csquid:S2629½"$Invoke method(s) only conditionally.(Œá»¡8óØÇáÖ-
+€squid:S3457·"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ÅØ´ñ8ÒˆºÒş-
+€squid:S3457½"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Œá»¡8óØÇáÖ-
+…squid:S3457¿"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ì Ú“úÿÿÿÿ8ÑÈáÖ-
+\squid:S1155|">Use isEmpty() to check whether the collection is empty or not.(å¸Ô·8ÕıÑü×-
+jsquid:S00117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê‘¿
+Hsquid:S2629¿"$Invoke method(s) only conditionally.(ì Ú“úÿÿÿÿ8ÑÈáÖ-

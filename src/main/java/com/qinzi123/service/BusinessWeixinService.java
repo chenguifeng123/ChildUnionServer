@@ -1,6 +1,7 @@
 package com.qinzi123.service;
 
 import com.qinzi123.dto.WxCitys;
+import com.qinzi123.dto.WxOneCity;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -28,4 +29,5 @@ public interface BusinessWeixinService {
 	int hasScoreHistory(int cardId);
 
 	List<WxCitys> listCitys();
+	WxOneCity oneCity(int id);
 }

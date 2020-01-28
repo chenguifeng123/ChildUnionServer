@@ -2,6 +2,7 @@ package com.qinzi123.dao;
 
 import com.qinzi123.dto.CardInfo;
 import com.qinzi123.dto.WxCitys;
+import com.qinzi123.dto.WxOneCity;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.LinkedHashMap;
@@ -46,4 +47,5 @@ public interface CardDao {
 	public List<Map> hasScoreHistory(@Param("card_id") int card_id, @Param("score_type") int score_type);
 
 	List<WxCitys> listCitys();
+	WxOneCity oneCity(@Param("id") int id);
 }

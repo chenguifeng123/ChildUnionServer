@@ -1,6 +1,7 @@
 package com.qinzi123.controller.micro;
 
 import com.qinzi123.dto.WxCitys;
+import com.qinzi123.dto.WxOneCity;
 import com.qinzi123.service.BusinessWeixinService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -129,6 +130,12 @@ public class BusinessController {
 	@RequestMapping(value = "/business/listCitys", method = RequestMethod.GET)
 	private List<WxCitys> listCitys(){
 		return businessWeixinService.listCitys();
+	}
+
+	@ApiOperation(value = "获取单个城市", notes = "获取单个城市")
+	@RequestMapping(value = "/business/oneCity/{id}", method = RequestMethod.GET)
+	private WxOneCity oneCity(@PathVariable int id){
+		return businessWeixinService.oneCity(id);
 	}
 
 }
