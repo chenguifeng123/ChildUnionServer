@@ -141,10 +141,15 @@ public class BusinessWeixinServiceImpl extends AbstractWechatMiniProgramService 
 		if(map.get("gender") == null){
 			map.put("gender", "0");
 		}
+		// 保护用户如果没有城市,给默认值
+		if(map.get("city") == null){
+			map.put("city", 220);
+		}
 		return map;
 	}
 
 	private Map makeTagMap(Map map){
+		if(map.get("tag") == null) throw new GlobalProcessException("所属亲子行业为空");
 		// 处理 标签,需要拆分成 3个标签
 		String tag = map.get("tag").toString();
 		String[] tagList = tag.split(",");

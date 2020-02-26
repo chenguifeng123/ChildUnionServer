@@ -4,9 +4,9 @@ import com.qinzi123.dto.*;
 import com.qinzi123.dto.template.miniProgram.CardInfoTemplateHelper;
 import com.qinzi123.dto.template.miniProgram.CooperateMessageReplyTemplateHelper;
 import com.qinzi123.dto.template.miniProgram.CooperateMessageTemplateHelper;
+import com.qinzi123.happiness.util.StringUtil;
 import com.qinzi123.service.BusinessWeixinService;
 import com.qinzi123.service.PushMiniProgramService;
-import com.qinzi123.service.TokenService;
 import com.qinzi123.util.Utils;
 import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
@@ -29,9 +29,6 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 	BusinessWeixinService businessWeixinService;
 
 	@Autowired
-	TokenService tokenService;
-
-	@Autowired
 	CardInfoTemplateHelper cardInfoTemplateHelper;
 
 	@Autowired
@@ -39,6 +36,10 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 
 	@Autowired
 	CooperateMessageReplyTemplateHelper cooperateMessageReplyTemplateHelper;
+
+	private boolean isValidFormId(String formId){
+		return !StringUtil.isEmpty(formId) && formId.length() < 64;
+	}
 
 	public List<String> getFansUser2Push(@Param("followerId") int followerId) {
 		return pushDao.getFansUser2Push(followerId);
@@ -50,7 +51,7 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 
 	@Override
 	public int addFormId(WxSmallFormId wxSmallFormId) {
-		if(wxSmallFormId.getCardId() == -1) return 0;
+		if(wxSmallFormId.getCardId() == -1 && !isValidFormId(wxSmallFormId.getFormId())) return 0;
 		logger.info(String.format("插入新的formId %s", wxSmallFormId.toString()));
 		return pushDao.addFormId(wxSmallFormId);
 	}
@@ -63,7 +64,9 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 		wxSmallFormId.setIsUse(0);
 		wxSmallFormId.setCardId(cardId);
 		for(String formId : formIdList){
+			if (!isValidFormId(formId)) return 0;
 			wxSmallFormId.setFormId(formId);
+			logger.info(wxSmallFormId.toString());
 			pushDao.addFormId(wxSmallFormId);
 		}
 		return 1;

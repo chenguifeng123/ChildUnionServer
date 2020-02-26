@@ -1,25 +1,26 @@
 
-dsquid:S44887"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(å“¸•şÿÿÿÿ
-_squid:S4488\"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·£Í…
-nsquid:S00117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
-Gsquid:S2629Q"$Invoke method(s) only conditionally.(Œû£Ëùÿÿÿÿ8­è¶Ø-
-_squid:S4488z"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İ“çÃ
-dsquid:S4488*"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³ş’°úÿÿÿÿ
-nsquid:S00117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
-_squid:S4488h"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÇÕ¡
-isquid:S00117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
-_squid:S4488="HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–ùÛŸ
-isquid:S00117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
-fsquid:S4488O"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¥åü’øÿÿÿÿ
-dsquid:S4488V"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÙşÿÿÿÿ
-„squid:S3457Q"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Œû£Ëùÿÿÿÿ8­è¶Ø-
-_squid:S4488t"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ëóÚ¸
-dsquid:S4488C"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğø•øÿÿÿÿ
-^squid:S4488b"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(±üŠ
-dsquid:S4488I"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( ÃÃÂıÿÿÿÿ
-gsquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( „Ì8ó½»ü-
-asquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ğ«» 
-^squid:S44881"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ï¶ñ
-`squid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(Ö”¢Öşÿÿÿÿ
-dsquid:S4488n"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İñĞãüÿÿÿÿ
-@squid:S1659!""Declare "city" on a separate line.(ò²¹ß8êˆºÒş-
+dsquid:S4488+"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³ş’°úÿÿÿÿ
+nsquid:S00117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
+^squid:S4488c"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(±üŠ
+„squid:S3457R"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Œû£Ëùÿÿÿÿ8­è¶Ø-
+dsquid:S4488W"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÙşÿÿÿÿ
+Gsquid:S2629R"$Invoke method(s) only conditionally.(Œû£Ëùÿÿÿÿ8­è¶Ø-
+isquid:S00117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
+dsquid:S4488J"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( ÃÃÂıÿÿÿÿ
+dsquid:S44888"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(å“¸•şÿÿÿÿ
+dsquid:S4488o"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İñĞãüÿÿÿÿ
+_squid:S4488u"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ëóÚ¸
+_squid:S4488{"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İ“çÃ
+_squid:S4488i"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÇÕ¡
+_squid:S4488>"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–ùÛŸ
+dsquid:S4488D"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğø•øÿÿÿÿ
+gsquid:S4488ˆ"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(İÃÇ•8ßÑŸÔş-
+_squid:S4488]"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·£Í…
+asquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ğ«» 
+nsquid:S00117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÑÅ‘ûÿÿÿÿ
+isquid:S00117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¾Ú‘
+^squid:S44882"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ï¶ñ
+`squid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(Ö”¢Öşÿÿÿÿ
+@squid:S1659"""Declare "city" on a separate line.(ò²¹ß8êˆºÒş-
+fsquid:S4488P"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¥åü’øÿÿÿÿ
+gsquid:S4488‚"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"( „Ì8ó½»ü-

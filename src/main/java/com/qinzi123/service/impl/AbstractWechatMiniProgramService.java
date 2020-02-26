@@ -17,6 +17,9 @@ public abstract class AbstractWechatMiniProgramService extends AbstractWechatSer
 	// 小程序发送模板消息 URL
 	private static final String SEND_URL = "https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=%s";
 
+	// 小程序发送订阅消息 URL
+	private static final String SEND_SUBSCRIBE_URL = "https://api.weixin.qq.com/cgi-bin/message/subscribe/send?access_token=%s";
+
 	// 微信支付 URL
 	protected static final String PREPAY_URL = "https://api.mch.weixin.qq.com/pay/unifiedorder";
 	protected static final String NOTIFY_URL = "https://www.qinzi123.com/order/callback";

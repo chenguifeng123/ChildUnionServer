@@ -76,14 +76,14 @@
 	</select>
 
 	<insert id="addCardInfo" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.Map">
-		insert into card_info(phone, realname, gender, company, job, headimgurl, openid, workaddress, introduce, weixincode, datetime, invite)
-		values(#{phone}, #{realname}, #{gender}, #{company}, #{job}, #{headimgurl}, #{openid}, #{workaddress}, #{introduce}, #{weixincode}, #{datetime}, #{invite})
+		insert into card_info(phone, realname, gender, company, job, headimgurl, openid, city, workaddress, introduce, weixincode, datetime, invite)
+		values(#{phone}, #{realname}, #{gender}, #{company}, #{job}, #{headimgurl}, #{openid}, #{city}, #{workaddress}, #{introduce}, #{weixincode}, #{datetime}, #{invite})
 	</insert>
 
 	<update id="updateCardInfo" parameterType="java.util.Map">
 		update card_info
 		set phone = #{phone}, realname = #{realname}, gender = #{gender}, company=#{company}, job=#{job}, datetime=#{datetime},
-		headimgurl = #{headimgurl}, workaddress = #{workaddress}, introduce = #{introduce}, weixincode = #{weixincode}
+		headimgurl = #{headimgurl}, city = #{city}, workaddress = #{workaddress}, introduce = #{introduce}, weixincode = #{weixincode}
 		where id = #{id}
 	</update>
 
