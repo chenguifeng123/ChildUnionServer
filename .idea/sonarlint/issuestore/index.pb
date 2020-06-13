@@ -309,3 +309,7 @@ Csrc/main/java/com/qinzi123/controller/micro/MiniFileController.java,b\7\b7d980
 +src/main/java/com/qinzi123/dto/WxCitys.java,5\8\58e92a82fb99b94bd82c6c7c6700f24489310ddd
 ]
 -src/main/java/com/qinzi123/dto/WxOneCity.java,a\e\ae5710dbf90f2a206e3f88ad811dd8d092199d1b
+W
+'src/main/java/com/qinzi123/dto/Use.java,5\7\57cd913690a44f2c3d85f78df0e8062d9fd9a5a0
+]
+-src/main/java/com/qinzi123/dto/LoginUser.java,b\1\b1e159d977da3eb930d13ff3587e2a066e238c0a

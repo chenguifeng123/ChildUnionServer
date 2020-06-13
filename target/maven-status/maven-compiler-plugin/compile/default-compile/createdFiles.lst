@@ -95,6 +95,7 @@ com\qinzi123\service\impl\TokenServiceImpl.class
 com\qinzi123\dao\PCShowDao.class
 com\qinzi123\dao\CooperateDao.class
 com\qinzi123\dto\WxOneCity.class
+com\qinzi123\dto\LoginUser.class
 com\qinzi123\happiness\service\impl\PCShowServiceImpl$Request.class
 com\qinzi123\dto\template\officialAccount\Remark.class
 com\github\wxpay\sdk\WXPayReport.class

@@ -163,4 +163,8 @@ public class EntityServiceImpl implements EntityService {
 		String selectList = Utils.join(new String[]{key, value}, ",");
 		return entityDao.findSpecialEntitys(selectList, tableName);
 	}
+
+	public List<LinkedHashMap> showSaaSService(String tableName, String condition) {
+		return entityDao.findEntityByKey(tableName, condition);
+	}
 }

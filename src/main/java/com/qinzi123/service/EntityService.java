@@ -17,6 +17,7 @@ public interface EntityService {
     public List<LinkedHashMap> showService(String tableName, Map<String, Object> map);
     public List<LinkedHashMap> showAllService(String tableName);
     public List<LinkedHashMap> showSpecialService(Map<String, Object> map);
+    List<LinkedHashMap> showSaaSService(String tableName, String condition);
 
 }
 

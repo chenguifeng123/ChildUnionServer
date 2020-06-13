@@ -1,7 +1,7 @@
 
-Qsquid:S1172(".Remove this unused method parameter "message".(Ç¾Èñøÿÿÿÿ8©×¼ƒÑ-
 isquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(øí«¥8öˆÁƒÑ-
-]squid:S1118":Add a private constructor to hide the implicit public one.(‹Þßìþÿÿÿÿ8ë‚¤¢Û-
-isquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(¤Û¤Š8º…½ƒÑ-
 Lsquid:S1172".Remove this unused method parameter "message".(Ò‹‚£8¤å¾ƒÑ-
+isquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(¤Û¤Š8º…½ƒÑ-
 nsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(ßñ¯Ûýÿÿÿÿ8©×¼ƒÑ-
+]squid:S1118":Add a private constructor to hide the implicit public one.(‹Þßìþÿÿÿÿ8ë‚¤¢Û-
+Qsquid:S1172(".Remove this unused method parameter "message".(Ç¾Èñøÿÿÿÿ8©×¼ƒÑ-
