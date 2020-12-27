@@ -1,9 +1,13 @@
 package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.*;
-import com.qinzi123.dto.template.miniProgram.CardInfoTemplateHelper;
-import com.qinzi123.dto.template.miniProgram.CooperateMessageReplyTemplateHelper;
-import com.qinzi123.dto.template.miniProgram.CooperateMessageTemplateHelper;
+import com.qinzi123.dto.push.message.CooperateMessageReplySubmitHelper;
+import com.qinzi123.dto.push.message.CooperateMessageSubmitHelper;
+import com.qinzi123.dto.push.message.MessageSendObject;
+import com.qinzi123.dto.push.template.MiniProgramSendObject;
+import com.qinzi123.dto.push.template.miniProgram.CardInfoTemplateHelper;
+import com.qinzi123.dto.push.template.miniProgram.CooperateMessageReplyTemplateHelper;
+import com.qinzi123.dto.push.template.miniProgram.CooperateMessageTemplateHelper;
 import com.qinzi123.happiness.util.StringUtil;
 import com.qinzi123.service.BusinessWeixinService;
 import com.qinzi123.service.PushMiniProgramService;
@@ -28,14 +32,20 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 	@Autowired
 	BusinessWeixinService businessWeixinService;
 
-	@Autowired
+/*	@Autowired
 	CardInfoTemplateHelper cardInfoTemplateHelper;
 
 	@Autowired
 	CooperateMessageTemplateHelper cooperateMessageTemplateHelper;
 
 	@Autowired
-	CooperateMessageReplyTemplateHelper cooperateMessageReplyTemplateHelper;
+	CooperateMessageReplyTemplateHelper cooperateMessageReplyTemplateHelper;*/
+
+	@Autowired
+	CooperateMessageSubmitHelper cooperateMessageSubmitHelper;
+
+	@Autowired
+	CooperateMessageReplySubmitHelper cooperateMessageReplySubmitHelper;
 
 	private boolean isValidFormId(String formId){
 		return !StringUtil.isEmpty(formId) && formId.length() < 64;
@@ -51,9 +61,10 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 
 	@Override
 	public int addFormId(WxSmallFormId wxSmallFormId) {
-		if(wxSmallFormId.getCardId() == -1 && !isValidFormId(wxSmallFormId.getFormId())) return 0;
+		/*if(wxSmallFormId.getCardId() == -1 && !isValidFormId(wxSmallFormId.getFormId())) return 0;
 		logger.info(String.format("插入新的formId %s", wxSmallFormId.toString()));
-		return pushDao.addFormId(wxSmallFormId);
+		return pushDao.addFormId(wxSmallFormId);*/
+		return 1;
 	}
 
 	@Override
@@ -106,14 +117,14 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 	 * @param sendObject
 	 * @return
 	 */
-	private boolean pushSendObject2OneUser(MiniProgramSendObject sendObject){
+	private boolean pushSendObject2OneUser(MessageSendObject sendObject){
 		return push2OneUser(getToken(), sendObject);
 	}
 
 	@Override
 	public boolean pushCard2AllUser(Map cardMap) {
-		// 批量拿formId, 发送失败就继续取一个
-		List<Map> cardFormList = getEveryUserCanUseSmallFormId();
+		// 名片关注的，模板改消息，稍后修改
+		/*List<Map> cardFormList = getEveryUserCanUseSmallFormId();
 		for(Map cardFormMap : cardFormList) {
 			try {
 				MiniProgramSendObject sendObject = cardInfoTemplateHelper.generateSendObject(
@@ -137,7 +148,7 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 			}catch (Exception e){
 				logger.error("当前记录发送失败" + cardFormMap.toString(), e);
 			}
-		}
+		}*/
 		return true;
 	}
 
@@ -151,16 +162,11 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 		List<WxSmallFormId> wxSmallFormIdList = getCanUseSmallFormId(
 				cardMessage.getCardId());
 		cardMessage.setUpdateTime(Utils.getCurrentDate());
-		for(WxSmallFormId wxSmallFormId : wxSmallFormIdList) {
-			MiniProgramSendObject sendObject = cooperateMessageTemplateHelper.generateSendObject(
-					cardMessage.getCardInfo().getOpenid(), wxSmallFormId.getFormId(),
-					cardMessage, cardMessage);
-			if (pushSendObject2OneUser(sendObject)) {
-				logger.info("插入发送成功记录");
-				addMessageSend(cardMessage, cardMessage.getId());
-				updateFormId(wxSmallFormId);
-				break;
-			}
+		MessageSendObject sendObject = cooperateMessageSubmitHelper.generateSendObject(
+				cardMessage.getCardInfo().getOpenid(), cardMessage, cardMessage);
+		if (pushSendObject2OneUser(sendObject)) {
+			logger.info("插入发送成功记录");
+			addMessageSend(cardMessage, cardMessage.getId());
 		}
 		return true;
 	}
@@ -194,21 +200,15 @@ public class PushMiniProgramServiceImpl extends AbstractWechatMiniProgramService
 			openId = cardMessage.getCardInfo().getOpenid();
 		}
 
-		// 批量拿formId, 发送失败就继续取一个
-		List<WxSmallFormId> wxSmallFormIdList = getCanUseSmallFormId(cardId);
-		for(WxSmallFormId wxSmallFormId : wxSmallFormIdList){
-			MiniProgramSendObject sendObject = cooperateMessageReplyTemplateHelper.generateSendObject(openId,
-					wxSmallFormId.getFormId(), cardMessage, cardMessageReply);
-			boolean result = pushSendObject2OneUser(sendObject);
-			if(result){
-				logger.info("插入发送成功记录");
-				addMessageSend(cardMessageReply, cardMessageReply.getMessageId());
-				wxSmallFormId.setIsUse(Use.USE.getIsUse());
-				updateFormId(wxSmallFormId);
-				break;
-			}else
-				logger.info(String.format("该formId发送失败, %s", wxSmallFormId.toString()));
-		}
+		// 不再使用模板消息
+		MessageSendObject sendObject = cooperateMessageReplySubmitHelper.generateSendObject(openId,
+				cardMessage, cardMessageReply);
+		boolean result = pushSendObject2OneUser(sendObject);
+		if(result){
+			logger.info("插入发送成功记录");
+			addMessageSend(cardMessageReply, cardMessageReply.getMessageId());
+		}else
+			logger.info(String.format("该消息发送失败"));
 		return true;
 	}
 }

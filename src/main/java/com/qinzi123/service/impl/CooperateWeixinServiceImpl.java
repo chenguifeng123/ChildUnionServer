@@ -94,9 +94,7 @@ public class CooperateWeixinServiceImpl extends AbstractWechatMiniProgramService
 		cardMessage.setMessage(fillMessage(cardMessage.getMessage()));
 		cardMessage.setTitle(fillMessage(cardMessage.getTitle()));
 		int result = cooperateDao.addMessage(cardMessage);
-		logger.info("插入消息数据 {} 成功, 批量插入formId", cardMessage.toString());
-		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessage))
-			pushService.addFormId(wxSmallFormId);
+		logger.info("插入消息数据 {} 成功", cardMessage.toString());
 		scoreService.addScore(cardMessage.getCardId(), ScoreType.Message);
 		pushMessage(cardMessage);
 		return result;
@@ -155,9 +153,7 @@ public class CooperateWeixinServiceImpl extends AbstractWechatMiniProgramService
 		checkMsg(getToken(), cardMessageReply.getReplyMessage());
 		cardMessageReply.setReplyMessage(fillMessage(cardMessageReply.getReplyMessage()));
 		int result = cooperateDao.addCardMessageReply(cardMessageReply);
-		logger.info("回复消息 {} 成功, 批量插入formId", cardMessageReply.toString());
-		for(WxSmallFormId wxSmallFormId: generateWxSmallFormId(cardMessageReply))
-			pushService.addFormId(wxSmallFormId);
+		logger.info("回复消息 {} 成功", cardMessageReply.toString());
 		scoreService.addScore(cardMessageReply.getCardId(), ScoreType.MessageReply);
 		pushMessage(cardMessageReply);
 		return result;

@@ -41,7 +41,8 @@ public abstract class AbstractWechatMiniProgramService extends AbstractWechatSer
 	}
 
 	protected String getSendUrl(){
-		return SEND_URL;
+		//return SEND_URL;
+		return SEND_SUBSCRIBE_URL;
 	}
 
 	protected String getMchId(){return "1527081391";}

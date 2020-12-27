@@ -2,9 +2,9 @@ package com.qinzi123.service.impl;
 
 import com.qinzi123.dto.CardMessage;
 import com.qinzi123.dto.CardMessageReply;
-import com.qinzi123.dto.OfficialAccountSendObject;
-import com.qinzi123.dto.template.officialAccount.OACooperateMessageReplyTemplateHelper;
-import com.qinzi123.dto.template.officialAccount.OACooperateMessageTemplateHelper;
+import com.qinzi123.dto.push.template.OfficialAccountSendObject;
+import com.qinzi123.dto.push.template.officialAccount.OACooperateMessageReplyTemplateHelper;
+import com.qinzi123.dto.push.template.officialAccount.OACooperateMessageTemplateHelper;
 import com.qinzi123.service.PushOfficialAccountService;
 import com.qinzi123.service.TokenService;
 import org.slf4j.Logger;
