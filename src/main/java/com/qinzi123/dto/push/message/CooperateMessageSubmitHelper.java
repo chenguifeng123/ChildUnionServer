@@ -16,7 +16,7 @@ import java.util.Map;
 public class CooperateMessageSubmitHelper extends CooperateMessageHelper {
     @Override
     String templateId() {
-        return "LJaWcDFwNvldSKvb9rTdNNzXMeyYrhKYzWUf_Qjy8Nk";
+        return "auLNgQjD8StjjSvOvVcdk3qU7XDURV2gRZB9OdiYozM";
     }
 
     @Override
@@ -28,10 +28,10 @@ public class CooperateMessageSubmitHelper extends CooperateMessageHelper {
     Object data(Object object) {
         CardMessage cardMessage = (CardMessage)object;
         CooperateMessage cooperateMessage = new CooperateMessage();
-        cooperateMessage.setThing1(getKeyword(cardMessage.getTitle()));
-        cooperateMessage.setName2(getKeyword(cardMessage.getCardInfo().getRealname()));
-        cooperateMessage.setDate3(getKeyword(cardMessage.getUpdateTime()));
-        cooperateMessage.setName4(getKeyword(cardMessage.getCardInfo().getRealname()));
+        cooperateMessage.setThing4(getKeyword(cardMessage.getTitle()));
+        cooperateMessage.setName1(getKeyword(cardMessage.getCardInfo().getRealname()));
+        cooperateMessage.setThing2(getKeyword(cardMessage.getMessage()));
+        cooperateMessage.setTime3(getKeyword(cardMessage.getUpdateTime()));
         return cooperateMessage;
     }
 }

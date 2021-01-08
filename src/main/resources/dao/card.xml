@@ -29,7 +29,7 @@
 		<if test="tagId != null" >
 			and (tagid1 = #{tagId} or tagid2 = #{tagId} or tagid3 = #{tagId})
 		</if>
-		<if test="city != null" >
+		<if test="city != null and city != -1" >
 			and city = #{city}
 		</if>
 		order by datetime desc,id desc limit #{start}, #{num}

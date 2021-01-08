@@ -16,7 +16,7 @@ import java.util.*;
  * Created by chenguifeng on 2018/11/17.
  */
 @Component
-@EnableAsync
+//@EnableAsync
 public class CooperateWeixinServiceImpl extends AbstractWechatMiniProgramService implements CooperateWeixinService{
 
 	@Autowired
@@ -66,14 +66,14 @@ public class CooperateWeixinServiceImpl extends AbstractWechatMiniProgramService
 
 	}
 
-	@Async
+	//@Async
 	void pushMessage(CardMessageReply cardMessageReply){
 		logger.info("异步准备发送消息");
 		pushService.pushMessageReply2OneUser(cardMessageReply);
 		pushOfficialAccountService.pushMessageReply2OneUser(cardMessageReply);
 	}
 
-	@Async
+	//@Async
 	void pushMessage(CardMessage cardMessage){
 		logger.info("异步准备发送消息");
 		pushOfficialAccountService.pushMessage2OneUser(cardMessage);

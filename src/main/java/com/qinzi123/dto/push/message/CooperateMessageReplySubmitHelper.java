@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class CooperateMessageReplySubmitHelper extends CooperateMessageHelper{
     @Override
     String templateId() {
-        return "4da162IYoX6oUoyLDxrF9AI3ANNClhTU0SR15rBF4JM";
+        return "9mY0ssY4O1iSnG9c3hPID4BQxVBHA_GWWjBZ43-HEl4";
     }
 
     @Override
@@ -25,9 +25,9 @@ public class CooperateMessageReplySubmitHelper extends CooperateMessageHelper{
     Object data(Object object) {
         CardMessageReply cardMessageReply = (CardMessageReply)object;
         CooperateReplyMessage cooperateReplyMessage = new CooperateReplyMessage();
-        cooperateReplyMessage.setThing1(getKeyword(cardMessageReply.getTitle()));
-        cooperateReplyMessage.setName3(getKeyword(cardMessageReply.getCardInfo().getRealname()));
-        cooperateReplyMessage.setDate2(getKeyword(cardMessageReply.getCreateTime()));
+        cooperateReplyMessage.setName2(getKeyword(cardMessageReply.getCardInfo().getRealname()));
+        cooperateReplyMessage.setThing3(getKeyword(cardMessageReply.getReplyMessage()));
+        cooperateReplyMessage.setDate4(getKeyword(cardMessageReply.getCreateTime()));
         return cooperateReplyMessage;
     }
 }
