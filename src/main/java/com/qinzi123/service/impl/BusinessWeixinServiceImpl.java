@@ -55,6 +55,11 @@ public class BusinessWeixinServiceImpl extends AbstractWechatMiniProgramService 
 		return cardDao.listBusiness(id, start, num, search, tagId, city);
 	}
 
+	@Override
+	public int countBusiness(Integer city) {
+		return cardDao.countBusiness(city);
+	}
+
 	/**
 	 * 查询某个商户情况
 	 * @param id 商户ID

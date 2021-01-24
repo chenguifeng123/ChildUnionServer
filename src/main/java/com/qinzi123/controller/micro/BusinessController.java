@@ -46,6 +46,12 @@ public class BusinessController {
 		return businessWeixinService.listBusiness(id, start, num, null, -1, -1);
 	}
 
+	@ApiOperation(value = "商户统计", notes = "商户统计")
+	@RequestMapping(value="/business/count/{city}", method=RequestMethod.GET)
+	private int countBusiness(@PathVariable int city){
+		return businessWeixinService.countBusiness(city);
+	}
+
 	@ApiOperation(value = "具体商户信息", notes = "具体商户信息")
 	@RequestMapping(value="/business/info/{id}", method=RequestMethod.GET)
 	private List<LinkedHashMap> oneBusiness(@PathVariable String id){

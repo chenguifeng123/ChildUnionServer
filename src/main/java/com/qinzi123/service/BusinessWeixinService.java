@@ -12,6 +12,8 @@ import java.util.Map;
  */
 public interface BusinessWeixinService {
 	List<LinkedHashMap> listBusiness(String id, int start, int num, String search, Integer tagId, Integer city);
+	int countBusiness(Integer city);
+
 	List<LinkedHashMap> oneBusiness(String id);
 	int getIdByCode(String code);
 	int addFollower(int userId, int followerId);

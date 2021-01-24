@@ -36,6 +36,14 @@
     </select>
 
 	<!-- 获取商户列表 -->
+	<select id="countBusiness" resultType="java.lang.Integer">
+		select count(1) from card_info where 1 = 1
+		<if test="city != null and city != -1" >
+			and city = #{city}
+		</if>
+	</select>
+
+	<!-- 获取商户列表 -->
 	<select id="oneBusiness" resultType="java.util.LinkedHashMap">
 		select id, headimgurl, realname, job, company, phone, workaddress, introduce, weixincode, score,
 			tag1, tag2, tag3, follow_count,fans_count, gender, leaguer,city

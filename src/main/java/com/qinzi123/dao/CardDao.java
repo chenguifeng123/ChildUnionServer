@@ -19,6 +19,7 @@ public interface CardDao {
 											@Param("search") String search,
 											@Param("tagId") Integer tagId,
 											@Param("city") Integer city);
+	public int countBusiness(@Param("city") Integer city);
 	public List<LinkedHashMap> oneBusiness(@Param("id") String id);
 
 	public int addFollower(@Param("userId") int userId, @Param("followerId") int followerId);
